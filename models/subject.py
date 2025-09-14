@@ -4,7 +4,7 @@ from openerp.exceptions import Warning
 
 class Subject(models.Model):
     _name = 'python_odoo8_module.subject'
-    _description = 'Modelo de materias/cursos'
+    _description = 'Modelo de cursos'
 
     name = fields.Char('Nombre de Materia', required=True)
     description = fields.Text('Descripción')

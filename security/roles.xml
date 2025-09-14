@@ -1,12 +1,12 @@
 <openerp>
     <data>
         <record id="student_role_group" model="res.groups">
-            <field name="name">Estudiante</field>
+            <field name="name">Estudiantes</field>
             <field name="category_id" ref="base.module_category_hidden"/>
         </record>
 
         <record id="teacher_role_group" model="res.groups">
-            <field name="name">Profesor / Administrador</field>
+            <field name="name">Profesores</field>
             <field name="category_id" ref="base.module_category_hidden"/>
         </record>
     </data>

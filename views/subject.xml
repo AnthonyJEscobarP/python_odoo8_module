@@ -28,10 +28,18 @@
             </field>
         </record>
 
-        <record id="subject_actions" model="ir.actions.act_window">
+        <record id="subject_actions_teacher" model="ir.actions.act_window">
             <field name="name">Materias</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_mode">tree,form</field>
+            <field name="groups_id" eval="[(6,0,[ref('python_odoo8_module.teacher_role_group')])]"/>
+        </record>
+
+        <record id="subject_actions_student" model="ir.actions.act_window">
+            <field name="name">Materias</field>
+            <field name="res_model">python_odoo8_module.subject</field>
+            <field name="view_mode">tree,form</field>
+            <field name="groups_id" eval="[(6,0,[ref('python_odoo8_module.student_role_group')])]"/>
         </record>
     </data>
 </openerp>

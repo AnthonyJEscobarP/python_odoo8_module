@@ -1,9 +1,9 @@
 <openerp>
     <data>
         <menuitem id="primary_menu" name="Administracion Estudiantil" sequence="1" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_student" name="Gestion Estudiantes" parent="primary_menu" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_subject" name="Gestion Materias" parent="primary_menu" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_classroom" name="GestionAulas" parent="primary_menu" action="classroom_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_student" name="Manejo de Estudiantes" parent="primary_menu" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_subject" name="Manejo de Materias" parent="primary_menu" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_classroom" name="Manejo de Aulas" parent="primary_menu" action="classroom_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
 
         <menuitem id="primary_menu_student" name="Perfil academico" sequence="1" groups="python_odoo8_module.student_role_group"/>
         <menuitem id="submenu_student_student" name="Informacion de Estudiante" parent="primary_menu_student" action="student_actions_student" groups="python_odoo8_module.student_role_group"/>

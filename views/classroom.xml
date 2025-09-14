@@ -31,6 +31,7 @@
             <field name="name">Aulas</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="classroom_tree_view"/>
         </record>
 
         <record id="classroom_actions_student" model="ir.actions.act_window">

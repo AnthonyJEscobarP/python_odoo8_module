@@ -32,12 +32,14 @@
             <field name="name">Materias</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="subject_tree_view"/>
         </record>
 
         <record id="subject_actions_student" model="ir.actions.act_window">
             <field name="name">Materias</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="subject_tree_view"/>
         </record>
     </data>
 </openerp>

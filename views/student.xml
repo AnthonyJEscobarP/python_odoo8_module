@@ -41,12 +41,14 @@
             <field name="name">Estudiantes</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="student_tree_view"/>
         </record>
 
         <record id="student_actions_student" model="ir.actions.act_window">
             <field name="name">Informacion academica</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_mode">form</field>
+            <field name="view_id" ref="student_form_view"/>
         </record>
     </data>
 </openerp>

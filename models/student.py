@@ -21,12 +21,6 @@ class student(models.Model):
     
     section = fields.Selection([('A', 'A'), ('B', 'B'), ('C', 'C')], 'Seccion', required=True)
     
-    subject_ids = fields.Many2many(
-        'python_odoo8_module.subject',
-        'student_subject_rel',
-        'student_id', 'subject_id',
-        string='Materias'
-    )
     
     user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo')
     
@@ -34,6 +28,13 @@ class student(models.Model):
         ('student_card_unique', 'unique(card)', 'El carnet debe ser único.'),
         ('student_email_unique', 'unique(email)', 'El email ya está en uso.'),
     ]
+    
+    itinerary_ids = fields.Many2many(
+        'python_odoo8_module.itinerary',
+        'itinerary_student_rel',
+        'student_id', 'itinerary_id',
+        string='Itinerario'
+    )
     
     @api.constrains('email')
     def validateEmail(self):
@@ -58,13 +59,25 @@ class student(models.Model):
             
         if vals.get('email') and not vals.get('user_id'):
             try:
-                user_odoo = self.env['res.users'].create({
+                group = self.env['res.groups'].search([('name', '=', 'Estudiantes')], limit=1)
+                user_data = {
                     'name': vals.get('name'),
                     'login': vals.get('email'),
                     'password': 'temporal',
-                })
+                }
+                if group:
+                    user_data['groups_id'] = [(6, 0, [group.id])]
+                user_odoo = self.env['res.users'].create(user_data)
                 vals['user_id'] = user_odoo.id
             except Exception:
                 pass
 
         return super(student, self).create(vals)
+
+    @api.multi
+    def write(self, vals):
+        res = super(student, self).write(vals)
+        for rec in self:
+            if 'email' in vals and rec.user_id:
+                rec.user_id.login = vals['email']
+        return res

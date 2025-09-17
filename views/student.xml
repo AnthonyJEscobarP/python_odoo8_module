@@ -19,21 +19,66 @@
             <field name="name">student.form_view</field>
             <field name="model">python_odoo8_module.student</field>
             <field name="arch" type="xml">
-                <form string="informacion personal">
+                <form string="Informacion personal">
                     <sheet>
                         <group>
-                            <field name="name"/>
-                            <field name="photo" widget="image"/>
-                            <field name="age"/>
-                            <field name="card" readonly="1"/>
-                            <field name="email"/>
-                            <field name="grade"/>
-                            <field name="section"/>
-                            <field name="subject_ids"/>
-                            <field name="user_id" readonly="1"/>
+                            <group>
+                                <field name="photo" widget="image" class="oe_avatar" style="height:140px;width:140px"/>
+                            </group>
+                            <field name="name" placeholder="Estudiante"/>
+                            <field name="card" readonly="1" placeholder="Carnet"/>
+                            <field name="age" placeholder="Edad"/>
+                            <field name="email" placeholder="Correo electronico"/>
                         </group>
+                        <notebook>
+                            <page string="Informacion Académica">
+                                <group>
+                                    <field name="grade" placeholder="Grado"/>
+                                    <field name="section" placeholder="Seccion"/>
+                                </group>
+                                <group>
+                                    <field name="itinerary_ids" widget="many2many_list">
+                                        <tree string="Horarios del estudiante">
+                                            <field name="day" string="Dia"/>
+                                            <field name="hour" string="Hora"/>
+                                            <field name="subject_id" string="Materia"/>
+                                            <field name="classroom_id" string="Aula"/>
+                                            <field name="subject_id.teacher_id" string="Profesor"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="student_search_view" model="ir.ui.view">
+            <field name="name">student.search_view</field>
+            <field name="model">python_odoo8_module.student</field>
+            <field name="arch" type="xml">
+                <search string="Buscar y encontrar">
+                    <field name="name" string="Nombre"/>
+                    <field name="age" string="Edad"/>
+                    <field name="card" string="Carnet"/>
+                    <field name="email" string="Correo"/>
+                    <field name="grade" string="Grado"/>
+                    <field name="section" string="Seccion"/>
+                    <field name="itinerary_ids.subject_id" string="Materia"/>
+                    <field name="itinerary_ids.classroom_id" string="Aula"/>
+                    <field name="itinerary_ids" string="Itinerario"/>
+                    <filter string="Inscritos" name="with_itinerary" domain="[('itinerary_ids','!=',False)]"/>
+                    <filter string="No Inscritos" name="without_itinerary" domain="[('itinerary_ids','=',False)]"/>
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Grado" context="{'group_by':'grade'}"/>
+                        <filter string="Seccion" context="{'group_by':'section'}"/>
+                        <filter string="Itinerario" context="{'group_by':'itinerary_ids'}"/>
+                        <filter string="Grado y Seccion" context="{'group_by':'grade,section'}"/>
+                        <filter string="Materia" context="{'group_by':'itinerary_ids.subject_id'}"/>
+                        <filter string="Aula" context="{'group_by':'itinerary_ids.classroom_id'}"/>
+                    </group>
+                </search>
             </field>
         </record>
 
@@ -45,7 +90,7 @@
         </record>
 
         <record id="student_actions_student" model="ir.actions.act_window">
-            <field name="name">Informacion academica</field>
+            <field name="name">Mi Informacion</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="student_form_view"/>

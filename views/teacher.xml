@@ -1,0 +1,76 @@
+<openerp>
+    <data>
+        <record id="teacher_tree_view" model="ir.ui.view">
+            <field name="name">teacher.tree_view</field>
+            <field name="model">python_odoo8_module.teacher</field>
+            <field name="arch" type="xml">
+                <tree string="Listado de Profesores">
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="email"/>
+                    <field name="subject_id" string="Materia"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="teacher_form_view" model="ir.ui.view">
+            <field name="name">teacher.form_view</field>
+            <field name="model">python_odoo8_module.teacher</field>
+            <field name="arch" type="xml">
+                <form string="Informacion personal">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="photo" widget="image" class="oe_avatar" style="height:140px;width:140px"/>
+                            </group>
+                            <field name="name" placeholder="Nombre Completo"/>
+                            <field name="age" placeholder="Edad"/>
+                            <field name="email" placeholder="Correo Electrónico"/>
+                        </group>
+                        <notebook>
+                            <page string="Informacion academica">
+                                <field name="subject_id" string="Materia a cargo"/>
+                                <field name="itinerary_ids" widget="many2many_list">
+                                    <tree string="Horarios del profesor">
+                                        <field name="day" string="Dia"/>
+                                        <field name="hour" string="Hora"/>
+                                        <field name="classroom_id" string="Aula"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="teacher_search_view" model="ir.ui.view">
+            <field name="name">teacher.search_view</field>
+            <field name="model">python_odoo8_module.teacher</field>
+            <field name="arch" type="xml">
+                <search string="Buscar y encontrar">
+                    <field name="name" string="Nombre"/>
+                    <field name="email" string="Correo"/>
+                    <field name="subject_id" string="Materia"/>
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Materia" context="{'group_by':'subject_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="teacher_actions_admin" model="ir.actions.act_window">
+            <field name="name">Profesores</field>
+            <field name="res_model">python_odoo8_module.teacher</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="teacher_tree_view"/>
+        </record>
+
+        <record id="teacher_actions_teacher" model="ir.actions.act_window">
+            <field name="name">Mi Informacion</field>
+            <field name="res_model">python_odoo8_module.teacher</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="teacher_form_view"/>
+        </record>
+    </data>
+</openerp>

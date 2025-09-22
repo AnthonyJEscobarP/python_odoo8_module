@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from openerp import models, fields, api, _
 from datetime import datetime, timedelta
 from openerp.osv import expression

@@ -4,7 +4,7 @@ from openerp.osv import expression
 from collections import defaultdict
 import re
 
-class Itinerary(models.Model):
+class itinerary(models.Model):
     _name = 'python_odoo8_module.itinerary'
     _description = 'Modelo de itinerario para sesiones de clases'
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from openerp import models, fields, _
 
-class Classroom(models.Model):
+class classroom(models.Model):
     _name = 'python_odoo8_module.classroom'
     _description = 'Modelo de Aulas'
 

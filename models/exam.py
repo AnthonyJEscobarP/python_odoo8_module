@@ -1,6 +1,6 @@
 from openerp import models, fields, api, _
 
-class Exam(models.Model):
+class exam(models.Model):
     _name = 'python_odoo8_module.exam'
     _description = 'Modelo de examenes'
 

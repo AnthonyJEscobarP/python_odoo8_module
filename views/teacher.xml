@@ -4,10 +4,10 @@
             <field name="name">teacher.tree_view</field>
             <field name="model">python_odoo8_module.teacher</field>
             <field name="arch" type="xml">
-                <tree string="Listado de Profesores">
-                    <field name="name"/>
-                    <field name="age"/>
-                    <field name="email"/>
+                <tree string="Profesores">
+                    <field name="name" string="Profesor"/>
+                    <field name="age" string="Edad"/>
+                    <field name="email" string="Correo"/>
                     <field name="subject_id" string="Materia"/>
                 </tree>
             </field>
@@ -23,7 +23,7 @@
                             <group>
                                 <field name="photo" widget="image" class="oe_avatar" style="height:140px;width:140px"/>
                             </group>
-                            <field name="name" placeholder="Nombre Completo"/>
+                            <field name="name" placeholder="Profesor"/>
                             <field name="age" placeholder="Edad"/>
                             <field name="email" placeholder="Correo Electrónico"/>
                         </group>
@@ -31,7 +31,7 @@
                             <page string="Informacion academica">
                                 <field name="subject_id" string="Materia a cargo"/>
                                 <field name="itinerary_ids" widget="many2many_list">
-                                    <tree string="Horarios del profesor">
+                                    <tree string="Horarios de clase">
                                         <field name="day" string="Dia"/>
                                         <field name="hour" string="Hora"/>
                                         <field name="classroom_id" string="Aula"/>
@@ -52,8 +52,17 @@
                     <field name="name" string="Nombre"/>
                     <field name="email" string="Correo"/>
                     <field name="subject_id" string="Materia"/>
+                    <field name="itinerary_ids.day" string="Día"/>
+                    <field name="itinerary_ids.hour" string="Hora"/>
+                    <field name="itinerary_ids.classroom_id" string="Aula"/>
+
+                    <filter string="Asignados" name="by_subject" domain="[('subject_id','!=',False)]"/>
+                    <filter string="Sin asignar" name="by_subject" domain="[('subject_id','=',False)]"/>
+
                     <group expand="0" string="Agrupar Por">
                         <filter string="Materia" context="{'group_by':'subject_id'}"/>
+                        <filter string="Día" context="{'group_by':'itinerary_ids.day'}"/>
+                        <filter string="Aula" context="{'group_by':'itinerary_ids.classroom_id'}"/>
                     </group>
                 </search>
             </field>

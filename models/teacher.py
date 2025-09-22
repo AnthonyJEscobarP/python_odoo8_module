@@ -4,7 +4,7 @@ from openerp.exceptions import Warning
 import re
 from datetime import datetime
 
-class teacher(models.Model):
+class Teacher(models.Model):
     _name = 'python_odoo8_module.teacher'
     _description = 'Modelo de maestro'
 

@@ -5,12 +5,12 @@
             <field name="model">python_odoo8_module.student</field>
             <field name="arch" type="xml">
                 <tree string="Listado estudiantes">
-                    <field name="name"/>
-                    <field name="age"/>
-                    <field name="card"/>
-                    <field name="email"/>
-                    <field name="grade"/>
-                    <field name="section"/>
+                    <field name="name" string="Estudiante"/>
+                    <field name="age" string="Edad"/>
+                    <field name="card" string="Carnet"/>
+                    <field name="email" string="Correo"/>
+                    <field name="grade" string="Grado"/>
+                    <field name="section" string="Seccion"/>
                 </tree>
             </field>
         </record>
@@ -38,7 +38,7 @@
                                 </group>
                                 <group>
                                     <field name="itinerary_ids" widget="many2many_list">
-                                        <tree string="Horarios del estudiante">
+                                        <tree string="Horarios de estudiante">
                                             <field name="day" string="Dia"/>
                                             <field name="hour" string="Hora"/>
                                             <field name="subject_id" string="Materia"/>
@@ -59,21 +59,20 @@
             <field name="model">python_odoo8_module.student</field>
             <field name="arch" type="xml">
                 <search string="Buscar y encontrar">
-                    <field name="name" string="Nombre"/>
-                    <field name="age" string="Edad"/>
+                    <field name="name" string="Estudiante"/>
                     <field name="card" string="Carnet"/>
                     <field name="email" string="Correo"/>
                     <field name="grade" string="Grado"/>
                     <field name="section" string="Seccion"/>
                     <field name="itinerary_ids.subject_id" string="Materia"/>
                     <field name="itinerary_ids.classroom_id" string="Aula"/>
-                    <field name="itinerary_ids" string="Itinerario"/>
+                    <field name="itinerary_ids" string="Periodo"/>
                     <filter string="Inscritos" name="with_itinerary" domain="[('itinerary_ids','!=',False)]"/>
                     <filter string="No Inscritos" name="without_itinerary" domain="[('itinerary_ids','=',False)]"/>
                     <group expand="0" string="Agrupar Por">
                         <filter string="Grado" context="{'group_by':'grade'}"/>
                         <filter string="Seccion" context="{'group_by':'section'}"/>
-                        <filter string="Itinerario" context="{'group_by':'itinerary_ids'}"/>
+                        <filter string="Periodos" context="{'group_by':'itinerary_ids'}"/>
                         <filter string="Grado y Seccion" context="{'group_by':'grade,section'}"/>
                         <filter string="Materia" context="{'group_by':'itinerary_ids.subject_id'}"/>
                         <filter string="Aula" context="{'group_by':'itinerary_ids.classroom_id'}"/>

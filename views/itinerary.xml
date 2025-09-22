@@ -1,0 +1,95 @@
+<openerp>
+    <data>
+        <record id="itinerary_tree_view" model="ir.ui.view">
+            <field name="name">itinerary.tree_view</field>
+            <field name="model">python_odoo8_module.itinerary</field>
+            <field name="arch" type="xml">
+                <tree string="Organizacion de clase">
+                    <field name="day" string="Día"/>
+                    <field name="hour" string="Hora"/>
+                    <field name="subject_id.teacher_id" string="Profesor"/>
+                    <field name="subject_id" string="Materia"/>
+                    <field name="classroom_id" string="Aula"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="itinerary_form_view" model="ir.ui.view">
+            <field name="name">itinerary.form_view</field>
+            <field name="model">python_odoo8_module.itinerary</field>
+            <field name="arch" type="xml">
+                <form string="Horario de clase">
+                    <sheet>
+                        <group>
+                            <field name="day" placeholder="Día"/>
+                            <field name="hour" placeholder="Hora"/>
+                        </group>
+                        <group>
+                            <field name="subject_id.teacher_id" string="Profesor"/>
+                            <field name="subject_id" string="Materia"/>
+                            <field name="classroom_id" string="Aula"/>
+                        </group>
+                        <notebook>
+                            <page string="Estudiantes">
+                                <field name="student_ids" widget="many2many_list">
+                                    <tree string="Inscritos">
+                                        <field name="name" string="Nombre"/>
+                                        <field name="email" string="Correo"/>
+                                        <field name="grade" string="Grado"/>
+                                        <field name="section" string="Sección"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="itinerary_search_view" model="ir.ui.view">
+            <field name="name">itinerary.search_view</field>
+            <field name="model">python_odoo8_module.itinerary</field>
+            <field name="arch" type="xml">
+                <search string="Buscar y encontrar">
+                    <field name="day" string="Día"/>
+                    <field name="hour" string="Hora"/>
+                    <field name="subject_id.teacher_id" string="Profesor"/>
+                    <field name="subject_id" string="Materia"/>
+                    <field name="classroom_id" string="Aula"/>
+                    <field name="student_ids" string="Estudiantes"/>
+
+                    <filter string="Por Profesor" name="by_teacher" domain="[('subject_id.teacher_id.user_id', '=', uid)]"/>
+                    <filter string="Por Estudiante" name="by_student" domain="[('student_ids.user_id', '=', uid)]"/>
+
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Día" context="{'group_by':'day'}"/>
+                        <filter string="Materia" context="{'group_by':'subject_id'}"/>
+                        <filter string="Aula" context="{'group_by':'classroom_id'}"/>
+                        <filter string="Profesor" context="{'group_by':'subject_id.teacher_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="itinerary_actions_admin" model="ir.actions.act_window">
+            <field name="name">Agenda academica</field>
+            <field name="res_model">python_odoo8_module.itinerary</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="itinerary_tree_view"/>
+        </record>
+
+        <record id="itinerary_actions_teacher" model="ir.actions.act_window">
+            <field name="name">Agenda academica</field>
+            <field name="res_model">python_odoo8_module.itinerary</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="itinerary_tree_view"/>
+        </record>
+
+        <record id="itinerary_actions_student" model="ir.actions.act_window">
+            <field name="name">Agenda academica</field>
+            <field name="res_model">python_odoo8_module.itinerary</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="itinerary_tree_view"/>
+        </record>
+    </data>
+</openerp>

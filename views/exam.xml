@@ -1,0 +1,94 @@
+<openerp>
+    <data>
+        <record id="exam_tree_view" model="ir.ui.view">
+            <field name="name">exam.tree_view</field>
+            <field name="model">python_odoo8_module.exam</field>
+            <field name="arch" type="xml">
+                <tree string="Exámenes">
+                    <field name="name" string="Examen"/>
+                    <field name="subject_id" string="Materia"/>
+                    <field name="subject_id.teacher_id" string="Profesor"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="exam_form_view" model="ir.ui.view">
+            <field name="name">exam.form_view</field>
+            <field name="model">python_odoo8_module.exam</field>
+            <field name="arch" type="xml">
+                <form string="Detalles de examen">
+                    <sheet>
+                        <group>
+                            <field name="subject_id.teacher_id" string="Profesor"/>
+                            <field name="name" placeholder="Examen"/>
+                            <field name="subject_id" string="Materia"/>
+                        </group>
+                        <notebook>
+                            <page string="Preguntas">
+                                <field name="question_ids">
+                                    <tree string="Preguntas">
+                                        <field name="sentence" string="Pregunta"/>
+                                    </tree>
+                                    <form string="Pregunta">
+                                        <sheet>
+                                            <group>
+                                                <field name="sentence" placeholder="Pregunta"/>
+                                            </group>
+                                            <group>
+                                                <field name="answer_ids">
+                                                    <tree string="Respuestas">
+                                                        <field name="response" string="Respuesta"/>
+                                                        <field name="correct" string="¿Correcta?"/>
+                                                        <field name="point" string="Puntos"/>
+                                                    </tree>
+                                                </field>
+                                            </group>
+                                        </sheet>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="Calificaciones - Participantes">
+                                <field name="result_ids">
+                                    <tree string="Listado de notas">
+                                        <field name="student_id" string="Estudiante"/>
+                                        <field name="score" string="Puntaje"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="exam_search_view" model="ir.ui.view">
+            <field name="name">exam.search_view</field>
+            <field name="model">python_odoo8_module.exam</field>
+            <field name="arch" type="xml">
+                <search string="Buscar y encontrar">
+                    <field name="name" string="Examen"/>
+                    <field name="subject_id" string="Materia"/>
+                    <field name="subject_id.teacher_id" string="Profesor"/>
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Materia" context="{'group_by':'subject_id'}"/>
+                        <filter string="Profesor" context="{'group_by':'subject_id.teacher_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="exam_actions_teacher" model="ir.actions.act_window">
+            <field name="name">Examenes</field>
+            <field name="res_model">python_odoo8_module.exam</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="exam_tree_view"/>
+        </record>
+
+        <record id="exam_actions_student" model="ir.actions.act_window">
+            <field name="name">Examenes</field>
+            <field name="res_model">python_odoo8_module.exam</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="exam_tree_view"/>
+        </record>
+    </data>
+</openerp>

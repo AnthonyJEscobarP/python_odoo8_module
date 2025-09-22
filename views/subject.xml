@@ -4,9 +4,10 @@
             <field name="name">subject.tree_view</field>
             <field name="model">python_odoo8_module.subject</field>
             <field name="arch" type="xml">
-                <tree string="Listado materias">
-                    <field name="name"/>
-                    <field name="classroom_id"/>
+                <tree string="Listado - materias">
+                    <field name="name" string="Materia"/>
+                    <field name="description" string="Descripcion"/>
+                    <field name="teacher_id" string="Profesor"/>
                 </tree>
             </field>
         </record>
@@ -15,16 +16,65 @@
             <field name="name">subject.form_view</field>
             <field name="model">python_odoo8_module.subject</field>
             <field name="arch" type="xml">
-                <form string="Informacion de materia">
+                <form string="Información de Materia">
                     <sheet>
                         <group>
-                            <field name="name"/>
-                            <field name="description"/>
-                            <field name="classroom_id"/>
-                            <field name="student_ids"/>
+                            <field name="teacher_id" string="Profesor"/>
+                            <field name="name" placeholder="Materia"/>
+                            <field name="description" placeholder="Descripción"/>
                         </group>
+                        <notebook>
+                            <page string="Horarios de clase">
+                                <field name="itinerary_ids">
+                                    <tree string="Periodos de la Materia">
+                                        <field name="day" string="Día"/>
+                                        <field name="hour" string="Hora"/>
+                                        <field name="classroom_id" string="Aula"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Estudiantes Inscritos">
+                                <field name="itinerary_ids.student_ids" widget="many2many_list">
+                                    <tree string="Estudiantes Inscritos">
+                                        <field name="card" string="Carnet"/>
+                                        <field name="name" string="Nombre"/>
+                                        <field name="grade" string="Grado"/>
+                                        <field name="section" string="Sección"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Exámenes">
+                                <field name="exam_ids">
+                                    <tree string="Exámenes de la materia">
+                                        <field name="name" string="Examen"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="subject_search_view" model="ir.ui.view">
+            <field name="name">subject.search_view</field>
+            <field name="model">python_odoo8_module.subject</field>
+            <field name="arch" type="xml">
+                <search string="Buscar y encontrar">
+                    <field name="name" string="Materia"/>
+                    <field name="teacher_id" string="Profesor"/>
+                    <field name="itinerary_ids.hour" string="Hora"/>
+                    <field name="itinerary_ids.classroom_id" string="Aula"/>
+
+                    <filter string="Con Horarios" name="with_itineraries" domain="[('itinerary_ids', '!=', False)]"/>
+                    <filter string="Sin Horarios" name="without_itineraries" domain="[('itinerary_ids', '=', False)]"/>
+
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Profesor" context="{'group_by':'teacher_id'}"/>
+                        <filter string="Aula" context="{'group_by':'itinerary_ids.classroom_id'}"/>
+                        <filter string="Día" context="{'group_by':'itinerary_ids.day'}"/>
+                    </group>
+                </search>
             </field>
         </record>
 

@@ -1,6 +1,9 @@
-from . import classroom
-from . import subject
 from . import student
 from . import teacher
-from . import schedule
-# from . import test
+from . import classroom
+from . import subject
+from . import itinerary
+from . import exam
+from . import question
+from . import answer
+from . import result

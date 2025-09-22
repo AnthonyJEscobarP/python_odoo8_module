@@ -4,9 +4,9 @@
             <field name="name">classroom.tree_view</field>
             <field name="model">python_odoo8_module.classroom</field>
             <field name="arch" type="xml">
-                <tree string="Listado aulas">
-                    <field name="name"/>
-                    <field name="capacity"/>
+                <tree string="Listado de aulas">
+                    <field name="name" string="Aula"/>
+                    <field name="capacity" string="Capacidad"/>
                 </tree>
             </field>
         </record>
@@ -15,15 +15,59 @@
             <field name="name">classroom.form_view</field>
             <field name="model">python_odoo8_module.classroom</field>
             <field name="arch" type="xml">
-                <form string="Informacion de aula">
+                <form string="Información de Aula">
                     <sheet>
                         <group>
-                            <field name="name"/>
-                            <field name="capacity"/>
-                            <field name="subject_ids"/>
+                            <field name="name" string="Aula"/>
+                            <field name="capacity" string="Capacidad"/>
                         </group>
+                        <notebook>
+                            <page string="Horarios de aula">
+                                <field name="itinerary_ids">
+                                    <tree string="Periodos de clase ">
+                                        <field name="day" string="Día"/>
+                                        <field name="hour" string="Hora"/>
+                                        <field name="subject_id" string="Materia"/>
+                                        <field name="subject_id.teacher_id" string="Profesor"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Estudiantes">
+                                <field name="itinerary_ids.student_ids" widget="many2many_list">
+                                    <tree string="Estudiantes">
+                                        <field name="card" string="Carnet"/>
+                                        <field name="name" string="Nombre"/>
+                                        <field name="grade" string="Grado"/>
+                                        <field name="section" string="Sección"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="classroom_search_view" model="ir.ui.view">
+            <field name="name">classroom.search_view</field>
+            <field name="model">python_odoo8_module.classroom</field>
+            <field name="arch" type="xml">
+                <search string="Buscar y encontrar">
+                    <field name="name" string="Aula"/>
+                    <field name="capacity" string="Capacidad"/>
+                    <field name="itinerary_ids.day" string="Día"/>
+                    <field name="itinerary_ids.subject_id" string="Materia"/>
+                    <field name="itinerary_ids.subject_id.teacher_id" string="Profesor"/>
+
+                    <filter string="Con horarios" name="with_itineraries" domain="[('itinerary_ids', '!=', False)]"/>
+                    <filter string="Sin horarios" name="without_itineraries" domain="[('itinerary_ids', '=', False)]"/>
+
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Materia" context="{'group_by':'itinerary_ids.subject_id'}"/>
+                        <filter string="Profesor" context="{'group_by':'itinerary_ids.subject_id.teacher_id'}"/>
+                        <filter string="Día" context="{'group_by':'itinerary_ids.day'}"/>
+                    </group>
+                </search>
             </field>
         </record>
 

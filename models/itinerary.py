@@ -1,13 +1,13 @@
 from openerp import models, fields, api, _
-import re
 from datetime import datetime, timedelta
+from openerp.osv import expression
+from collections import defaultdict
+import re
 
-class itinerary(models.Model):
+class Itinerary(models.Model):
     _name = 'python_odoo8_module.itinerary'
     _description = 'Modelo de itinerario para sesiones de clases'
 
-    name = fields.Char('Nombre de Sesión', required=True)
-    
     day = fields.Selection([
         ('mon', 'Lunes'),
         ('tue', 'Martes'),
@@ -40,15 +40,26 @@ class itinerary(models.Model):
         ('unique_itinerary', 'unique(classroom_id, day, hour)', 'Aula, día y hora ocupados, verifica nuevamente'),
     ]
     
+    @api.constrains('student_ids')
+    def validate_same_grade(self):
+        for itinerary in self:
+            if itinerary.student_ids:
+                grades = defaultdict(list)
+                for student in itinerary.student_ids:
+                    grades[student.grade].append(student.name)
+                
+                if len(grades) > 1:
+                    raise Warning(_("No se pueden asignar estudiantes de diferentes grados al mismo periodo"))
+                    
     @api.constrains('student_ids', 'classroom_id')
     def validate_capacity(self):
         for itinerary in self:
             if itinerary.classroom_id and len(itinerary.student_ids) > itinerary.classroom_id.capacity:
-                raise Warning(_("Esta aula %s solo permite %s alumnos, pero intentas asignar %s.") %
+                raise Warning(_("La capacidad maxima del aula es de %s solo permite %s alumnos, pero intentas asignar %s.") %
                     (itinerary.classroom_id.name, itinerary.classroom_id.capacity, len(itinerary.student_ids)))
                 
     @api.constrains('hour', 'day', 'classroom_id')
-    def validate_no_overlap(self):
+    def validate_mixed_hours(self):
         for rec in self:
             try:
                 start = datetime.strptime(rec.hour, "%H:%M")
@@ -73,3 +84,15 @@ class itinerary(models.Model):
         for rec in self:
             if rec.hour and not hour_validation.match(rec.hour):
                 raise Warning(_("La hora debe estar en formato de 24H HH:MM."))
+
+    @api.model
+    def one_hour_search(self, args, offset=0, limit=None, order=None, count=False):
+        for argument in args:
+            if isinstance(argument, (list, tuple)) and argument[0] == 'hour' and argument[1] == '=':
+                try:
+                    start_time = datetime.strptime(argument[2], "%H:%M")
+                    end_time = start_time + timedelta(hours=1)
+                    args = expression.AND([args,[('hour', '>=', start_time.strftime("%H:%M")), ('hour', '<', end_time.strftime("%H:%M"))]])
+                except ValueError:
+                    raise Warning(_("Debe estar en formato de 24h: HH:MM."))
+        return super(itinerary, self).search(args, offset, limit, order, count)

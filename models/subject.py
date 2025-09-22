@@ -13,6 +13,12 @@ class Subject(models.Model):
         'python_odoo8_module.teacher',
         string='Profesor'
     )
+    
+    exam_ids = fields.One2many(
+        'python_odoo8_module.exam', 
+        'subject_id', 
+        string='Exámenes'
+    )
 
     _sql_constraints = [
         ('subject_name_unique', 'unique(name)', 'Esta materia ya existe, intenta de nuevo con un nombre diferente.'),

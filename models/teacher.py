@@ -18,18 +18,17 @@ class teacher(models.Model):
         string='Materia'
     )
     
-    itinerary_ids = fields.Many2many(
-        'python_odoo8_module.itinerary',
-        compute='itinerary_access',
-        string='Itinerarios',
+    schedule_ids = fields.Many2many(
+        'python_odoo8_module.schedule',
+        compute='schedule_access',
+        string='horarios',
         store=False
     )
 
-    @api.depends('subject_ids')
-    def itinerary_access(self):
+    @api.depends('subject_id')
+    def schedule_access(self):
         for teacher in self:
-            itineraries = self.env['python_odoo8_module.itinerary'].search([('subject_id', 'in', teacher.subject_ids.ids)])
-            teacher.itinerary_ids = itineraries
+            itineraries = self.env['python_odoo8_module.schedule'].search([('subject_id', '=', teacher.subject_id.id)])
 
     user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo')
 

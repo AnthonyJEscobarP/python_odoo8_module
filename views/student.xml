@@ -37,7 +37,7 @@
                                     <field name="section" placeholder="Seccion"/>
                                 </group>
                                 <group>
-                                    <field name="itinerary_ids" widget="many2many_list">
+                                    <field name="schedule_ids" widget="many2many_list">
                                         <tree string="Horarios de estudiante">
                                             <field name="day" string="Dia"/>
                                             <field name="hour" string="Hora"/>
@@ -64,20 +64,44 @@
                     <field name="email" string="Correo"/>
                     <field name="grade" string="Grado"/>
                     <field name="section" string="Seccion"/>
-                    <field name="itinerary_ids.subject_id" string="Materia"/>
-                    <field name="itinerary_ids.classroom_id" string="Aula"/>
-                    <field name="itinerary_ids" string="Periodo"/>
-                    <filter string="Inscritos" name="with_itinerary" domain="[('itinerary_ids','!=',False)]"/>
-                    <filter string="No Inscritos" name="without_itinerary" domain="[('itinerary_ids','=',False)]"/>
+                    <field name="schedule_ids.subject_id" string="Materia"/>
+                    <field name="schedule_ids.classroom_id" string="Aula"/>
+                    <field name="schedule_ids" string="Periodo"/>
+                    <filter string="Inscritos" name="with_schedule" domain="[('schedule_ids','!=',False)]"/>
+                    <filter string="No Inscritos" name="without_schedule" domain="[('schedule_ids','=',False)]"/>
                     <group expand="0" string="Agrupar Por">
                         <filter string="Grado" context="{'group_by':'grade'}"/>
                         <filter string="Seccion" context="{'group_by':'section'}"/>
-                        <filter string="Periodos" context="{'group_by':'itinerary_ids'}"/>
+                        <filter string="Periodos" context="{'group_by':'schedule_ids'}"/>
                         <filter string="Grado y Seccion" context="{'group_by':'grade,section'}"/>
-                        <filter string="Materia" context="{'group_by':'itinerary_ids.subject_id'}"/>
-                        <filter string="Aula" context="{'group_by':'itinerary_ids.classroom_id'}"/>
+                        <filter string="Materia" context="{'group_by':'schedule_ids.subject_id'}"/>
+                        <filter string="Aula" context="{'group_by':'schedule_ids.classroom_id'}"/>
                     </group>
                 </search>
+            </field>
+        </record>
+
+        <record id="student_transcript_wizard" model="ir.ui.view">
+            <field name="name">student.transcript_wizard</field>
+            <field name="model">python_odoo8_module.student</field>
+            <field name="inherit_id" ref="python_odoo8_module.student_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button name="%(python_odoo8_module.student_transcript_wizard_actions)d" string="Generar boleta PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,python_odoo8_module.teacher_role_group,python_odoo8_module.student_role_group"/>
+                    </header>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="student_schedule_wizard" model="ir.ui.view">
+            <field name="name">student.schedule_wizard</field>
+            <field name="model">python_odoo8_module.student</field>
+            <field name="inherit_id" ref="python_odoo8_module.student_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="%(python_odoo8_module.student_schedule_wizard_actions)d" string="Generar Horario PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,python_odoo8_module.teacher_role_group,python_odoo8_module.student_role_group"/>
+                </xpath>
             </field>
         </record>
 

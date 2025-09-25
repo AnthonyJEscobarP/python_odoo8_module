@@ -5,9 +5,9 @@ from openerp.osv import expression
 from collections import defaultdict
 import re
 
-class itinerary(models.Model):
-    _name = 'python_odoo8_module.itinerary'
-    _description = 'Modelo de itinerario para sesiones de clases'
+class schedule(models.Model):
+    _name = 'python_odoo8_module.schedule'
+    _description = 'Modelo de horario de clases'
 
     day = fields.Selection([
         ('mon', 'Lunes'),
@@ -32,21 +32,21 @@ class itinerary(models.Model):
     
     student_ids = fields.Many2many(
         'python_odoo8_module.student',
-        'itinerary_student_rel',
-        'itinerary_id', 'student_id',
+        'schedule_student_rel',
+        'schedule_id', 'student_id',
         string='Estudiantes'
     )
 
     _sql_constraints = [
-        ('unique_itinerary', 'unique(classroom_id, day, hour)', 'Aula, día y hora ocupados, verifica nuevamente'),
+        ('unique_schedule', 'unique(classroom_id, day, hour)', 'Aula, día y hora ocupados, verifica nuevamente'),
     ]
     
     @api.constrains('student_ids')
     def validate_same_grade(self):
-        for itinerary in self:
-            if itinerary.student_ids:
+        for schedule in self:
+            if schedule.student_ids:
                 grades = defaultdict(list)
-                for student in itinerary.student_ids:
+                for student in schedule.student_ids:
                     grades[student.grade].append(student.name)
                 
                 if len(grades) > 1:
@@ -54,10 +54,10 @@ class itinerary(models.Model):
                     
     @api.constrains('student_ids', 'classroom_id')
     def validate_capacity(self):
-        for itinerary in self:
-            if itinerary.classroom_id and len(itinerary.student_ids) > itinerary.classroom_id.capacity:
+        for schedule in self:
+            if schedule.classroom_id and len(schedule.student_ids) > schedule.classroom_id.capacity:
                 raise Warning(_("La capacidad maxima del aula es de %s solo permite %s alumnos, pero intentas asignar %s.") %
-                    (itinerary.classroom_id.name, itinerary.classroom_id.capacity, len(itinerary.student_ids)))
+                    (schedule.classroom_id.name, schedule.classroom_id.capacity, len(schedule.student_ids)))
                 
     @api.constrains('hour', 'day', 'classroom_id')
     def validate_mixed_hours(self):
@@ -96,4 +96,4 @@ class itinerary(models.Model):
                     args = expression.AND([args,[('hour', '>=', start_time.strftime("%H:%M")), ('hour', '<', end_time.strftime("%H:%M"))]])
                 except ValueError:
                     raise Warning(_("Debe estar en formato de 24h: HH:MM."))
-        return super(itinerary, self).search(args, offset, limit, order, count)
+        return super(schedule, self).search(args, offset, limit, order, count)

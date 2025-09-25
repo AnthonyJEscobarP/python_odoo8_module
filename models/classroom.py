@@ -13,8 +13,8 @@ class classroom(models.Model):
         ('classroom_name_unique', 'unique(name)', 'Ya existe un aula con ese nombre.'),
     ]
     
-    itinerary_ids = fields.One2many(
-        'python_odoo8_module.itinerary',
+    schedule_ids = fields.One2many(
+        'python_odoo8_module.schedule',
         'classroom_id',
-        string='Itinerario'
+        string='horario'
     )

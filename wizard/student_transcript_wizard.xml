@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="student_transcript_wizard_form_view" model="ir.ui.view">
+            <field name="name">student_transcript_wizard.form</field>
+            <field name="model">python_odoo8_module.student_transcript_wizard</field>
+            <field name="arch" type="xml">
+                <form string="Generar boleta de calificaciones">
+                    <sheet>
+                        <group>
+                            <group string="Estudiante: ">
+                                <field name="student_id" required="1" attrs="{'readonly': [('student_id', '!=', False)]}" context="{'default_user_id': uid}"/>
+                            </group>
+                            <group string="Archivo PDF" attrs="{'invisible': [('file_data', '=', False)]}">
+                                <field name="file_data" filename="file_name" widget="binary" readonly="1"/>
+                                <label string="Boleta de calificaciones lista para descargar"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="generate_transcript_button" string="Generar Boleta PDF" type="object" class="btn-primary" attrs="{'invisible': [('file_data', '!=', False)]}"/>
+                        <button string="Cerrar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="student_transcript_wizard_actions" model="ir.actions.act_window">
+            <field name="name">Generar boleta</field>
+            <field name="res_model">python_odoo8_module.student_transcript_wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_student_id': active_id}</field>
+        </record>
+    </data>
+</openerp>

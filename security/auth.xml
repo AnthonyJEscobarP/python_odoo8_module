@@ -51,17 +51,32 @@
         </record>
 
         <record id="teacher_auth_result" model="ir.rule">
-            <field name="name">Profesor solo ve resultados de sus exámenes</field>
+            <field name="name">Permiso de profesor para solo ver resultados de sus exámenes</field>
             <field name="model_id" ref="model_python_odoo8_module_result"/>
             <field name="domain_force">[('exam_id.subject_id.teacher_id.user_id', '=', user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
         </record>
 
-        <record id="teacher_auth_itinerary" model="ir.rule">
-            <field name="name">Permiso de profesores para ver itinerarios</field>
+        <record id="teacher_auth_itinerary_read" model="ir.rule">
+            <field name="name">Permiso de profesor para ver todos los itinerarios</field>
             <field name="model_id" ref="model_python_odoo8_module_itinerary"/>
             <field name="domain_force">[]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+
+        <record id="teacher_auth_itinerary_write" model="ir.rule">
+            <field name="name">Permiso de profesor para solo modificar sus itinerarios</field>
+            <field name="model_id" ref="model_python_odoo8_module_itinerary"/>
+            <field name="domain_force">[('subject_id.teacher_id.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
         </record>
     </data>
 </openerp>

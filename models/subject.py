@@ -24,9 +24,9 @@ class subject(models.Model):
         ('subject_name_unique', 'unique(name)', 'Esta materia ya existe, intenta de nuevo con un nombre diferente.'),
     ]
     
-    itinerary_ids = fields.One2many(
-        'python_odoo8_module.itinerary',
+    schedule_ids = fields.One2many(
+        'python_odoo8_module.schedule',
         'subject_id',
-        string='Itinerario'
+        string='horario'
     )
  

@@ -29,11 +29,11 @@ class student(models.Model):
         ('student_email_unique', 'unique(email)', 'El email ya está en uso.'),
     ]
     
-    itinerary_ids = fields.Many2many(
-        'python_odoo8_module.itinerary',
-        'itinerary_student_rel',
-        'student_id', 'itinerary_id',
-        string='Itinerario'
+    schedule_ids = fields.Many2many(
+        'python_odoo8_module.schedule',
+        'schedule_student_rel',
+        'student_id', 'schedule_id',
+        string='horario'
     )
     
     @api.constrains('email')

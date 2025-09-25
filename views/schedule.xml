@@ -1,8 +1,8 @@
 <openerp>
     <data>
-        <record id="itinerary_tree_view" model="ir.ui.view">
-            <field name="name">itinerary.tree_view</field>
-            <field name="model">python_odoo8_module.itinerary</field>
+        <record id="schedule_tree_view" model="ir.ui.view">
+            <field name="name">schedule.tree_view</field>
+            <field name="model">python_odoo8_module.schedule</field>
             <field name="arch" type="xml">
                 <tree string="Organizacion de clase">
                     <field name="day" string="Día"/>
@@ -14,9 +14,9 @@
             </field>
         </record>
 
-        <record id="itinerary_form_view" model="ir.ui.view">
-            <field name="name">itinerary.form_view</field>
-            <field name="model">python_odoo8_module.itinerary</field>
+        <record id="schedule_form_view" model="ir.ui.view">
+            <field name="name">schedule.form_view</field>
+            <field name="model">python_odoo8_module.schedule</field>
             <field name="arch" type="xml">
                 <form string="Horario de clase">
                     <sheet>
@@ -46,9 +46,9 @@
             </field>
         </record>
 
-        <record id="itinerary_search_view" model="ir.ui.view">
-            <field name="name">itinerary.search_view</field>
-            <field name="model">python_odoo8_module.itinerary</field>
+        <record id="schedule_search_view" model="ir.ui.view">
+            <field name="name">schedule.search_view</field>
+            <field name="model">python_odoo8_module.schedule</field>
             <field name="arch" type="xml">
                 <search string="Buscar y encontrar">
                     <field name="day" string="Día"/>
@@ -71,25 +71,25 @@
             </field>
         </record>
 
-        <record id="itinerary_actions_admin" model="ir.actions.act_window">
+        <record id="schedule_actions_admin" model="ir.actions.act_window">
             <field name="name">Agenda academica</field>
-            <field name="res_model">python_odoo8_module.itinerary</field>
+            <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="itinerary_tree_view"/>
+            <field name="view_id" ref="schedule_tree_view"/>
         </record>
 
-        <record id="itinerary_actions_teacher" model="ir.actions.act_window">
+        <record id="schedule_actions_teacher" model="ir.actions.act_window">
             <field name="name">Agenda academica</field>
-            <field name="res_model">python_odoo8_module.itinerary</field>
+            <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="itinerary_tree_view"/>
+            <field name="view_id" ref="schedule_tree_view"/>
         </record>
 
-        <record id="itinerary_actions_student" model="ir.actions.act_window">
+        <record id="schedule_actions_student" model="ir.actions.act_window">
             <field name="name">Agenda academica</field>
-            <field name="res_model">python_odoo8_module.itinerary</field>
+            <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="itinerary_tree_view"/>
+            <field name="view_id" ref="schedule_tree_view"/>
         </record>
     </data>
 </openerp>

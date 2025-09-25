@@ -27,7 +27,7 @@ class result(models.Model):
     @api.depends('answer_ids')
     def get_exam_score(self):
         for result in self:
-            result.score = sum(ans.points for ans in result.answer_ids if ans.correct)
+            result.score = sum(ans.point for ans in result.answer_ids if ans.correct)
             
     @api.constrains('exam_id', 'student_id')
     def one_try_by_student(self):
@@ -44,5 +44,5 @@ class result(models.Model):
     def validate_inscription(self):
         for rec in self:
             subject = rec.exam_id.subject_id
-            if rec.student_id not in subject.itinerary_ids.mapped('student_ids'):
+            if rec.student_id not in subject.schedule_ids.mapped('student_ids'):
                 raise Warning(_("No cuentas con inscripcion en esta materia."))

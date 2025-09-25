@@ -23,7 +23,7 @@
                         </group>
                         <notebook>
                             <page string="Horarios de aula">
-                                <field name="itinerary_ids">
+                                <field name="schedule_ids">
                                     <tree string="Periodos de clase ">
                                         <field name="day" string="Día"/>
                                         <field name="hour" string="Hora"/>
@@ -33,7 +33,7 @@
                                 </field>
                             </page>
                             <page string="Estudiantes">
-                                <field name="itinerary_ids.student_ids" widget="many2many_list">
+                                <field name="schedule_ids.student_ids" widget="many2many_list">
                                     <tree string="Estudiantes">
                                         <field name="card" string="Carnet"/>
                                         <field name="name" string="Nombre"/>
@@ -55,17 +55,17 @@
                 <search string="Buscar y encontrar">
                     <field name="name" string="Aula"/>
                     <field name="capacity" string="Capacidad"/>
-                    <field name="itinerary_ids.day" string="Día"/>
-                    <field name="itinerary_ids.subject_id" string="Materia"/>
-                    <field name="itinerary_ids.subject_id.teacher_id" string="Profesor"/>
+                    <field name="schedule_ids.day" string="Día"/>
+                    <field name="schedule_ids.subject_id" string="Materia"/>
+                    <field name="schedule_ids.subject_id.teacher_id" string="Profesor"/>
 
-                    <filter string="Con horarios" name="with_itineraries" domain="[('itinerary_ids', '!=', False)]"/>
-                    <filter string="Sin horarios" name="without_itineraries" domain="[('itinerary_ids', '=', False)]"/>
+                    <filter string="Con horarios" name="with_itineraries" domain="[('schedule_ids', '!=', False)]"/>
+                    <filter string="Sin horarios" name="without_itineraries" domain="[('schedule_ids', '=', False)]"/>
 
                     <group expand="0" string="Agrupar Por">
-                        <filter string="Materia" context="{'group_by':'itinerary_ids.subject_id'}"/>
-                        <filter string="Profesor" context="{'group_by':'itinerary_ids.subject_id.teacher_id'}"/>
-                        <filter string="Día" context="{'group_by':'itinerary_ids.day'}"/>
+                        <filter string="Materia" context="{'group_by':'schedule_ids.subject_id'}"/>
+                        <filter string="Profesor" context="{'group_by':'schedule_ids.subject_id.teacher_id'}"/>
+                        <filter string="Día" context="{'group_by':'schedule_ids.day'}"/>
                     </group>
                 </search>
             </field>

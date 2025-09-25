@@ -2,8 +2,10 @@ from . import student
 from . import teacher
 from . import classroom
 from . import subject
-from . import itinerary
+from . import schedule
 from . import exam
 from . import question
 from . import answer
 from . import result
+from . import student_transcript_wizard
+from . import student_schedule_wizard 

@@ -5,7 +5,7 @@ from openerp.osv import expression
 from collections import defaultdict
 import re
 
-class schedule(models.Model):
+class Schedule(models.Model):
     _name = 'python_odoo8_module.schedule'
     _description = 'Modelo de horario de clases'
 
@@ -75,8 +75,8 @@ class schedule(models.Model):
                     other_start = datetime.strptime(other.hour, "%H:%M")
                     other_end = other_start + timedelta(hours=1)
                     if (start < other_end) and (end > other_start):
-                        raise Warning(_("Tu horario "))
-            except Exception:
+                        raise Warning(_("El horario no esta disponible. Razon: Ocupado"))
+            except ValueError:
                 raise Warning(_("La hora debe estar en formato de 24H HH:MM."))
                 
     @api.constrains('hour')
@@ -88,12 +88,21 @@ class schedule(models.Model):
 
     @api.model
     def one_hour_search(self, args, offset=0, limit=None, order=None, count=False):
-        for argument in args:
-            if isinstance(argument, (list, tuple)) and argument[0] == 'hour' and argument[1] == '=':
-                try:
-                    start_time = datetime.strptime(argument[2], "%H:%M")
-                    end_time = start_time + timedelta(hours=1)
-                    args = expression.AND([args,[('hour', '>=', start_time.strftime("%H:%M")), ('hour', '<', end_time.strftime("%H:%M"))]])
-                except ValueError:
-                    raise Warning(_("Debe estar en formato de 24h: HH:MM."))
-        return super(schedule, self).search(args, offset, limit, order, count)
+        new_args = []
+        for arg in args:
+            if isinstance(arg, (list, tuple)) and len(arg) >= 3:
+                field_name, operator, value = arg[0], arg[1], arg[2]
+                
+                if field_name == 'hour' and operator in ['=', 'ilike', 'like']:
+                    try:
+                        if isinstance(value, str) and ':' in value:
+                            search_time = datetime.strptime(value, "%H:%M")
+                            start_time = search_time
+                            end_time = search_time + timedelta(hours=1) - timedelta(seconds=1)
+                            new_args.append(('hour', '>=', start_time.strftime("%H:%M")))
+                            new_args.append(('hour', '<=', end_time.strftime("%H:%M")))
+                            continue
+                    except ValueError:
+                        pass  
+            new_args.append(arg)
+        return super(Schedule, self).search(new_args, offset, limit, order, count)

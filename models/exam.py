@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from openerp import models, fields, api, _
 
-class exam(models.Model):
+class Exam(models.Model):
     _name = 'python_odoo8_module.exam'
     _description = 'Modelo de examenes'
 
@@ -14,7 +14,7 @@ class exam(models.Model):
     )
     
     question_ids = fields.One2many(
-        'python_odoo8_module.exam_question', 
+        'python_odoo8_module.question', 
         'exam_id', 
         string='Preguntas',
         required=True

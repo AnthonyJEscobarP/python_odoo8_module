@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="subject_tree_view" model="ir.ui.view">
@@ -25,21 +26,12 @@
                         </group>
                         <notebook>
                             <page string="Horarios de clase">
-                                <field name="schedule_ids">
-                                    <tree string="Periodos de la Materia">
+                                <field name="schedule_ids" widget="one2many">
+                                    <tree string="Horarios">
                                         <field name="day" string="Día"/>
                                         <field name="hour" string="Hora"/>
                                         <field name="classroom_id" string="Aula"/>
-                                    </tree>
-                                </field>
-                            </page>
-                            <page string="Estudiantes Inscritos">
-                                <field name="schedule_ids.student_ids" widget="many2many_list">
-                                    <tree string="Estudiantes Inscritos">
-                                        <field name="card" string="Carnet"/>
-                                        <field name="name" string="Nombre"/>
-                                        <field name="grade" string="Grado"/>
-                                        <field name="section" string="Sección"/>
+                                        <field name="student_ids" widget="many2many_tags" string="Estudiantes"/>
                                     </tree>
                                 </field>
                             </page>
@@ -76,6 +68,13 @@
                     </group>
                 </search>
             </field>
+        </record>
+
+        <record id="subject_actions_administrator" model="ir.actions.act_window">
+            <field name="name">Materias</field>
+            <field name="res_model">python_odoo8_module.subject</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="subject_tree_view"/>
         </record>
 
         <record id="subject_actions_teacher" model="ir.actions.act_window">

@@ -1,13 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <menuitem id="primary_menu_admin" name="Administración Estudiantil" sequence="1" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_student_admin" name="Estudiantes" parent="primary_menu_admin" action="student_actions_admin" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_teacher_admin" name="Profesores" parent="primary_menu_admin" action="teacher_actions_admin" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_subject_admin" name="Materias" parent="primary_menu_admin" action="subject_actions_teacher" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_classroom_admin" name="Aulas" parent="primary_menu_admin" action="classroom_actions_teacher" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_schedule_admin" name="Agenda académica" parent="primary_menu_admin" action="schedule_actions_admin" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_exam_admin" name="Exámenes" parent="primary_menu_admin" action="exam_actions_teacher" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_result_admin" name="Resultados de exámenes" parent="primary_menu_admin" action="result_actions_teacher" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="primary_menu_administrator" name="Administración Estudiantil" sequence="1" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_student_administrator" name="Estudiantes" parent="primary_menu_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_teacher_administrator" name="Profesores" parent="primary_menu_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_subject_administrator" name="Materias" parent="primary_menu_administrator" action="subject_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_classroom_administrator" name="Aulas" parent="primary_menu_administrator" action="classroom_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_schedule_administrator" name="Agenda académica" parent="primary_menu_administrator" action="schedule_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_exam_administrator" name="Exámenes" parent="primary_menu_administrator" action="exam_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_result_administrator" name="Resultados de exámenes" parent="primary_menu_administrator" action="result_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
 
         <menuitem id="primary_menu_teacher" name="Administración Estudiantil" sequence="2" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_student_teacher" name="Estudiantes" parent="primary_menu_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>

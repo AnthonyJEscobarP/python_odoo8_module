@@ -4,7 +4,7 @@ from openerp.exceptions import Warning
 import re
 from datetime import datetime
 
-class student(models.Model):
+class Student(models.Model):
     _name = 'python_odoo8_module.student'
     _description = 'Modelo de estudiante'
 
@@ -63,6 +63,7 @@ class student(models.Model):
                 user_data = {
                     'name': vals.get('name'),
                     'login': vals.get('email'),
+                    'email': vals.get('email'),
                     'password': 'temporal',
                 }
                 if group:
@@ -72,11 +73,11 @@ class student(models.Model):
             except Exception:
                 pass
 
-        return super(student, self).create(vals)
+        return super(Student, self).create(vals)
 
     @api.multi
     def write(self, vals):
-        res = super(student, self).write(vals)
+        res = super(Student, self).write(vals)
         for rec in self:
             if 'email' in vals and rec.user_id:
                 rec.user_id.login = vals['email']

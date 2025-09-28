@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="teacher_tree_view" model="ir.ui.view">
@@ -30,7 +31,7 @@
                         <notebook>
                             <page string="Informacion academica">
                                 <field name="subject_id" string="Materia a cargo"/>
-                                <field name="schedule_ids" widget="many2many_list">
+                                <field name="schedule_ids" widget="many2many_list" readonly="1">
                                     <tree string="Horarios de clase">
                                         <field name="day" string="Dia"/>
                                         <field name="hour" string="Hora"/>
@@ -56,8 +57,8 @@
                     <field name="schedule_ids.hour" string="Hora"/>
                     <field name="schedule_ids.classroom_id" string="Aula"/>
 
-                    <filter string="Asignados" name="by_subject" domain="[('subject_id','!=',False)]"/>
-                    <filter string="Sin asignar" name="by_subject" domain="[('subject_id','=',False)]"/>
+                    <filter string="Asignados" name="with_subject" domain="[('subject_id','!=',False)]"/>
+                    <filter string="Sin asignar" name="without_subject" domain="[('subject_id','=',False)]"/>
 
                     <group expand="0" string="Agrupar Por">
                         <filter string="Materia" context="{'group_by':'subject_id'}"/>
@@ -68,7 +69,7 @@
             </field>
         </record>
 
-        <record id="teacher_actions_admin" model="ir.actions.act_window">
+        <record id="teacher_actions_administrator" model="ir.actions.act_window">
             <field name="name">Profesores</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_mode">tree,form</field>

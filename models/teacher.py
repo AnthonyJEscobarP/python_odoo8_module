@@ -4,7 +4,7 @@ from openerp.exceptions import Warning
 import re
 from datetime import datetime
 
-class teacher(models.Model):
+class Teacher(models.Model):
     _name = 'python_odoo8_module.teacher'
     _description = 'Modelo de maestro'
 
@@ -22,13 +22,14 @@ class teacher(models.Model):
         'python_odoo8_module.schedule',
         compute='schedule_access',
         string='horarios',
-        store=False
+        store=True
     )
 
     @api.depends('subject_id')
     def schedule_access(self):
         for teacher in self:
-            itineraries = self.env['python_odoo8_module.schedule'].search([('subject_id', '=', teacher.subject_id.id)])
+            schedules = self.env['python_odoo8_module.schedule'].search([('subject_id', '=', teacher.subject_id.id)])
+            teacher.schedule_ids = [(6, 0, schedules.ids)]
 
     user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo')
 
@@ -51,6 +52,7 @@ class teacher(models.Model):
                 user_data = {
                     'name': vals.get('name'),
                     'login': vals.get('email'),
+                    'email': vals.get('email'),
                     'password': 'temporal', 
                 }
                 if group:
@@ -59,11 +61,11 @@ class teacher(models.Model):
                 vals['user_id'] = user_odoo.id
             except Exception:
                 pass
-        return super(teacher, self).create(vals)
+        return super(Teacher, self).create(vals)
 
     @api.multi
     def write(self, vals):
-        res = super(teacher, self).write(vals)
+        res = super(Teacher, self).write(vals)
         for rec in self:
             if 'email' in vals and rec.user_id:
                 rec.user_id.login = vals['email']

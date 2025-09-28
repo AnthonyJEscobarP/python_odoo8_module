@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="exam_tree_view" model="ir.ui.view">
@@ -19,32 +20,23 @@
                 <form string="Detalles de examen">
                     <sheet>
                         <group>
-                            <field name="subject_id.teacher_id" string="Profesor"/>
                             <field name="name" placeholder="Examen"/>
                             <field name="subject_id" string="Materia"/>
+                            <field name="subject_id.teacher_id" string="Profesor"/>
                         </group>
                         <notebook>
                             <page string="Preguntas">
-                                <field name="question_ids">
-                                    <tree string="Preguntas">
+                                <field name="question_ids" context="{'default_exam_id': id}">
+                                    <tree string="Preguntas" editable="bottom">
                                         <field name="sentence" string="Pregunta"/>
+                                        <field name="answer_ids" widget="one2many" options="{'create': true, 'delete': true, 'edit': true}">
+                                            <tree string="Respuestas" editable="bottom">
+                                                <field name="response" string="Respuesta"/>
+                                                <field name="correct" string="¿Correcta?"/>
+                                                <field name="point" string="Puntos"/>
+                                            </tree>
+                                        </field>
                                     </tree>
-                                    <form string="Pregunta">
-                                        <sheet>
-                                            <group>
-                                                <field name="sentence" placeholder="Pregunta"/>
-                                            </group>
-                                            <group>
-                                                <field name="answer_ids">
-                                                    <tree string="Respuestas">
-                                                        <field name="response" string="Respuesta"/>
-                                                        <field name="correct" string="¿Correcta?"/>
-                                                        <field name="point" string="Puntos"/>
-                                                    </tree>
-                                                </field>
-                                            </group>
-                                        </sheet>
-                                    </form>
                                 </field>
                             </page>
                             <page string="Calificaciones - Participantes">
@@ -75,6 +67,13 @@
                     </group>
                 </search>
             </field>
+        </record>
+
+        <record id="exam_actions_administrator" model="ir.actions.act_window">
+            <field name="name">Examenes</field>
+            <field name="res_model">python_odoo8_module.exam</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="exam_tree_view"/>
         </record>
 
         <record id="exam_actions_teacher" model="ir.actions.act_window">

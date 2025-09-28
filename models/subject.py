@@ -2,7 +2,7 @@
 from openerp import models, fields, api,_
 from openerp.exceptions import Warning
 
-class subject(models.Model):
+class Subject(models.Model):
     _name = 'python_odoo8_module.subject'
     _description = 'Modelo de cursos'
 

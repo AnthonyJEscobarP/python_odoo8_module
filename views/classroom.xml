@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="classroom_tree_view" model="ir.ui.view">
@@ -32,16 +33,6 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Estudiantes">
-                                <field name="schedule_ids.student_ids" widget="many2many_list">
-                                    <tree string="Estudiantes">
-                                        <field name="card" string="Carnet"/>
-                                        <field name="name" string="Nombre"/>
-                                        <field name="grade" string="Grado"/>
-                                        <field name="section" string="Sección"/>
-                                    </tree>
-                                </field>
-                            </page>
                         </notebook>
                     </sheet>
                 </form>
@@ -71,6 +62,13 @@
             </field>
         </record>
 
+        <record id="classroom_actions_administrator" model="ir.actions.act_window">
+            <field name="name">Aulas</field>
+            <field name="res_model">python_odoo8_module.classroom</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="classroom_tree_view"/>
+        </record>
+
         <record id="classroom_actions_teacher" model="ir.actions.act_window">
             <field name="name">Aulas</field>
             <field name="res_model">python_odoo8_module.classroom</field>
@@ -82,6 +80,7 @@
             <field name="name">Aulas</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="classroom_tree_view"/>
         </record>
     </data>
 </openerp>

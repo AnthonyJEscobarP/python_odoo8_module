@@ -60,10 +60,10 @@ class StudentScheduleWizard(models.TransientModel):
             
             info_style = styles['BodyText']
             student_info = [
-                f"<b>Estudiante:</b> {student.name}",
-                f"<b>Carnet:</b> {student.card}",
-                f"<b>Grado:</b> {student.grade} - Sección: {student.section}",
-                f"<b>Creacion de horario:</b> {datetime.now().strftime('%d/%m/%Y')}"
+                "<b>Estudiante:</b> {0}".format(student.name),
+                "<b>Carnet:</b> {0}".format(student.card),
+                "<b>Grado:</b> {0} - Sección: {1}".format(student.grade, student.section),
+                "<b>Creacion de horario:</b> {0}".format(datetime.now().strftime('%d/%m/%Y'))
             ]
             
             for info in student_info:
@@ -91,7 +91,7 @@ class StudentScheduleWizard(models.TransientModel):
                     day_names = {'monday': 'LUNES', 'tuesday': 'MARTES', 'wednesday': 'MIÉRCOLES', 
                                 'thursday': 'JUEVES', 'friday': 'VIERNES'}
                     
-                    day_title = Paragraph(f"<b>{day_names.get(day, day.upper())}</b>", styles['Heading2'])
+                    day_title = Paragraph("<b>{0}</b>".format(day_names.get(day, day.upper())), styles['Heading2'])
                     elements.append(day_title)
                     elements.append(Spacer(1, 10))
                     
@@ -130,7 +130,11 @@ class StudentScheduleWizard(models.TransientModel):
             
             wizard.write({
                 'file_data': base64.b64encode(pdf_data),
-                'file_name': f'Horario de {student.name} - {student.card} | {datetime.now().strftime("%Y%m%d")}.pdf'
+                'file_name': 'Horario de {0} - {1} | {2}.pdf'.format(
+                    student.name, 
+                    student.card, 
+                    datetime.now().strftime("%Y%m%d")
+                )
             })
         
         return {

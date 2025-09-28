@@ -18,7 +18,7 @@
                         </group>
                     </sheet>
                     <footer>
-                        <button name="generate_transcript_button" string="Generar Boleta PDF" type="object" class="btn-primary" attrs="{'invisible': [('file_data', '!=', False)]}"/>
+                        <button name="generate_transcript_pdf" string="Generar Boleta PDF" type="object" class="btn-primary" attrs="{'invisible': [('file_data', '!=', False)]}"/>
                         <button string="Cerrar" class="oe_link" special="cancel"/>
                     </footer>
                 </form>

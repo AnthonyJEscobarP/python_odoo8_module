@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="student_tree_view" model="ir.ui.view">
@@ -103,6 +104,13 @@
                     <button name="%(python_odoo8_module.student_schedule_wizard_actions)d" string="Generar Horario PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,python_odoo8_module.teacher_role_group,python_odoo8_module.student_role_group"/>
                 </xpath>
             </field>
+        </record>
+
+        <record id="student_actions_administrator" model="ir.actions.act_window">
+            <field name="name">Estudiantes</field>
+            <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="student_tree_view"/>
         </record>
 
         <record id="student_actions_teacher" model="ir.actions.act_window">

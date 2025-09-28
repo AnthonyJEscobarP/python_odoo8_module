@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="schedule_tree_view" model="ir.ui.view">
@@ -71,7 +72,7 @@
             </field>
         </record>
 
-        <record id="schedule_actions_admin" model="ir.actions.act_window">
+        <record id="schedule_actions_administrator" model="ir.actions.act_window">
             <field name="name">Agenda academica</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_mode">tree,form</field>

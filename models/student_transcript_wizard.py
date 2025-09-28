@@ -10,7 +10,7 @@ from reportlab.lib import colors
 from cStringIO import StringIO
 from datetime import datetime
 
-class studentTranscriptWizard(models.TransientModel):
+class StudentTranscriptWizard(models.TransientModel):
     _name = 'python_odoo8_module.student_transcript_wizard'
     _description = 'Wizard para boleta de calificaciones de estudiantes'
     
@@ -26,7 +26,7 @@ class studentTranscriptWizard(models.TransientModel):
     @api.model
     def default_get(self, fields_list):
         """Seleccion de estudiante segun el usuario logueado"""
-        res = super(studentTranscriptWizard, self).default_get(fields_list)
+        res = super(StudentTranscriptWizard, self).default_get(fields_list)
         
         if self.env.user.has_group('python_odoo8_module.student_role_group'):
             student = self.env['python_odoo8_module.student'].search([
@@ -38,7 +38,7 @@ class studentTranscriptWizard(models.TransientModel):
         return res
     
     @api.multi
-    def generate_pdf(self):
+    def generate_transcript_pdf(self):
         """Generar boleta de calificaciones"""
         for wizard in self:
             student = wizard.student_id
@@ -60,12 +60,12 @@ class studentTranscriptWizard(models.TransientModel):
             
             info_style = styles['BodyText']
             student_info = [
-                f"<b>Estudiante:</b> {student.name}",
-                f"<b>Carnet:</b> {student.card}",
-                f"<b>Email:</b> {student.email}",
-                f"<b>Grado:</b> {student.grade}",
-                f"<b>Sección:</b> {student.section}",
-                f"<b>Creacion de boleta:</b> {datetime.now().strftime('%d/%m/%Y')}"
+                "<b>Estudiante:</b> {0}".format(student.name),
+                "<b>Carnet:</b> {0}".format(student.card),
+                "<b>Email:</b> {0}".format(student.email),
+                "<b>Grado:</b> {0}".format(student.grade),
+                "<b>Sección:</b> {0}".format(student.section),
+                "<b>Creacion de boleta:</b> {0}".format(datetime.now().strftime('%d/%m/%Y'))
             ]
             
             for info in student_info:
@@ -83,7 +83,7 @@ class studentTranscriptWizard(models.TransientModel):
                 elements.append(Spacer(1, 15))
                 
                 for subject in subjects:
-                    subject_header = Paragraph(f"<b>Materia: {subject.name}</b>", styles['Heading3'])
+                    subject_header = Paragraph("<b>Materia: {0}</b>".format(subject.name), styles['Heading3'])
                     elements.append(subject_header)
                     
                     exams = self.env['python_odoo8_module.exam'].search([
@@ -108,7 +108,7 @@ class studentTranscriptWizard(models.TransientModel):
                         
                         if exam_count > 0:
                             promedio = total_score / exam_count
-                            exam_data.append(['<b>NOTA FINAL</b>', f'<b>{promedio:.2f}</b>'])
+                            exam_data.append(['<b>NOTA FINAL</b>', '<b>{0:.2f}</b>'.format(promedio)])
                             
                             table = Table(exam_data, colWidths=[400, 100])
                             table.setStyle(TableStyle([
@@ -138,12 +138,16 @@ class studentTranscriptWizard(models.TransientModel):
             
             wizard.write({
                 'file_data': base64.b64encode(pdf_data),
-                'file_name': f'Boleta: {student.name} - {student.card} | {datetime.now().strftime("%Y%m%d")}.pdf'
+                'file_name': 'Boleta: {0} - {1} | {2}.pdf'.format(
+                    student.name, 
+                    student.card, 
+                    datetime.now().strftime("%Y%m%d")
+                )
             })
         
         return {
             'type': 'ir.actions.act_window',
-            'res_model': 'python_odoo8_module.report_card_wizard',
+            'res_model': 'python_odoo8_module.student_transcript_wizard',
             'view_mode': 'form',
             'view_type': 'form',
             'res_id': self.id,

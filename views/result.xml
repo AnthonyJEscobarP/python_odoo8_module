@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <record id="result_tree_view" model="ir.ui.view">
@@ -25,8 +26,8 @@
                             <field name="exam_id.subject_id" string="Materia"/>
                             <field name="exam_id.subject_id.teacher_id" string="Profesor"/>
                             <field name="exam_id" string="Examen"/>
-                            <field name="answer_ids">
-                                <tree string="Respuestas seleccionadas">
+                            <field name="answer_ids" widget="one2many" options="{'create': false, 'delete': false, 'edit': false}">
+                                <tree string="Respuestas seleccionadas" decoration-success="correct" decoration-danger="not correct">
                                     <field name="response" string="Respuesta"/>
                                     <field name="correct" string="¿Correcta?"/>
                                     <field name="point" string="Puntos"/>
@@ -55,6 +56,13 @@
                     </group>
                 </search>
             </field>
+        </record>
+
+        <record id="result_actions_administrator" model="ir.actions.act_window">
+            <field name="name">Resultados de exámenes</field>
+            <field name="res_model">python_odoo8_module.result</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="result_tree_view"/>
         </record>
 
         <record id="result_actions_teacher" model="ir.actions.act_window">

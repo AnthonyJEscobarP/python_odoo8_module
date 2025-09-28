@@ -18,7 +18,10 @@ class Result(models.Model):
     )
     
     answer_ids = fields.Many2many(
-        'python_odoo8_module.answer', 
+        'python_odoo8_module.answer',
+        'result_answer_rel',
+        'result_id',
+        'answer_id',
         string='Respuestas'
     )
     

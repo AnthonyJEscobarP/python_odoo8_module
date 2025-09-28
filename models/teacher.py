@@ -18,24 +18,12 @@ class Teacher(models.Model):
         string='Materia'
     )
     
-    schedule_ids = fields.Many2many(
+    schedule_ids = fields.One2many(
         'python_odoo8_module.schedule',
-        compute='schedule_access',
-        string='horarios',
-        store=True
+        related='subject_id.schedule_ids', 
+        string='Horarios',
+        readonly=True
     )
-
-    @api.depends('subject_id')
-    def schedule_access(self):
-        for teacher in self:
-            schedules = self.env['python_odoo8_module.schedule'].search([('subject_id', '=', teacher.subject_id.id)])
-            teacher.schedule_ids = [(6, 0, schedules.ids)]
-
-    user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo')
-
-    _sql_constraints = [
-        ('teacher_email_unique', 'unique(email)', 'El email ya está en uso.'),
-    ]
     
     @api.constrains('email')
     def validateEmail(self):

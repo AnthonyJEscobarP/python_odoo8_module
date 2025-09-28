@@ -31,7 +31,7 @@
                         <notebook>
                             <page string="Informacion academica">
                                 <field name="subject_id" string="Materia a cargo"/>
-                                <field name="schedule_ids" widget="many2many_list" readonly="1">
+                                <field name="schedule_ids" widget="one2many_list" readonly="1">
                                     <tree string="Horarios de clase">
                                         <field name="day" string="Dia"/>
                                         <field name="hour" string="Hora"/>

@@ -26,6 +26,22 @@ class Result(models.Model):
     )
     
     score = fields.Integer('Puntuacion', compute='get_exam_score', store=True)
+    
+    teacher_id = fields.Many2one(
+        'python_odoo8_module.teacher',
+        string='Profesor',
+        related='exam_id.subject_id.teacher_id',
+        store=True,
+        readonly=True
+    )
+
+    subject_id = fields.Many2one(
+        'python_odoo8_module.subject',
+        string='Materia',
+        related='exam_id.subject_id',
+        store=True,
+        readonly=True
+    )
 
     @api.depends('answer_ids')
     def get_exam_score(self):

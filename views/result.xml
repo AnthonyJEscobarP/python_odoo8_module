@@ -7,8 +7,8 @@
             <field name="arch" type="xml">
                 <tree string="Nota de examenes">
                     <field name="student_id" string="Estudiante"/>
-                    <field name="exam_id.subject_id.teacher_id" string="Profesor"/>
-                    <field name="exam_id.subject_id" string="Materia"/>
+                    <field name="teacher_id" string="Profesor"/>
+                    <field name="subject_id" string="Materia"/>
                     <field name="exam_id" string="Examen"/>
                     <field name="score" string="Puntaje"/>
                 </tree>
@@ -23,8 +23,8 @@
                     <sheet>
                         <group>
                             <field name="student_id" string="Estudiante"/>
-                            <field name="exam_id.subject_id" string="Materia"/>
-                            <field name="exam_id.subject_id.teacher_id" string="Profesor"/>
+                            <field name="subject_id" string="Materia"/>
+                            <field name="teacher_id" string="Profesor"/>
                             <field name="exam_id" string="Examen"/>
                             <field name="answer_ids" widget="one2many" options="{'create': false, 'delete': false, 'edit': false}">
                                 <tree string="Respuestas seleccionadas" decoration-success="correct" decoration-danger="not correct">
@@ -47,10 +47,10 @@
                 <search string="Buscar y encontrar">
                     <field name="student_id" string="Estudiante"/>
                     <field name="exam_id" string="Examen"/>
-                    <field name="exam_id.subject_id" string="Materia"/>
-                    <field name="exam_id.subject_id.teacher_id" string="Profesor"/>
+                    <field name="subject_id" string="Materia"/>
+                    <field name="teacher_id" string="Profesor"/>
                     <group expand="0" string="Agrupar Por">
-                        <filter string="Materia" context="{'group_by':'exam_id.subject_id'}"/>
+                        <filter string="Materia" context="{'group_by':'subject_id'}"/>
                         <filter string="Estudiante" context="{'group_by':'student_id'}"/>
                         <filter string="Examen" context="{'group_by':'exam_id'}"/>
                     </group>

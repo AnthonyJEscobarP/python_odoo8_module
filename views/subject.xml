@@ -55,16 +55,12 @@
                 <search string="Buscar y encontrar">
                     <field name="name" string="Materia"/>
                     <field name="teacher_id" string="Profesor"/>
-                    <field name="schedule_ids.hour" string="Hora"/>
-                    <field name="schedule_ids.classroom_id" string="Aula"/>
 
                     <filter string="Con Horarios" name="with_itineraries" domain="[('schedule_ids', '!=', False)]"/>
                     <filter string="Sin Horarios" name="without_itineraries" domain="[('schedule_ids', '=', False)]"/>
 
                     <group expand="0" string="Agrupar Por">
                         <filter string="Profesor" context="{'group_by':'teacher_id'}"/>
-                        <filter string="Aula" context="{'group_by':'schedule_ids.classroom_id'}"/>
-                        <filter string="Día" context="{'group_by':'schedule_ids.day'}"/>
                     </group>
                 </search>
             </field>

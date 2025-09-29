@@ -1,6 +1,6 @@
 {
   'name': 'Modulo: administracion estudiantil',
-  'version': '2.0',
+  'version': '5.0',
   'author': 'Anthony Escobar / AE-Solutions',
   'category': 'Education',
   'depends': ['base','web'],

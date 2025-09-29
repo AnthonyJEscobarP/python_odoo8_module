@@ -37,6 +37,14 @@ class Schedule(models.Model):
         string='Estudiantes'
     )
 
+    teacher_id = fields.Many2one(
+        'python_odoo8_module.teacher',
+        string='Profesor',
+        related='subject_id.teacher_id',
+        store=True,
+        readonly=True
+    )
+    
     _sql_constraints = [
         ('unique_schedule', 'unique(classroom_id, day, hour)', 'Aula, día y hora ocupados, verifica nuevamente'),
     ]

@@ -26,7 +26,7 @@
                             <field name="hour" placeholder="Hora"/>
                         </group>
                         <group>
-                            <field name="subject_id.teacher_id" string="Profesor"/>
+                            <field name="teacher_id" string="Profesor"/>
                             <field name="subject_id" string="Materia"/>
                             <field name="classroom_id" string="Aula"/>
                         </group>

@@ -8,7 +8,6 @@
                 <tree string="Exámenes">
                     <field name="name" string="Examen"/>
                     <field name="subject_id" string="Materia"/>
-                    <field name="subject_id.teacher_id" string="Profesor"/>
                 </tree>
             </field>
         </record>
@@ -22,7 +21,6 @@
                         <group>
                             <field name="name" placeholder="Examen"/>
                             <field name="subject_id" string="Materia"/>
-                            <field name="subject_id.teacher_id" string="Profesor"/>
                         </group>
                         <notebook>
                             <page string="Preguntas">
@@ -60,10 +58,8 @@
                 <search string="Buscar y encontrar">
                     <field name="name" string="Examen"/>
                     <field name="subject_id" string="Materia"/>
-                    <field name="subject_id.teacher_id" string="Profesor"/>
                     <group expand="0" string="Agrupar Por">
                         <filter string="Materia" context="{'group_by':'subject_id'}"/>
-                        <filter string="Profesor" context="{'group_by':'subject_id.teacher_id'}"/>
                     </group>
                 </search>
             </field>

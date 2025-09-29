@@ -8,7 +8,7 @@
                 <tree string="Organizacion de clase">
                     <field name="day" string="Día"/>
                     <field name="hour" string="Hora"/>
-                    <field name="subject_id.teacher_id" string="Profesor"/>
+                    <field name="teacher_id" string="Profesor"/>
                     <field name="subject_id" string="Materia"/>
                     <field name="classroom_id" string="Aula"/>
                 </tree>
@@ -54,19 +54,19 @@
                 <search string="Buscar y encontrar">
                     <field name="day" string="Día"/>
                     <field name="hour" string="Hora"/>
-                    <field name="subject_id.teacher_id" string="Profesor"/>
+                    <field name="teacher_id" string="Profesor"/>
                     <field name="subject_id" string="Materia"/>
                     <field name="classroom_id" string="Aula"/>
                     <field name="student_ids" string="Estudiantes"/>
 
-                    <filter string="Por Profesor" name="by_teacher" domain="[('subject_id.teacher_id.user_id', '=', uid)]"/>
+                    <filter string="Por Profesor" name="by_teacher" domain="[('teacher_id.user_id', '=', uid)]"/>
                     <filter string="Por Estudiante" name="by_student" domain="[('student_ids.user_id', '=', uid)]"/>
 
                     <group expand="0" string="Agrupar Por">
                         <filter string="Día" context="{'group_by':'day'}"/>
                         <filter string="Materia" context="{'group_by':'subject_id'}"/>
                         <filter string="Aula" context="{'group_by':'classroom_id'}"/>
-                        <filter string="Profesor" context="{'group_by':'subject_id.teacher_id'}"/>
+                        <filter string="Profesor" context="{'group_by':'teacher_id'}"/>
                     </group>
                 </search>
             </field>

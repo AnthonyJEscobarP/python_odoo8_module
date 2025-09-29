@@ -64,8 +64,6 @@
                     <field name="email" string="Correo"/>
                     <field name="grade" string="Grado"/>
                     <field name="section" string="Seccion"/>
-                    <field name="schedule_ids.subject_id" string="Materia"/>
-                    <field name="schedule_ids.classroom_id" string="Aula"/>
                     <field name="schedule_ids" string="Periodo"/>
                     <filter string="Inscritos" name="with_schedule" domain="[('schedule_ids','!=',False)]"/>
                     <filter string="No Inscritos" name="without_schedule" domain="[('schedule_ids','=',False)]"/>

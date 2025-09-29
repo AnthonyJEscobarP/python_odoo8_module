@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+        <record id="student_actions_administrator" model="ir.actions.act_window">
+            <field name="name">Estudiantes</field>
+            <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="student_tree_view"/>
+        </record>
+
+        <record id="student_actions_teacher" model="ir.actions.act_window">
+            <field name="name">Estudiantes</field>
+            <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="student_tree_view"/>
+        </record>
+
+        <record id="student_actions_student" model="ir.actions.act_window">
+            <field name="name">Mi Informacion</field>
+            <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="student_form_view"/>
+        </record>
+
         <menuitem id="primary_menu_administrator" name="Administración Estudiantil" sequence="1" groups="python_odoo8_module.admin_role_group"/>
         <menuitem id="submenu_student_administrator" name="Estudiantes" parent="primary_menu_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
         <menuitem id="submenu_teacher_administrator" name="Profesores" parent="primary_menu_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group"/>

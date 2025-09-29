@@ -8,11 +8,11 @@
     'security/roles.xml',
     'security/auth.xml',
     'security/ir.model.access.csv',
-    'views/student.xml',
-    'views/teacher.xml',
-    'views/classroom.xml',
-    'views/subject.xml',
-    'views/schedule.xml',
+    'views/teacher.xml',      # Primero
+    'views/classroom.xml',    # Segundo  
+    'views/student.xml',      # Tercero
+    'views/subject.xml',      # Cuarto
+    'views/schedule.xml', 
     'views/exam.xml',
     'views/result.xml',
     'views/menu.xml',

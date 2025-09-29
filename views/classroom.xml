@@ -51,26 +51,5 @@
                 </search>
             </field>
         </record>
-
-        <record id="classroom_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Aulas</field>
-            <field name="res_model">python_odoo8_module.classroom</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-        </record>
-
-        <record id="classroom_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Aulas</field>
-            <field name="res_model">python_odoo8_module.classroom</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-        </record>
-
-        <record id="classroom_actions_student" model="ir.actions.act_window">
-            <field name="name">Aulas</field>
-            <field name="res_model">python_odoo8_module.classroom</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-        </record>
     </data>
 </openerp>

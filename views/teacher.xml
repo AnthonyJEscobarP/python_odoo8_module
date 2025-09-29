@@ -63,19 +63,5 @@
                 </search>
             </field>
         </record>
-
-        <record id="teacher_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Profesores</field>
-            <field name="res_model">python_odoo8_module.teacher</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="teacher_tree_view"/>
-        </record>
-
-        <record id="teacher_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Mi Informacion</field>
-            <field name="res_model">python_odoo8_module.teacher</field>
-            <field name="view_mode">form</field>
-            <field name="view_id" ref="teacher_form_view"/>
-        </record>
     </data>
 </openerp>

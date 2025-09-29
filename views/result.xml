@@ -57,26 +57,5 @@
                 </search>
             </field>
         </record>
-
-        <record id="result_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Resultados de exámenes</field>
-            <field name="res_model">python_odoo8_module.result</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="result_tree_view"/>
-        </record>
-
-        <record id="result_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Resultados de exámenes</field>
-            <field name="res_model">python_odoo8_module.result</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="result_tree_view"/>
-        </record>
-
-        <record id="result_actions_student" model="ir.actions.act_window">
-            <field name="name">Mis resultados</field>
-            <field name="res_model">python_odoo8_module.result</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="result_tree_view"/>
-        </record>
     </data>
 </openerp>

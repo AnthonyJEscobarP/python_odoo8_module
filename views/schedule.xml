@@ -71,26 +71,5 @@
                 </search>
             </field>
         </record>
-
-        <record id="schedule_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Agenda academica</field>
-            <field name="res_model">python_odoo8_module.schedule</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-        </record>
-
-        <record id="schedule_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Agenda academica</field>
-            <field name="res_model">python_odoo8_module.schedule</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-        </record>
-
-        <record id="schedule_actions_student" model="ir.actions.act_window">
-            <field name="name">Agenda academica</field>
-            <field name="res_model">python_odoo8_module.schedule</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-        </record>
     </data>
 </openerp>

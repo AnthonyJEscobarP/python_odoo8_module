@@ -64,26 +64,5 @@
                 </search>
             </field>
         </record>
-
-        <record id="exam_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Examenes</field>
-            <field name="res_model">python_odoo8_module.exam</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="exam_tree_view"/>
-        </record>
-
-        <record id="exam_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Examenes</field>
-            <field name="res_model">python_odoo8_module.exam</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="exam_tree_view"/>
-        </record>
-
-        <record id="exam_actions_student" model="ir.actions.act_window">
-            <field name="name">Examenes</field>
-            <field name="res_model">python_odoo8_module.exam</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="exam_tree_view"/>
-        </record>
     </data>
 </openerp>

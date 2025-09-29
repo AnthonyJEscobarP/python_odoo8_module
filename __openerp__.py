@@ -1,6 +1,6 @@
 {
   'name': 'Modulo: administracion estudiantil',
-  'version': '1.6',
+  'version': '1.2.2',
   'author': 'Anthony Escobar / AE-Solutions',
   'category': 'Education',
   'depends': ['base','web'],
@@ -8,11 +8,11 @@
     'security/roles.xml',
     'security/auth.xml',
     'security/ir.model.access.csv',
-    'views/teacher.xml',      # Primero
-    'views/classroom.xml',    # Segundo  
-    'views/student.xml',      # Tercero
-    'views/subject.xml',      # Cuarto
+    'views/teacher.xml',   
+    'views/subject.xml', 
+    'views/classroom.xml',
     'views/schedule.xml', 
+    'views/student.xml',
     'views/exam.xml',
     'views/result.xml',
     'views/menu.xml',

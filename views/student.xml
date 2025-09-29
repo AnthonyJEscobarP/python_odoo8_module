@@ -84,7 +84,9 @@
             <field name="arch" type="xml">
                 <xpath expr="//sheet" position="before">
                     <header>
-                        <button name="%(python_odoo8_module.student_transcript_wizard_actions)d" string="Generar boleta PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,python_odoo8_module.teacher_role_group,python_odoo8_module.student_role_group"/>
+                        <button name="%(python_odoo8_module.student_transcript_wizard_actions)d" string="Generar boleta PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,
+                        python_odoo8_module.teacher_role_group,
+                        python_odoo8_module.student_role_group"/>
                     </header>
                 </xpath>
             </field>
@@ -95,8 +97,12 @@
             <field name="model">python_odoo8_module.student</field>
             <field name="inherit_id" ref="python_odoo8_module.student_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//header" position="inside">
-                    <button name="%(python_odoo8_module.student_schedule_wizard_actions)d" string="Generar Horario PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,python_odoo8_module.teacher_role_group,python_odoo8_module.student_role_group"/>
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button name="%(python_odoo8_module.student_schedule_wizard_actions)d" string="Generar Horario PDF" type="action" class="oe_highlight" groups="python_odoo8_module.admin_role_group,
+                        python_odoo8_module.teacher_role_group,
+                        python_odoo8_module.student_role_group"/>
+                    </header>
                 </xpath>
             </field>
         </record>

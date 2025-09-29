@@ -45,16 +45,9 @@
                 <search string="Buscar y encontrar">
                     <field name="name" string="Aula"/>
                     <field name="capacity" string="Capacidad"/>
-                    <field name="schedule_ids.day" string="Día"/>
-                    <field name="schedule_ids.subject_id" string="Materia"/>
 
                     <filter string="Con horarios" name="with_itineraries" domain="[('schedule_ids', '!=', False)]"/>
                     <filter string="Sin horarios" name="without_itineraries" domain="[('schedule_ids', '=', False)]"/>
-
-                    <group expand="0" string="Agrupar Por">
-                        <filter string="Materia" context="{'group_by':'schedule_ids.subject_id'}"/>
-                        <filter string="Día" context="{'group_by':'schedule_ids.day'}"/>
-                    </group>
                 </search>
             </field>
         </record>

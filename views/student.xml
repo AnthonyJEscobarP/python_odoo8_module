@@ -74,8 +74,6 @@
                         <filter string="Seccion" context="{'group_by':'section'}"/>
                         <filter string="Periodos" context="{'group_by':'schedule_ids'}"/>
                         <filter string="Grado y Seccion" context="{'group_by':'grade,section'}"/>
-                        <filter string="Materia" context="{'group_by':'schedule_ids.subject_id'}"/>
-                        <filter string="Aula" context="{'group_by':'schedule_ids.classroom_id'}"/>
                     </group>
                 </search>
             </field>

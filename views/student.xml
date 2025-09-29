@@ -44,7 +44,6 @@
                                             <field name="hour" string="Hora"/>
                                             <field name="subject_id" string="Materia"/>
                                             <field name="classroom_id" string="Aula"/>
-                                            <field name="subject_id.teacher_id" string="Profesor"/>
                                         </tree>
                                     </field>
                                 </group>

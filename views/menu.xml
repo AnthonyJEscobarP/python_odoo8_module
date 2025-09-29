@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+
+        <!-- Acciones -->
         <record id="student_actions_administrator" model="ir.actions.act_window">
             <field name="name">Estudiantes</field>
             <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="student_tree_view"/>
+            <field name="target">current</field>
         </record>
 
         <record id="student_actions_teacher" model="ir.actions.act_window">
             <field name="name">Estudiantes</field>
             <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="student_tree_view"/>
+            <field name="target">current</field>
         </record>
 
         <record id="student_actions_student" model="ir.actions.act_window">
-            <field name="name">Mi Informacion</field>
+            <field name="name">Mi Información</field>
             <field name="res_model">python_odoo8_module.student</field>
+            <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="student_form_view"/>
+            <field name="target">current</field>
         </record>
 
-        <menuitem id="primary_menu_administrator" name="Administración Estudiantil" sequence="1" groups="python_odoo8_module.admin_role_group"/>
+        <!-- Menús Administrador -->
+        <menuitem id="primary_menu_administrator" name="Administración Estudiantil" sequence="1"/>
         <menuitem id="submenu_student_administrator" name="Estudiantes" parent="primary_menu_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
         <menuitem id="submenu_teacher_administrator" name="Profesores" parent="primary_menu_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
         <menuitem id="submenu_subject_administrator" name="Materias" parent="primary_menu_administrator" action="subject_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
@@ -31,7 +40,8 @@
         <menuitem id="submenu_exam_administrator" name="Exámenes" parent="primary_menu_administrator" action="exam_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
         <menuitem id="submenu_result_administrator" name="Resultados de exámenes" parent="primary_menu_administrator" action="result_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
 
-        <menuitem id="primary_menu_teacher" name="Administración Estudiantil" sequence="2" groups="python_odoo8_module.teacher_role_group"/>
+        <!-- Menús Profesor -->
+        <menuitem id="primary_menu_teacher" name="Administración Estudiantil" sequence="2"/>
         <menuitem id="submenu_student_teacher" name="Estudiantes" parent="primary_menu_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_teacher_teacher" name="Mi Información" parent="primary_menu_teacher" action="teacher_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_subject_teacher" name="Materias" parent="primary_menu_teacher" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
@@ -40,12 +50,14 @@
         <menuitem id="submenu_exam_teacher" name="Exámenes" parent="primary_menu_teacher" action="exam_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_result_teacher" name="Resultados de exámenes" parent="primary_menu_teacher" action="result_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
 
-        <menuitem id="primary_menu_student" name="Perfil académico" sequence="3" groups="python_odoo8_module.student_role_group"/>
+        <!-- Menús Estudiante -->
+        <menuitem id="primary_menu_student" name="Perfil académico" sequence="3"/>
         <menuitem id="submenu_student_student" name="Mi Información" parent="primary_menu_student" action="student_actions_student" groups="python_odoo8_module.student_role_group"/>
         <menuitem id="submenu_subject_student" name="Materias" parent="primary_menu_student" action="subject_actions_student" groups="python_odoo8_module.student_role_group"/>
         <menuitem id="submenu_classroom_student" name="Aulas" parent="primary_menu_student" action="classroom_actions_student" groups="python_odoo8_module.student_role_group"/>
         <menuitem id="submenu_schedule_student" name="Agenda académica" parent="primary_menu_student" action="schedule_actions_student" groups="python_odoo8_module.student_role_group"/>
         <menuitem id="submenu_exam_student" name="Exámenes" parent="primary_menu_student" action="exam_actions_student" groups="python_odoo8_module.student_role_group"/>
         <menuitem id="submenu_result_student" name="Mis resultados" parent="primary_menu_student" action="result_actions_student" groups="python_odoo8_module.student_role_group"/>
+
     </data>
 </openerp>

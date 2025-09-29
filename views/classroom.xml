@@ -29,7 +29,6 @@
                                         <field name="day" string="Día"/>
                                         <field name="hour" string="Hora"/>
                                         <field name="subject_id" string="Materia"/>
-                                        <field name="subject_id.teacher_id" string="Profesor"/>
                                     </tree>
                                 </field>
                             </page>
@@ -48,14 +47,12 @@
                     <field name="capacity" string="Capacidad"/>
                     <field name="schedule_ids.day" string="Día"/>
                     <field name="schedule_ids.subject_id" string="Materia"/>
-                    <field name="schedule_ids.subject_id.teacher_id" string="Profesor"/>
 
                     <filter string="Con horarios" name="with_itineraries" domain="[('schedule_ids', '!=', False)]"/>
                     <filter string="Sin horarios" name="without_itineraries" domain="[('schedule_ids', '=', False)]"/>
 
                     <group expand="0" string="Agrupar Por">
                         <filter string="Materia" context="{'group_by':'schedule_ids.subject_id'}"/>
-                        <filter string="Profesor" context="{'group_by':'schedule_ids.subject_id.teacher_id'}"/>
                         <filter string="Día" context="{'group_by':'schedule_ids.day'}"/>
                     </group>
                 </search>

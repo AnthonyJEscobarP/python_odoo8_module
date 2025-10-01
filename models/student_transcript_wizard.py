@@ -107,7 +107,7 @@ class StudentTranscriptWizard(models.TransientModel):
                                 exam_count += 1
                         
                         if exam_count > 0:
-                            promedio = total_score / exam_count
+                            promedio = float(total_score) / exam_count
                             exam_data.append(['<b>NOTA FINAL</b>', '<b>{0:.2f}</b>'.format(promedio)])
                             
                             table = Table(exam_data, colWidths=[400, 100])

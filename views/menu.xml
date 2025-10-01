@@ -11,11 +11,6 @@
             <field name="search_view_id" ref="student_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="student_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="student_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="student_tree_view"/>
-        </record>
         <record id="student_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="student_actions_administrator"/>
             <field name="view_mode">form</field>
@@ -30,11 +25,6 @@
             <field name="view_id" ref="student_tree_view"/>
             <field name="search_view_id" ref="student_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="student_action_teacher_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="student_actions_teacher"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="student_tree_view"/>
         </record>
         <record id="student_action_teacher_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="student_actions_teacher"/>
@@ -65,11 +55,6 @@
             <field name="search_view_id" ref="teacher_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="teacher_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="teacher_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="teacher_tree_view"/>
-        </record>
         <record id="teacher_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="teacher_actions_administrator"/>
             <field name="view_mode">form</field>
@@ -78,7 +63,7 @@
 
         <!-- ACCIONES MODELO: PROFESORES - PARA: PROFESOR -->
         <record id="teacher_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Mi Información</field>
+            <field name="name">Mi Informacion</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
@@ -102,11 +87,6 @@
             <field name="search_view_id" ref="subject_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="subject_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="subject_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="subject_tree_view"/>
-        </record>
         <record id="subject_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="subject_actions_administrator"/>
             <field name="view_mode">form</field>
@@ -122,11 +102,6 @@
             <field name="view_id" ref="subject_tree_view"/>
             <field name="search_view_id" ref="subject_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="subject_action_teacher_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="subject_actions_teacher"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="subject_tree_view"/>
         </record>
         <record id="subject_action_teacher_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="subject_actions_teacher"/>
@@ -144,11 +119,6 @@
             <field name="search_view_id" ref="subject_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="subject_action_student_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="subject_actions_student"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="subject_tree_view"/>
-        </record>
         <record id="subject_action_student_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="subject_actions_student"/>
             <field name="view_mode">form</field>
@@ -164,11 +134,6 @@
             <field name="view_id" ref="classroom_tree_view"/>
             <field name="search_view_id" ref="classroom_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="classroom_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="classroom_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="classroom_tree_view"/>
         </record>
         <record id="classroom_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="classroom_actions_administrator"/>
@@ -186,11 +151,6 @@
             <field name="search_view_id" ref="classroom_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="classroom_action_teacher_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="classroom_actions_teacher"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-        </record>
         <record id="classroom_action_teacher_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="classroom_actions_teacher"/>
             <field name="view_mode">form</field>
@@ -206,11 +166,6 @@
             <field name="view_id" ref="classroom_tree_view"/>
             <field name="search_view_id" ref="classroom_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="classroom_action_student_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="classroom_actions_student"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="classroom_tree_view"/>
         </record>
         <record id="classroom_action_student_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="classroom_actions_student"/>
@@ -228,11 +183,6 @@
             <field name="search_view_id" ref="schedule_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="schedule_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="schedule_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-        </record>
         <record id="schedule_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="schedule_actions_administrator"/>
             <field name="view_mode">form</field>
@@ -248,11 +198,6 @@
             <field name="view_id" ref="schedule_tree_view"/>
             <field name="search_view_id" ref="schedule_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="schedule_action_teacher_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="schedule_actions_teacher"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="schedule_tree_view"/>
         </record>
         <record id="schedule_action_teacher_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="schedule_actions_teacher"/>
@@ -270,11 +215,6 @@
             <field name="search_view_id" ref="schedule_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="schedule_action_student_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="schedule_actions_student"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-        </record>
         <record id="schedule_action_student_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="schedule_actions_student"/>
             <field name="view_mode">form</field>
@@ -290,11 +230,6 @@
             <field name="view_id" ref="exam_tree_view"/>
             <field name="search_view_id" ref="exam_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="exam_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="exam_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="exam_tree_view"/>
         </record>
         <record id="exam_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="exam_actions_administrator"/>
@@ -312,11 +247,6 @@
             <field name="search_view_id" ref="exam_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="exam_action_teacher_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="exam_actions_teacher"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="exam_tree_view"/>
-        </record>
         <record id="exam_action_teacher_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="exam_actions_teacher"/>
             <field name="view_mode">form</field>
@@ -332,11 +262,6 @@
             <field name="view_id" ref="exam_tree_view"/>
             <field name="search_view_id" ref="exam_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="exam_action_student_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="exam_actions_student"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="exam_tree_view"/>
         </record>
         <record id="exam_action_student_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="exam_actions_student"/>
@@ -354,11 +279,6 @@
             <field name="search_view_id" ref="result_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="result_action_admin_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="result_actions_administrator"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="result_tree_view"/>
-        </record>
         <record id="result_action_admin_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="result_actions_administrator"/>
             <field name="view_mode">form</field>
@@ -374,11 +294,6 @@
             <field name="view_id" ref="result_tree_view"/>
             <field name="search_view_id" ref="result_search_view"/>
             <field name="target">current</field>
-        </record>
-        <record id="result_action_teacher_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="result_actions_teacher"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="result_tree_view"/>
         </record>
         <record id="result_action_teacher_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="result_actions_teacher"/>
@@ -396,11 +311,6 @@
             <field name="search_view_id" ref="result_search_view"/>
             <field name="target">current</field>
         </record>
-        <record id="result_action_student_tree_view" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="result_actions_student"/>
-            <field name="view_mode">tree</field>
-            <field name="view_id" ref="result_tree_view"/>
-        </record>
         <record id="result_action_student_form_view" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="result_actions_student"/>
             <field name="view_mode">form</field>
@@ -408,13 +318,13 @@
         </record>
 
         <menuitem id="primary_menu_administrator" name="Administración Estudiantil" sequence="1" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_student_administrator" name="Administracion | Estudiantes" parent="primary_menu_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_teacher_administrator" name="Administracion | Profesores" parent="primary_menu_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_subject_administrator" name="Administracion | Materias" parent="primary_menu_administrator" action="subject_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_classroom_administrator" name="Administracion |Aulas" parent="primary_menu_administrator" action="classroom_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_schedule_administrator" name="Administracion | Horarios" parent="primary_menu_administrator" action="schedule_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_exam_administrator" name="Administracion | Exámenes" parent="primary_menu_administrator" action="exam_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_result_administrator" name="Administracion | Resultados" parent="primary_menu_administrator" action="result_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_student_administrator" name="Administracion | Estudiantes" parent="primary_menu_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
+        <menuitem id="submenu_teacher_administrator" name="Administracion | Profesores" parent="primary_menu_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
+        <menuitem id="submenu_subject_administrator" name="Administracion | Materias" parent="primary_menu_administrator" action="subject_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
+        <menuitem id="submenu_classroom_administrator" name="Administracion |Aulas" parent="primary_menu_administrator" action="classroom_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
+        <menuitem id="submenu_schedule_administrator" name="Administracion | Horarios" parent="primary_menu_administrator" action="schedule_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
+        <menuitem id="submenu_exam_administrator" name="Administracion | Exámenes" parent="primary_menu_administrator" action="exam_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
+        <menuitem id="submenu_result_administrator" name="Administracion | Resultados" parent="primary_menu_administrator" action="result_actions_administrator" groups="python_odoo8_module.admin_role_group,base.group_system"/>
 
         <menuitem id="primary_menu_teacher" name="Portal Academico" sequence="2" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_student_teacher" name="Mis Estudiantes" parent="primary_menu_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>

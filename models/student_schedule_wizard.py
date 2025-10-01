@@ -88,8 +88,13 @@ class StudentScheduleWizard(models.TransientModel):
                 sorted_days = sorted(days_grouped.keys(), key=lambda x: days_order.get(x, 6))
                 
                 for day in sorted_days:
-                    day_names = {'monday': 'LUNES', 'tuesday': 'MARTES', 'wednesday': 'MIÉRCOLES', 
-                                'thursday': 'JUEVES', 'friday': 'VIERNES'}
+                    day_names = {
+                        'mon': 'LUNES',
+                        'tue': 'MARTES',
+                        'wed': 'MIÉRCOLES',
+                        'thu': 'JUEVES',
+                        'fri': 'VIERNES'
+                    }
                     
                     day_title = Paragraph("<b>{0}</b>".format(day_names.get(day, day.upper())), styles['Heading2'])
                     elements.append(day_title)

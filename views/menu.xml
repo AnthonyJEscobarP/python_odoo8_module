@@ -3,29 +3,29 @@
     <data>
         <!-- ACCIONES MODELO: ESTUDIANTES - PARA: ADMINISTRADOR -->
         <record id="student_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Estudiantes</field>
+            <field name="name">Accion Estudiantes Para Administrador</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="student_tree_view"/>
-            <field name="search_view_id" ref="student_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.student_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.student_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: ESTUDIANTES - PARA: PROFESOR -->
         <record id="student_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Estudiantes</field>
+            <field name="name">Accion Estudiantes Para Profesor</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="student_tree_view"/>
-            <field name="search_view_id" ref="student_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.student_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.student_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: ESTUDIANTES - PARA: ESTUDIANTE -->
         <record id="student_actions_student" model="ir.actions.act_window">
-            <field name="name">Mi Información</field>
+            <field name="name">Accion Estudiantes Para Estudiante</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
@@ -34,18 +34,18 @@
 
         <!-- ACCIONES MODELO: PROFESORES - PARA: ADMINISTRADOR -->
         <record id="teacher_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Profesores</field>
+            <field name="name">Accion Profesores Para Administrador</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="teacher_tree_view"/>
-            <field name="search_view_id" ref="teacher_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.teacher_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.teacher_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: PROFESORES - PARA: PROFESOR -->
         <record id="teacher_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Mi Informacion</field>
+            <field name="name">Accion Profesores Para Profesor</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
@@ -54,193 +54,218 @@
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: ADMINISTRADOR -->
         <record id="subject_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Materias</field>
+            <field name="name">Accion Materias Para Administrador</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="subject_tree_view"/>
-            <field name="search_view_id" ref="subject_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.subject_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.subject_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: PROFESOR -->
         <record id="subject_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Materias</field>
+            <field name="name">Accion Materias Para Profesor</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="subject_tree_view"/>
-            <field name="search_view_id" ref="subject_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.subject_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.subject_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: ESTUDIANTE -->
         <record id="subject_actions_student" model="ir.actions.act_window">
-            <field name="name">Materias</field>
+            <field name="name">Accion Materias Para Estudiante</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="subject_tree_view"/>
-            <field name="search_view_id" ref="subject_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.subject_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.subject_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: AULAS - PARA: ADMINISTRADOR -->
         <record id="classroom_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Aulas</field>
+            <field name="name">Accion Aulas Para Administrador</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-            <field name="search_view_id" ref="classroom_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.classroom_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.classroom_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: AULAS - PARA: PROFESOR -->
         <record id="classroom_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Aulas</field>
+            <field name="name">Accion Aulas Para Profesor</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-            <field name="search_view_id" ref="classroom_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.classroom_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.classroom_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: AULAS - PARA: ESTUDIANTE -->
         <record id="classroom_actions_student" model="ir.actions.act_window">
-            <field name="name">Aulas</field>
+            <field name="name">Accion Aulas Para Estudiante</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="classroom_tree_view"/>
-            <field name="search_view_id" ref="classroom_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.classroom_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.classroom_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: AGENDA - PARA: ADMINISTRADOR -->
         <record id="schedule_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Agenda académica</field>
+            <field name="name">Accion Agenda Para Administrador</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-            <field name="search_view_id" ref="schedule_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.schedule_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.schedule_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: AGENDA - PARA: PROFESOR -->
         <record id="schedule_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Agenda académica</field>
+            <field name="name">Accion Agenda Para Profesor</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-            <field name="search_view_id" ref="schedule_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.schedule_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.schedule_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: AGENDA - PARA: ESTUDIANTE -->
         <record id="schedule_actions_student" model="ir.actions.act_window">
-            <field name="name">Agenda académica</field>
+            <field name="name">Accion Agenda Para Estudiante</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="schedule_tree_view"/>
-            <field name="search_view_id" ref="schedule_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.schedule_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.schedule_search_view"/>
             <field name="target">current</field>
         </record>
 
-        <!-- ACCIONES MODELO: EXÁMENES - PARA: ADMINISTRADOR -->
+        <!-- ACCIONES MODELO: EXAMENES - PARA: ADMINISTRADOR -->
         <record id="exam_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Exámenes</field>
+            <field name="name">Accion Examenes Para Administrador</field>
             <field name="res_model">python_odoo8_module.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="exam_tree_view"/>
-            <field name="search_view_id" ref="exam_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.exam_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.exam_search_view"/>
             <field name="target">current</field>
         </record>
 
-        <!-- ACCIONES MODELO: EXÁMENES - PARA: PROFESOR -->
+        <!-- ACCIONES MODELO: EXAMENES - PARA: PROFESOR -->
         <record id="exam_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Exámenes</field>
+            <field name="name">Accion Examenes Para Profesor</field>
             <field name="res_model">python_odoo8_module.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="exam_tree_view"/>
-            <field name="search_view_id" ref="exam_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.exam_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.exam_search_view"/>
             <field name="target">current</field>
         </record>
 
-        <!-- ACCIONES MODELO: EXÁMENES - PARA: ESTUDIANTE -->
+        <!-- ACCIONES MODELO: EXAMENES - PARA: ESTUDIANTE -->
         <record id="exam_actions_student" model="ir.actions.act_window">
-            <field name="name">Exámenes</field>
+            <field name="name">Accion Examenes Para Estudiante</field>
             <field name="res_model">python_odoo8_module.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="exam_tree_view"/>
-            <field name="search_view_id" ref="exam_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.exam_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.exam_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: RESULTADOS - PARA: ADMINISTRADOR -->
         <record id="result_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Resultados de exámenes</field>
+            <field name="name">Accion Resultados Para Administrador</field>
             <field name="res_model">python_odoo8_module.result</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="result_tree_view"/>
-            <field name="search_view_id" ref="result_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: RESULTADOS - PARA: PROFESOR -->
         <record id="result_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Resultados de exámenes</field>
+            <field name="name">Accion Resultados Para Profesor</field>
             <field name="res_model">python_odoo8_module.result</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="result_tree_view"/>
-            <field name="search_view_id" ref="result_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
             <field name="target">current</field>
         </record>
 
         <!-- ACCIONES MODELO: RESULTADOS - PARA: ESTUDIANTE -->
         <record id="result_actions_student" model="ir.actions.act_window">
-            <field name="name">Mis resultados</field>
+            <field name="name">Accion Resultados Para Estudiante</field>
             <field name="res_model">python_odoo8_module.result</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="result_tree_view"/>
-            <field name="search_view_id" ref="result_search_view"/>
+            <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
+            <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
             <field name="target">current</field>
         </record>
 
+
+        <!-- MENUS: ADMINISTRADOR -->
         <menuitem id="primary_menu_administrator" name="Administración Estudiantil" sequence="1" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_student_administrator" name="Administracion | Estudiantes" parent="primary_menu_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_teacher_administrator" name="Administracion | Profesores" parent="primary_menu_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_subject_administrator" name="Administracion | Materias" parent="primary_menu_administrator" action="subject_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_classroom_administrator" name="Administracion |Aulas" parent="primary_menu_administrator" action="classroom_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_schedule_administrator" name="Administracion | Horarios" parent="primary_menu_administrator" action="schedule_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_exam_administrator" name="Administracion | Exámenes" parent="primary_menu_administrator" action="exam_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
-        <menuitem id="submenu_result_administrator" name="Administracion | Resultados" parent="primary_menu_administrator" action="result_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_student_administrator" name="Administracion | Estudiantes" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_student_administrator_item" name="Estudiantes" parent="submenu_student_administrator" action="student_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_teacher_administrator" name="Administracion | Profesores" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_teacher_administrator_item" name="Profesores" parent="submenu_teacher_administrator" action="teacher_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_subject_administrator" name="Administracion | Materias" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_subject_administrator_item" name="Materias" parent="submenu_subject_administrator" action="subject_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_classroom_administrator" name="Administracion | Aulas" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_classroom_administrator_item" name="Aulas" parent="submenu_classroom_administrator" action="classroom_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_schedule_administrator" name="Administracion | Horarios" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_schedule_administrator_item" name="Horarios" parent="submenu_schedule_administrator" action="schedule_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_exam_administrator" name="Administracion | Exámenes" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_exam_administrator_item" name="Exámenes" parent="submenu_exam_administrator" action="exam_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
+        <menuitem id="submenu_result_administrator" name="Administracion | Resultados" parent="primary_menu_administrator"/>
+        <menuitem id="submenu_result_administrator_item" name="Resultados" parent="submenu_result_administrator" action="result_actions_administrator" groups="python_odoo8_module.admin_role_group"/>
 
+        <!-- MENUS: MAESTRO - PROFESOR -->
         <menuitem id="primary_menu_teacher" name="Portal Academico" sequence="2" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_student_teacher" name="Mis Estudiantes" parent="primary_menu_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_teacher_teacher" name="Mi Información" parent="primary_menu_teacher" action="teacher_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_subject_teacher" name="Materias" parent="primary_menu_teacher" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_classroom_teacher" name="Aulas" parent="primary_menu_teacher" action="classroom_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_schedule_teacher" name="Agenda académica" parent="primary_menu_teacher" action="schedule_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_exam_teacher" name="Exámenes" parent="primary_menu_teacher" action="exam_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
-        <menuitem id="submenu_result_teacher" name="Resultados de exámenes" parent="primary_menu_teacher" action="result_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_student_teacher" name="Manejo | Estudiantes" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_student_teacher_item" name="Mis Estudiantes" parent="submenu_student_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_teacher_teacher" name="Manejo | Profesor" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_teacher_teacher_item" name="Mi Informacion" parent="submenu_teacher_teacher" action="teacher_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_subject_teacher" name="Manejo | Materia" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_subject_teacher_item" name="Mi Materia" parent="submenu_subject_teacher" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_classroom_teacher" name="Manejo | Aulas" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_classroom_teacher_item" name="Mis Aulas" parent="submenu_classroom_teacher" action="classroom_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_schedule_teacher" name="Manejo | Horarios" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_schedule_teacher_item" name="Mis horarios" parent="submenu_schedule_teacher" action="schedule_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_exam_teacher" name="Manejo | Exámenes" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_exam_teacher_item" name="Mis Examenes" parent="submenu_exam_teacher" action="exam_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_result_teacher" name="Manejo | Resultados" parent="primary_menu_teacher"/>
+        <menuitem id="submenu_result_teacher_item" name="Resultados" parent="submenu_result_teacher" action="result_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
 
+        <!-- MENUS: ESTUDIANTE -->
         <menuitem id="primary_menu_student" name="Portal Estudiantil" sequence="3" groups="python_odoo8_module.student_role_group"/>
-        <menuitem id="submenu_student_student" name="Mi Información" parent="primary_menu_student" action="student_actions_student" groups="python_odoo8_module.student_role_group"/>
-        <menuitem id="submenu_subject_student" name="Materias" parent="primary_menu_student" action="subject_actions_student" groups="python_odoo8_module.student_role_group"/>
-        <menuitem id="submenu_classroom_student" name="Aulas" parent="primary_menu_student" action="classroom_actions_student" groups="python_odoo8_module.student_role_group"/>
-        <menuitem id="submenu_schedule_student" name="Agenda académica" parent="primary_menu_student" action="schedule_actions_student" groups="python_odoo8_module.student_role_group"/>
-        <menuitem id="submenu_exam_student" name="Exámenes" parent="primary_menu_student" action="exam_actions_student" groups="python_odoo8_module.student_role_group"/>
-        <menuitem id="submenu_result_student" name="Mis resultados" parent="primary_menu_student" action="result_actions_student" groups="python_odoo8_module.student_role_group"/>
+        <menuitem id="submenu_student_student" name="Informacion | Estudiante" parent="primary_menu_student"/>
+        <menuitem id="submenu_student_student_item" name="Mi Información" parent="submenu_student_student" action="student_actions_student" groups="python_odoo8_module.student_role_group"/>
+        <menuitem id="submenu_subject_student" name="Informacion | Materias" parent="primary_menu_student"/>
+        <menuitem id="submenu_subject_student_item" name="Materias" parent="submenu_subject_student" action="subject_actions_student" groups="python_odoo8_module.student_role_group"/>
+        <menuitem id="submenu_classroom_student" name="Informacion | Aulas" parent="primary_menu_student"/>
+        <menuitem id="submenu_classroom_student_item" name="Aulas" parent="submenu_classroom_student" action="classroom_actions_student" groups="python_odoo8_module.student_role_group"/>
+        <menuitem id="submenu_schedule_student" name="Informacion | Horarios" parent="primary_menu_student"/>
+        <menuitem id="submenu_schedule_student_item" name="Agenda Estudiantil" parent="submenu_schedule_student" action="schedule_actions_student" groups="python_odoo8_module.student_role_group"/>
+        <menuitem id="submenu_exam_student" name="Informacion | Examenes" parent="primary_menu_student"/>
+        <menuitem id="submenu_exam_student_item" name="Exámenes" parent="submenu_exam_student" action="exam_actions_student" groups="python_odoo8_module.student_role_group"/>
+        <menuitem id="submenu_result_student" name="Informacion | Resultados" parent="primary_menu_student"/>
+        <menuitem id="submenu_result_student_item" name="Resultados" parent="submenu_result_student" action="result_actions_student" groups="python_odoo8_module.student_role_group"/>
+
     </data>
 </openerp>

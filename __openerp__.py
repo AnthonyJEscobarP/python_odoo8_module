@@ -1,6 +1,6 @@
 {
   'name': 'Modulo Administracion Estudiantil',
-  'version': '3.1.3',
+  'version': '4.5.0',
   'author': 'Anthony Escobar / AE-Solutions',
   'category': 'Education',
   'depends': ['base','web'],

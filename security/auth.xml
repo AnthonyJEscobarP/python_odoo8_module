@@ -3,12 +3,12 @@
         <record id="student_auth_student" model="ir.rule">
             <field name="name">Permisos de estudiantes para ver sus propios datos</field>
             <field name="model_id" ref="model_python_odoo8_module_student"/>
-            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="domain_force">[('user_id.id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.student_role_group'))]"/>
         </record>
 
         <record id="student_auth_schedule" model="ir.rule">
-            <field name="name">Permiso de estudiantes para ver su itinerario</field>
+            <field name="name">Permiso de estudiantes para ver sus horarios</field>
             <field name="model_id" ref="model_python_odoo8_module_schedule"/>
             <field name="domain_force">[('student_ids.user_id', '=', user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.student_role_group'))]"/>
@@ -32,15 +32,19 @@
         <record id="teacher_auth_teacher" model="ir.rule">
             <field name="name">Permiso de profesor para ver su propio registro</field>
             <field name="model_id" ref="model_python_odoo8_module_teacher"/>
-            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="domain_force">[('email','=',user.login)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
         </record>
 
         <record id="teacher_auth_subject" model="ir.rule">
-            <field name="name">Permiso de profesores para ver y editar su materia</field>
+            <field name="name">Permiso de profesor para ver todas y editar solo su materia</field>
             <field name="model_id" ref="model_python_odoo8_module_subject"/>
-            <field name="domain_force">[]</field>
+            <field name="domain_force">[('teacher_id.user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
         </record>
 
         <record id="teacher_auth_exam" model="ir.rule">
@@ -58,7 +62,7 @@
         </record>
 
         <record id="teacher_auth_schedule_read" model="ir.rule">
-            <field name="name">Permiso de profesor para ver todos los itinerarios</field>
+            <field name="name">Permiso de profesor para ver todos los horarios</field>
             <field name="model_id" ref="model_python_odoo8_module_schedule"/>
             <field name="domain_force">[]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
@@ -69,7 +73,7 @@
         </record>
 
         <record id="teacher_auth_schedule_write" model="ir.rule">
-            <field name="name">Permiso de profesor para solo modificar sus itinerarios</field>
+            <field name="name">Permiso de profesor para solo modificar sus horarios</field>
             <field name="model_id" ref="model_python_odoo8_module_schedule"/>
             <field name="domain_force">[('subject_id.teacher_id.user_id', '=', user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>

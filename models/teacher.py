@@ -49,12 +49,21 @@ class Teacher(models.Model):
                 vals['user_id'] = user_odoo.id
             except Exception:
                 pass
-        return super(Teacher, self).create(vals)
-
+        # add_subject_to_teacher_relation
+        teacher = super(Teacher, self).create(vals)
+        if vals.get('subject_id'):
+            teacher.subject_id.teacher_id = teacher.id
+        return teacher
+    
     @api.multi
     def write(self, vals):
         res = super(Teacher, self).write(vals)
         for rec in self:
             if 'email' in vals and rec.user_id:
                 rec.user_id.login = vals['email']
+        # update_teacher_to_subject_relation
+        if 'subject_id' in vals:
+            for teacher in self:
+                if teacher.subject_id:
+                    teacher.subject_id.teacher_id = teacher.id       
         return res

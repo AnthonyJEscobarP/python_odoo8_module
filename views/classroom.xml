@@ -24,7 +24,7 @@
                         </group>
                         <notebook>
                             <page string="Horarios de aula">
-                                <field name="schedule_ids">
+                                <field name="schedule_ids" readonly="1">
                                     <tree string="Periodos de clase ">
                                         <field name="day" string="Día"/>
                                         <field name="hour" string="Hora"/>

@@ -26,8 +26,8 @@
                         </group>
                         <notebook>
                             <page string="Horarios de clase">
-                                <field name="schedule_ids" widget="one2many">
-                                    <tree string="Horarios">
+                                <field name="schedule_ids" widget="one2many" readonly="1">
+                                    <tree>
                                         <field name="day" string="Día"/>
                                         <field name="hour" string="Hora"/>
                                         <field name="classroom_id" string="Aula"/>
@@ -36,8 +36,8 @@
                                 </field>
                             </page>
                             <page string="Exámenes">
-                                <field name="exam_ids">
-                                    <tree string="Exámenes de la materia">
+                                <field name="exam_ids" readonly="1">
+                                    <tree>
                                         <field name="name" string="Examen"/>
                                     </tree>
                                 </field>

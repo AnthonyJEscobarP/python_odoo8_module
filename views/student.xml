@@ -23,9 +23,9 @@
                 <form string="Informacion personal">
                     <sheet>
                         <group>
-                            <group>
-                                <field name="photo" widget="image" class="oe_avatar" style="height:140px;width:140px"/>
-                            </group>
+                            <field name="photo" widget="image" class="oe_avatar" style="height:140px;width:140px"/>
+                        </group>
+                        <group>
                             <field name="name" placeholder="Estudiante"/>
                             <field name="card" readonly="1" placeholder="Carnet"/>
                             <field name="age" placeholder="Edad"/>
@@ -38,7 +38,7 @@
                                     <field name="section" placeholder="Seccion"/>
                                 </group>
                                 <group>
-                                    <field name="schedule_ids" widget="many2many_list">
+                                    <field name="schedule_ids" widget="many2many_list" readonly="1">
                                         <tree string="Horarios de estudiante">
                                             <field name="day" string="Dia"/>
                                             <field name="hour" string="Hora"/>

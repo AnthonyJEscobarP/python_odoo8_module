@@ -27,7 +27,7 @@
                         </group>
                         <group>
                             <field name="teacher_id" string="Profesor"/>
-                            <field name="subject_id" string="Materia"/>
+                            <field name="subject_id" string="Materia" attrs="{'readonly':[('subject_id.teacher_id.user_id','=',user.id)]}"/>
                             <field name="classroom_id" string="Aula"/>
                         </group>
                         <notebook>

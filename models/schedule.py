@@ -49,6 +49,14 @@ class Schedule(models.Model):
         ('unique_schedule', 'unique(classroom_id, day, hour)', 'Aula, día y hora ocupados, verifica nuevamente'),
     ]
     
+    @api.model
+    def default_get(self, fields):
+        res = super(Schedule, self).default_get(fields)
+        teacher = self.env['python_odoo8_module.teacher'].search([('user_id','=',self.env.user.id)], limit=1)
+        if teacher:
+            res['subject_id'] = teacher.subject_id.id
+        return res
+
     @api.constrains('student_ids')
     def validate_same_grade(self):
         for schedule in self:

@@ -127,26 +127,26 @@ git clone https://github.com/AnthonyJEscobarP/python_odoo8_module.git
 - En la **interfaz de Odoo**: Configuración > Módulos > Actualizar lista de módulos (Settings > Modules > Update Modules List)
 
 #### **Paso 3: Instalar el Módulo**
-**3.1** - En la **interfaz de Odoo**: Configuración > Módulos > Modulos locales (Settings > Modules > Local Modules)
-**3.2** - **Buscar** módulo: **Modulo Administracion Estudiantil** o nombre tecnico: **python_odoo8_module** 
-**3.3** - **Instalar** y recargar la interfaz de odoo
+- **3.1** - En la **interfaz de Odoo**: Configuración > Módulos > Modulos locales (Settings > Modules > Local Modules)
+- **3.2** - **Buscar** módulo: **Modulo Administracion Estudiantil** o nombre tecnico: **python_odoo8_module** 
+- **3.3** - **Instalar** y recargar la interfaz de odoo
 
 #### **Paso 4: Configuracion de Roles y Permisos**
-**4.1** - En la **interfaz de Odoo**: 
-**4.2** - **Acceder como administrador** (Contar con acceso a *Technical Features*) y (recomendacion) activar modo desarrollador
-**4.3** - Configuración > Usuarios > *Grupos* (Settings > Users > Groups) y 
+- **4.1** - En la **interfaz de Odoo**: 
+- **4.2** - **Acceder como administrador** (Contar con acceso a *Technical Features*) y (recomendacion) activar modo desarrollador
+- **4.3** - Configuración > Usuarios > *Grupos* (Settings > Users > Groups) y 
 Verificar que existan los grupos: *Technical Settings / Administrador, Profesor y Estudiante.*
-**4.4** - En la misma ventana Usuarios > Usuarios (Users > Users): editar usuario actual y asignarle permisos de Administrador.
+- **4.4** - En la misma ventana Usuarios > Usuarios (Users > Users): editar usuario actual y asignarle permisos de Administrador.
 
 ---
 
 ### 🔄 Actualización a Nuevas Versiones
- **Paso 1:** - Desinstalar el módulo desde:  Configuración > Módulos > Modulos locales (Settings > Modules > Local Modules)
- **Paso 2:** - **Ingresar a la carpeta del módulo y ejecutar git pull para actualizar a la última versión**.
+- **Paso 1:** - Desinstalar el módulo desde:  Configuración > Módulos > Modulos locales (Settings > Modules > Local Modules)
+- **Paso 2:** - **Ingresar a la carpeta del módulo y ejecutar git pull para actualizar a la última versión**.
  ```
  cd addons/python_odoo8_module/
  ```
- **Paso 3:** - Reinstalar el módulo desde la interfaz.
+- **Paso 3:** - Reinstalar el módulo desde la interfaz.
 
 ---
 

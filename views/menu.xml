@@ -3,7 +3,7 @@
     <data>
         <!-- ACCIONES MODELO: ESTUDIANTES - PARA: ADMINISTRADOR -->
         <record id="student_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Estudiantes Para Administrador</field>
+            <field name="name">Estudiantes - Administrador</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -14,7 +14,7 @@
 
         <!-- ACCIONES MODELO: ESTUDIANTES - PARA: PROFESOR -->
         <record id="student_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Estudiantes Para Profesor</field>
+            <field name="name">Estudiantes - Profesor</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -25,7 +25,7 @@
 
         <!-- ACCIONES MODELO: ESTUDIANTES - PARA: ESTUDIANTE -->
         <record id="student_actions_student" model="ir.actions.act_window">
-            <field name="name">Accion Estudiantes Para Estudiante</field>
+            <field name="name">Mi Perfil - Estudiante</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
@@ -34,7 +34,7 @@
 
         <!-- ACCIONES MODELO: PROFESORES - PARA: ADMINISTRADOR -->
         <record id="teacher_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Profesores Para Administrador</field>
+            <field name="name">Profesores - Administrador</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -45,7 +45,7 @@
 
         <!-- ACCIONES MODELO: PROFESORES - PARA: PROFESOR -->
         <record id="teacher_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Profesores Para Profesor</field>
+            <field name="name">Mi Perfil - Profesor</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
@@ -54,7 +54,7 @@
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: ADMINISTRADOR -->
         <record id="subject_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Materias Para Administrador</field>
+            <field name="name">Materias - Administrador</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -65,7 +65,7 @@
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: PROFESOR -->
         <record id="subject_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Materias Para Profesor</field>
+            <field name="name">Materias - Profesor</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -76,7 +76,7 @@
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: ESTUDIANTE -->
         <record id="subject_actions_student" model="ir.actions.act_window">
-            <field name="name">Accion Materias Para Estudiante</field>
+            <field name="name">Materias - Estudiante</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -87,7 +87,7 @@
 
         <!-- ACCIONES MODELO: AULAS - PARA: ADMINISTRADOR -->
         <record id="classroom_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Aulas Para Administrador</field>
+            <field name="name">Aulas - Administrador</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -98,7 +98,7 @@
 
         <!-- ACCIONES MODELO: AULAS - PARA: PROFESOR -->
         <record id="classroom_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Aulas Para Profesor</field>
+            <field name="name">Aulas - Profesor</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -109,7 +109,7 @@
 
         <!-- ACCIONES MODELO: AULAS - PARA: ESTUDIANTE -->
         <record id="classroom_actions_student" model="ir.actions.act_window">
-            <field name="name">Accion Aulas Para Estudiante</field>
+            <field name="name">Aulas - Estudiante</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -120,7 +120,7 @@
 
         <!-- ACCIONES MODELO: AGENDA - PARA: ADMINISTRADOR -->
         <record id="schedule_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Agenda Para Administrador</field>
+            <field name="name">Horarios - Administrador</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -131,7 +131,7 @@
 
         <!-- ACCIONES MODELO: AGENDA - PARA: PROFESOR -->
         <record id="schedule_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Agenda Para Profesor</field>
+            <field name="name">Horarios - Profesor</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -142,7 +142,7 @@
 
         <!-- ACCIONES MODELO: AGENDA - PARA: ESTUDIANTE -->
         <record id="schedule_actions_student" model="ir.actions.act_window">
-            <field name="name">Accion Agenda Para Estudiante</field>
+            <field name="name">Agenda Estudiantil</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -153,7 +153,7 @@
 
         <!-- ACCIONES MODELO: EXAMENES - PARA: ADMINISTRADOR -->
         <record id="exam_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Examenes Para Administrador</field>
+            <field name="name">Examenes - Administrador</field>
             <field name="res_model">python_odoo8_module.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -164,7 +164,7 @@
 
         <!-- ACCIONES MODELO: EXAMENES - PARA: PROFESOR -->
         <record id="exam_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Examenes Para Profesor</field>
+            <field name="name">Examenes - Profesor</field>
             <field name="res_model">python_odoo8_module.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -175,7 +175,7 @@
 
         <!-- ACCIONES MODELO: EXAMENES - PARA: ESTUDIANTE -->
         <record id="exam_actions_student" model="ir.actions.act_window">
-            <field name="name">Accion Examenes Para Estudiante</field>
+            <field name="name">Examenes - Estudiante</field>
             <field name="res_model">python_odoo8_module.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -186,7 +186,7 @@
 
         <!-- ACCIONES MODELO: RESULTADOS - PARA: ADMINISTRADOR -->
         <record id="result_actions_administrator" model="ir.actions.act_window">
-            <field name="name">Accion Resultados Para Administrador</field>
+            <field name="name">Resultados - Administrador</field>
             <field name="res_model">python_odoo8_module.result</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -197,7 +197,7 @@
 
         <!-- ACCIONES MODELO: RESULTADOS - PARA: PROFESOR -->
         <record id="result_actions_teacher" model="ir.actions.act_window">
-            <field name="name">Accion Resultados Para Profesor</field>
+            <field name="name">Resultados - Profesor</field>
             <field name="res_model">python_odoo8_module.result</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -208,7 +208,7 @@
 
         <!-- ACCIONES MODELO: RESULTADOS - PARA: ESTUDIANTE -->
         <record id="result_actions_student" model="ir.actions.act_window">
-            <field name="name">Accion Resultados Para Estudiante</field>
+            <field name="name">Resultados - Estudiante</field>
             <field name="res_model">python_odoo8_module.result</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>

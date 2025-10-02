@@ -30,3 +30,20 @@ class Subject(models.Model):
         string='horario'
     )
  
+    # update_subject_to_teacher_relation
+    @api.multi
+    def write(self, vals):
+        res = super(Subject, self).write(vals)
+        if 'teacher_id' in vals:
+            for subject in self:
+                if subject.teacher_id:
+                    subject.teacher_id.subject_id = subject.id
+        return res
+
+    #add_subject_to_teacher_relation
+    @api.model
+    def create(self, vals):
+        subject = super(Subject, self).create(vals)
+        if vals.get('teacher_id'):
+            subject.teacher_id.subject_id = subject.id
+        return subject

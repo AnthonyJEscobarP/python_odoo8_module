@@ -36,12 +36,23 @@
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
         </record>
 
-        <record id="teacher_auth_subject" model="ir.rule">
-            <field name="name">Permiso de profesor para ver todas y editar solo su materia</field>
+        <record id="teacher_auth_subject_read" model="ir.rule">
+            <field name="name">Permiso de profesor para ver todas las materias</field>
+            <field name="model_id" ref="model_python_odoo8_module_subject"/>
+            <field name="domain_force">[]</field>
+            <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+
+        <record id="teacher_auth_subject_write" model="ir.rule">
+            <field name="name">Permiso de profesor para editar solo su materia</field>
             <field name="model_id" ref="model_python_odoo8_module_subject"/>
             <field name="domain_force">[('teacher_id.user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
-            <field name="perm_read" eval="True"/>
+            <field name="perm_read" eval="False"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_unlink" eval="False"/>

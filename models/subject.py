@@ -24,26 +24,12 @@ class Subject(models.Model):
         ('subject_name_unique', 'unique(name)', 'Esta materia ya existe, intenta de nuevo con un nombre diferente.'),
     ]
     
+    _sql_constraints = [
+        ('unique_teacher_subject', 'unique(teacher_id)', 'Cada profesor solo puede tener una materia.')
+    ]
+    
     schedule_ids = fields.One2many(
         'python_odoo8_module.schedule',
         'subject_id',
         string='horario'
     )
- 
-    # update_subject_to_teacher_relation
-    @api.multi
-    def write(self, vals):
-        res = super(Subject, self).write(vals)
-        if 'teacher_id' in vals:
-            for subject in self:
-                if subject.teacher_id:
-                    subject.teacher_id.subject_id = subject.id
-        return res
-
-    #add_subject_to_teacher_relation
-    @api.model
-    def create(self, vals):
-        subject = super(Subject, self).create(vals)
-        if vals.get('teacher_id'):
-            subject.teacher_id.subject_id = subject.id
-        return subject

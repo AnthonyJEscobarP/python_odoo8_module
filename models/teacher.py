@@ -12,10 +12,12 @@ class Teacher(models.Model):
     age = fields.Integer('Edad', required=True)
     photo = fields.Binary('Foto de perfil')
     email = fields.Char('Email', required=True)
-    
+
     subject_id = fields.Many2one(
         'python_odoo8_module.subject',
-        string='Materia'
+        string='Materia',
+        compute='teacher_to_subject_relation',
+        store=False
     )
     
     schedule_ids = fields.One2many(
@@ -25,6 +27,12 @@ class Teacher(models.Model):
         readonly=True
     )
     
+    @api.depends()
+    def teacher_to_subject_relation(self):
+        for teacher in self:
+            subject = self.env['python_odoo8_module.subject'].search([('teacher_id', '=', teacher.id)], limit=1)
+            teacher.subject_id = subject.id if subject else False
+        
     @api.constrains('email')
     def validateEmail(self):
         emailValidation = re.compile(r'^[^@]+@[^@]+\.[^@]+$')
@@ -49,21 +57,12 @@ class Teacher(models.Model):
                 vals['user_id'] = user_odoo.id
             except Exception:
                 pass
-        # add_subject_to_teacher_relation
-        teacher = super(Teacher, self).create(vals)
-        if vals.get('subject_id'):
-            teacher.subject_id.teacher_id = teacher.id
-        return teacher
+        return super(Teacher, self).create(vals)
     
     @api.multi
     def write(self, vals):
         res = super(Teacher, self).write(vals)
         for rec in self:
             if 'email' in vals and rec.user_id:
-                rec.user_id.login = vals['email']
-        # update_teacher_to_subject_relation
-        if 'subject_id' in vals:
-            for teacher in self:
-                if teacher.subject_id:
-                    teacher.subject_id.teacher_id = teacher.id       
+                rec.user_id.login = vals['email']     
         return res

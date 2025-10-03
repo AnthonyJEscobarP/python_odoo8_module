@@ -54,14 +54,6 @@
                 <search string="Buscar y encontrar">
                     <field name="name" string="Nombre"/>
                     <field name="email" string="Correo"/>
-                    <field name="subject_id" string="Materia"/>
-
-                    <filter string="Asignados" name="with_subject" domain="[('subject_id','!=',False)]"/>
-                    <filter string="Sin asignar" name="without_subject" domain="[('subject_id','=',False)]"/>
-
-                    <group expand="0" string="Agrupar Por">
-                        <filter string="Materia" context="{'group_by':'subject_id'}"/>
-                    </group>
                 </search>
             </field>
         </record>

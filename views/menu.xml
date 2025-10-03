@@ -32,6 +32,12 @@
             <field name="target">current</field>
         </record>
 
+        <record id="student_actions_student_form_view" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="student_actions_student"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="python_odoo8_module.student_form_view"/>
+        </record>
+
         <!-- ACCIONES MODELO: PROFESORES - PARA: ADMINISTRADOR -->
         <record id="teacher_actions_administrator" model="ir.actions.act_window">
             <field name="name">Profesores - Administrador</field>

@@ -24,6 +24,7 @@
                             <field name="photo" widget="image" class="oe_avatar" style="height:140px;width:140px"/>
                         </group>
                         <group>
+                            <field name="user_id" string="Usuario de Odoo" readonly="1"/>
                             <field name="name" placeholder="Profesor"/>
                             <field name="age" placeholder="Edad"/>
                             <field name="email" placeholder="Correo Electrónico"/>

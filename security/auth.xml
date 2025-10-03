@@ -3,7 +3,7 @@
         <record id="student_auth_student" model="ir.rule">
             <field name="name">Permisos de estudiantes para ver sus propios datos</field>
             <field name="model_id" ref="model_python_odoo8_module_student"/>
-            <field name="domain">[('user_id','=',uid)]</field>
+            <field name="domain_force">[('user_id','=',uid)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.student_role_group'))]"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>

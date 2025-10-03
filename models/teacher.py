@@ -27,6 +27,8 @@ class Teacher(models.Model):
         readonly=True
     )
     
+    user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo')
+    
     @api.depends()
     def teacher_to_subject_relation(self):
         for teacher in self:

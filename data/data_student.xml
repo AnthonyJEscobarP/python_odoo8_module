@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="student_dean_winchester" model="python_odoo8_module.student">
+            <field name="name">Dean Winchester</field>
+            <field name="age">18</field>
+            <field name="card">2025001</field>
+            <field name="email">dean@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_sam_winchester" model="python_odoo8_module.student">
+            <field name="name">Sam Winchester</field>
+            <field name="age">19</field>
+            <field name="card">2025002</field>
+            <field name="email">sam@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_castiel_novak" model="python_odoo8_module.student">
+            <field name="name">Castiel Novak</field>
+            <field name="age">16</field>
+            <field name="card">2025003</field>
+            <field name="email">castiel@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_bobby_singer" model="python_odoo8_module.student">
+            <field name="name">Bobby Singer</field>
+            <field name="age">17</field>
+            <field name="card">2025004</field>
+            <field name="email">bobby@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_crowley_macleod" model="python_odoo8_module.student">
+            <field name="name">Crowley MacLeod</field>
+            <field name="age">16</field>
+            <field name="card">2025005</field>
+            <field name="email">crowley@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_klaus_mikaelson" model="python_odoo8_module.student">
+            <field name="name">Klaus Mikaelson</field>
+            <field name="age">19</field>
+            <field name="card">2025006</field>
+            <field name="email">klaus@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_elijah_mikaelson" model="python_odoo8_module.student">
+            <field name="name">Elijah Mikaelson</field>
+            <field name="age">18</field>
+            <field name="card">2025007</field>
+            <field name="email">elijah@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_rebekah_mikaelson" model="python_odoo8_module.student">
+            <field name="name">Rebekah Mikaelson</field>
+            <field name="age">16</field>
+            <field name="card">2025008</field>
+            <field name="email">rebekah@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_marcel_gerard" model="python_odoo8_module.student">
+            <field name="name">Marcel Gerard</field>
+            <field name="age">17</field>
+            <field name="card">2025009</field>
+            <field name="email">marcel@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_hayley_marshall" model="python_odoo8_module.student">
+            <field name="name">Hayley Marshall</field>
+            <field name="age">17</field>
+            <field name="card">2025010</field>
+            <field name="email">hayley@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_rick_grimes" model="python_odoo8_module.student">
+            <field name="name">Rick Grimes</field>
+            <field name="age">16</field>
+            <field name="card">2025011</field>
+            <field name="email">rick@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_daryl_dixon" model="python_odoo8_module.student">
+            <field name="name">Daryl Dixon</field>
+            <field name="age">17</field>
+            <field name="card">2025012</field>
+            <field name="email">daryl@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_michonne_hawthorne" model="python_odoo8_module.student">
+            <field name="name">Michonne Hawthorne</field>
+            <field name="age">17</field>
+            <field name="card">2025013</field>
+            <field name="email">michonne@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_carol_peletier" model="python_odoo8_module.student">
+            <field name="name">Carol Peletier</field>
+            <field name="age">19</field>
+            <field name="card">2025014</field>
+            <field name="email">carol@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_glenn_rhee" model="python_odoo8_module.student">
+            <field name="name">Glenn Rhee</field>
+            <field name="age">18</field>
+            <field name="card">2025015</field>
+            <field name="email">glenn@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">C</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="subject_math" model="python_odoo8_module.subject">
+            <field name="name">Matemáticas</field>
+            <field name="description">Curso de Matemáticas nivel básico y avanzado</field>
+        </record>
+
+        <record id="subject_physics" model="python_odoo8_module.subject">
+            <field name="name">Física</field>
+            <field name="description">Curso de Física con prácticas experimentales</field>
+        </record>
+
+        <record id="subject_chemistry" model="python_odoo8_module.subject">
+            <field name="name">Química</field>
+            <field name="description">Química general y laboratorio</field>
+        </record>
+
+        <record id="subject_biology" model="python_odoo8_module.subject">
+            <field name="name">Biología</field>
+            <field name="description">Estudio de la biología moderna y ecología</field>
+        </record>
+
+        <record id="subject_history" model="python_odoo8_module.subject">
+            <field name="name">Historia</field>
+            <field name="description">Historia universal y de Guatemala</field>
+        </record>
+    </data>
+</openerp>

@@ -1,6 +1,6 @@
 {
   'name': 'Modulo Administracion Estudiantil',
-  'version': '4.5.0',
+  'version': '1.2.0',
   'author': 'Anthony Escobar / AE-Solutions',
   'category': 'Education',
   'depends': ['base','web'],
@@ -20,6 +20,11 @@
       'wizard/student_schedule_wizard.xml',
       'data/sequence_card.xml',
   ],
+  'demo': [
+        'data/data_student.xml',
+        'data/data_subject.xml',
+        'data/data_classroom.xml',
+    ],
   'installable': True,
   'application': True,
 }

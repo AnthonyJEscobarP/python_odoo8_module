@@ -1,6 +1,6 @@
 {
   'name': 'Modulo Administracion Estudiantil',
-  'version': '1.3.2',
+  'version': '1.1.0',
   'author': 'Anthony Escobar / AE-Solutions',
   'category': 'Education',
   'depends': ['base','web'],
@@ -18,7 +18,16 @@
       'views/menu.xml',
       'wizard/student_transcript_wizard.xml',
       'wizard/student_schedule_wizard.xml',
+      'data/sequence_card.xml',
+      'data/data_classroom.xml',
+      'data/data_student.xml',
+      'data/data_subject.xml',
       ],
+  'demo': [
+        'data/data_classroom.xml',
+        'data/data_student.xml',
+        'data/data_subject.xml',
+    ],
   'installable': True,
   'application': True,
   'external_dependencies': {

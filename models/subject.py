@@ -22,9 +22,6 @@ class Subject(models.Model):
 
     _sql_constraints = [
         ('subject_name_unique', 'unique(name)', 'Esta materia ya existe, intenta de nuevo con un nombre diferente.'),
-    ]
-    
-    _sql_constraints = [
         ('unique_teacher_subject', 'unique(teacher_id)', 'Cada profesor solo puede tener una materia.')
     ]
     

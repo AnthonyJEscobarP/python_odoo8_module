@@ -27,7 +27,7 @@ class Teacher(models.Model):
         readonly=True
     )
     
-    user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo')
+    user_id = fields.Many2one('res.users', 'Usuario Odoo', help='Usuario vinculado con Odoo', ondelete='cascade')
     
     @api.depends()
     def teacher_to_subject_relation(self):
@@ -46,17 +46,22 @@ class Teacher(models.Model):
     def create(self, vals):
         if vals.get('email') and not vals.get('user_id'):
             try:
-                group = self.env['res.groups'].search([('name', '=', 'Profesores')], limit=1)
-                user_data = {
-                    'name': vals.get('name'),
-                    'login': vals.get('email'),
-                    'email': vals.get('email'),
-                    'password': 'temporal', 
-                }
-                if group:
-                    user_data['groups_id'] = [(6, 0, [group.id])]
-                user_odoo = self.env['res.users'].create(user_data)
-                vals['user_id'] = user_odoo.id
+                email = vals.get('email')
+                existing_user = self.env['res.users'].search([('login', '=', email)], limit=1)
+                if existing_user:
+                    vals['user_id'] = existing_user.id
+                else:
+                    group = self.env['res.groups'].search([('name', '=', 'Profesores')], limit=1)
+                    user_data = {
+                        'name': vals.get('name'),
+                        'login': vals.get('email'),
+                        'email': vals.get('email'),
+                        'password': 'temporal', 
+                    }
+                    if group:
+                        user_data['groups_id'] = [(6, 0, [group.id])]
+                    user_odoo = self.env['res.users'].create(user_data)
+                    vals['user_id'] = user_odoo.id
             except Exception:
                 pass
         return super(Teacher, self).create(vals)

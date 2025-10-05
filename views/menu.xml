@@ -52,7 +52,16 @@
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
+            <field name="view_id" ref="python_odoo8_module.teacher_form_view"/>
+            <field name="domain">[('email','=',user.login)]</field>
+            <field name="context">{'create': False,'delete': False,'form_view_ref': 'python_odoo8_module.teacher_form_view'}</field>
             <field name="target">current</field>
+        </record>
+
+        <record id="teacher_actions_teacher_form" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="teacher_actions_teacher"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="python_odoo8_module.teacher_form_view"/>
         </record>
 
         <!-- ACCIONES MODELO: MATERIAS - PARA: ADMINISTRADOR -->

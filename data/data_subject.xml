@@ -40,17 +40,17 @@
         <record id="subject_biology_ii" model="python_odoo8_module.subject">
             <field name="name">Biología II</field>
             <field name="description">Biología avanzada, pensum en genética, microbiología y biología molecular aplicada.</field>
-            <field name="teacher_id" ref="teacher_maria_gonzalez"/>
+            <field name="teacher_id" ref="teacher_javier_herrera"/>
         </record>
         <record id="subject_history_i" model="python_odoo8_module.subject">
             <field name="name">Historia I</field>
             <field name="description">Historia con enfoque en civilizaciones antiguas, Edad Media y principios de historia moderna.</field>
-            <field name="teacher_id" ref="teacher_luis_mendez"/>
+            <field name="teacher_id" ref="teacher_alexander_garcia"/>
         </record>
         <record id="subject_history_ii" model="python_odoo8_module.subject">
             <field name="name">Historia II</field>
             <field name="description">Hhistoria contemporánea, Guatemala y movimientos sociales actuales.</field>
-            <field name="teacher_id" ref="teacher_ana_suarez"/>
+            <field name="teacher_id" ref="teacher_carlos_ramirez"/>
         </record>
     </data>
 </openerp>

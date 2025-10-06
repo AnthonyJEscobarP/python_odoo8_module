@@ -41,5 +41,20 @@
             <field name="age">41</field>
             <field name="email">claudia@gmail.com</field>
         </record>
+        <record id="teacher_javier_herrera" model="python_odoo8_module.teacher">
+            <field name="name">Javier Herrera</field>
+            <field name="age">26</field>
+            <field name="email">javier@gmail.com</field>
+        </record>
+        <record id="teacher_rafael_cordova" model="python_odoo8_module.teacher">
+            <field name="name">Rafael Cordova</field>
+            <field name="age">29</field>
+            <field name="email">rafael@gmail.com</field>
+        </record>
+        <record id="teacher_alexander_garcia" model="python_odoo8_module.teacher">
+            <field name="name">Alexander Garcia</field>
+            <field name="age">30</field>
+            <field name="email">alexander@gmail.com</field>
+        </record>
     </data>
 </openerp>

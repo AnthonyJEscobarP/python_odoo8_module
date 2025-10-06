@@ -6,6 +6,9 @@ Un módulo desarrollado para **Odoo 8** que centraliza y optimiza la administrac
 
 Este sistema proporciona un entorno **escalable, seguro y adaptable**, con reportes PDF personalizados, vistas dinámicas y control de accesos por roles, garantizando un flujo de información claro y confiable dentro de la institución.  
 
+## 📱MODULO IMPLEMENTADO
+### [**URL ODOO8**]:(**http://64.181.217.115/web**)
+  - **PARA ACCESO AL SERVIDOR/ODOO WEB, SOLICITAR CREDENCIALES AL DESARROLLADOR*
 ---
 
 ## ⚙️ Sistema de Gestión Académica Completa
@@ -167,7 +170,13 @@ Verificar que existan los grupos: *Technical Settings / Administrador, Profesor 
 python_odoo8_module/
 ├── data/
 │   ├── sequence_card.xml            # Secuencia para la creación de carnets
-│   └── demo_data/                   # Datos de demostración para cada modelo
+│   └── data_classroom.xml           # Datos demo para aulas
+│   └── data_student.xml             # Datos demo para estudiantes
+│   └── data_teacher.xml             # Datos demo para profesores
+│   └── data_subject.xml             # Datos demo para materias
+│   └── data_schedule.xml            # Datos demo para horarios
+│   └── data_exam.xml                # Datos demo para exámenes
+│   └── data_result.xml              # Datos demo para resultados
 ├── models/
 │   ├── __init__.py                  # Importación de todos los modelos y wizards
 │   ├── student.py
@@ -203,9 +212,19 @@ python_odoo8_module/
 ├── LICENSE                            # Licencia MIT
 └── .gitignore                         # Archivos y carpetas ignoradas por Git
 ```
+---
 
-## 📄 Autoria
-- ### 👨‍💻 Anthony Josue Escobar Ponce  
-  - 🏷️ Autor del módulo **Modulo Administracion Estudiantil v1.2.0** bajo **AE-Solutions**
-  - 💡 [Portafolio](https://ae--technologies.web.app/index.html)  
-  - 🔎 [LinkedIn](https://www.linkedin.com/in/anthony-josu%C3%A9-escobar-ponce-71004437b/)  
+## 💡Autoria
+  - **Modulo Administracion Estudiantil v1.1.2** bajo **AE-Solutions** 🏷️
+  ---
+### 🤖 Programador: 
+  - **Anthony Josue Escobar Ponce**
+  - 👀 **Portafolio Web:** [**CONOCE MAS SOBRE MI**](https://ae--technologies.web.app/index.html)  
+  - 🔎 **LinkedIn:** [**Trabajemos juntos**](https://www.linkedin.com/in/anthony-josu%C3%A9-escobar-ponce-71004437b/) 
+  ---
+### 💡 **Contacto directo:**
+  - **anthonyescobarponce@Outlook.com** / [**Click aqui**](https://ae--technologies.web.app/pages/contact.html)
+  ---
+### 📝 **Licencia**
+  - **MIT License**
+  ---

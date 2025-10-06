@@ -83,7 +83,7 @@ class StudentTranscriptWizard(models.TransientModel):
                 elements.append(Spacer(1, 15))
                 
                 for subject in subjects:
-                    subject_header = Paragraph("<b>Materia: {0}</b>".format(subject.name), styles['Heading3'])
+                    subject_header = Paragraph(u"<b>Materia: {0}</b>".format(subject.name), styles['Heading3'])
                     elements.append(subject_header)
                     
                     exams = self.env['python_odoo8_module.exam'].search([

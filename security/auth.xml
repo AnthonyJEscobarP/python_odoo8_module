@@ -36,7 +36,7 @@
         <record id="teacher_auth_teacher" model="ir.rule">
             <field name="name">Permiso de profesor para ver su propio registro</field>
             <field name="model_id" ref="model_python_odoo8_module_teacher"/>
-            <field name="domain_force">[('user_id','=',uid)]</field>
+            <field name="domain_force">[('user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('python_odoo8_module.teacher_role_group'))]"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>

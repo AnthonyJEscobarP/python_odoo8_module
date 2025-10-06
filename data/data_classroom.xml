@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
+    <data noupdate="1">
         <record id="classroom_a10" model="python_odoo8_module.classroom">
             <field name="name">A10</field>
             <field name="capacity">30</field>

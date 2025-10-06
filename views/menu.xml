@@ -30,7 +30,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="python_odoo8_module.student_form_view"/>
-            <field name="context">{'create': False,'delete': False,'form_view_ref': 'python_odoo8_module.student_form_view'}</field>
+            <field name="context">{'create': False,'delete': False,'edit': False,'form_view_ref': 'python_odoo8_module.student_form_view'}</field>
             <field name="target">current</field>
         </record>
 
@@ -224,6 +224,7 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
+            <field name="context">{'create': False,'delete': False,'edit': False,'form_view_ref': 'python_odoo8_module.result_form_view'}</field>
             <field name="target">current</field>
         </record>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
+    <data noupdate="1">
         <record id="student_dean_winchester" model="python_odoo8_module.student">
             <field name="name">Dean Winchester</field>
             <field name="age">18</field>

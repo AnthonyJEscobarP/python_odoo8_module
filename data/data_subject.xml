@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
+    <data noupdate="1">
         <record id="subject_math" model="python_odoo8_module.subject">
             <field name="name">Matemáticas</field>
             <field name="description">Curso de Matemáticas nivel básico y avanzado</field>

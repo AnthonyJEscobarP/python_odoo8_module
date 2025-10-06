@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Examen Matemáticas I -->
+        <record id="exam_math_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Matemáticas I - Unidad 1</field>
+            <field name="subject_id" ref="subject_math_i"/>
+        </record>
+        <record id="question_math_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="sentence">¿Cuánto es 7 + 5?</field>
+        </record>
+        <record id="answer_math_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_math_i_1"/>
+            <field name="response">12</field>
+            <field name="correct">True</field>
+            <field name="point">1</field>
+        </record>
+        <record id="answer_math_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_math_i_1"/>
+            <field name="response">10</field>
+        </record>
+
+        <!-- Examen Física I -->
+        <record id="exam_physics_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Física I - Mecánica</field>
+            <field name="subject_id" ref="subject_physics_i"/>
+        </record>
+        <record id="question_physics_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="sentence">La aceleración de un objeto en caída libre es de:</field>
+        </record>
+        <record id="answer_physics_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_physics_i_1"/>
+            <field name="response">9.8 m/s²</field>
+            <field name="correct">True</field>
+        </record>
+        <record id="answer_physics_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_physics_i_1"/>
+            <field name="response">10 m/s²</field>
+        </record>
+
+        <!-- Examen Química I -->
+        <record id="exam_chemistry_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Química I - Elementos y Compuestos</field>
+            <field name="subject_id" ref="subject_chemistry_i"/>
+        </record>
+        <record id="question_chemistry_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="sentence">El símbolo químico del Oxígeno es:</field>
+        </record>
+        <record id="answer_chemistry_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_chemistry_i_1"/>
+            <field name="response">O</field>
+            <field name="correct">True</field>
+        </record>
+        <record id="answer_chemistry_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_chemistry_i_1"/>
+            <field name="response">Ox</field>
+        </record>
+
+        <!-- Examen Biología I -->
+        <record id="exam_biology_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Biología I - Células</field>
+            <field name="subject_id" ref="subject_biology_i"/>
+        </record>
+        <record id="question_biology_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="sentence">La unidad básica de la vida es:</field>
+        </record>
+        <record id="answer_biology_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_biology_i_1"/>
+            <field name="response">La célula</field>
+            <field name="correct">True</field>
+        </record>
+        <record id="answer_biology_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_biology_i_1"/>
+            <field name="response">El tejido</field>
+        </record>
+
+        <!-- Examen Historia I -->
+        <record id="exam_history_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Historia I - Civilizaciones antiguas</field>
+            <field name="subject_id" ref="subject_history_i"/>
+        </record>
+        <record id="question_history_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="sentence">¿Qué civilización construyó las pirámides de Egipto?</field>
+        </record>
+        <record id="answer_history_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_history_i_1"/>
+            <field name="response">Egipcia</field>
+            <field name="correct">True</field>
+        </record>
+        <record id="answer_history_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question_history_i_1"/>
+            <field name="response">Maya</field>
+        </record>
+    </data>
+</openerp>

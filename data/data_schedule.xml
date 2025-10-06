@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Lunes -->
+        <record id="schedule_math_i_mon" model="python_odoo8_module.schedule">
+            <field name="day">mon</field>
+            <field name="hour">07:30</field>
+            <field name="subject_id" ref="subject_math_i"/>
+            <field name="classroom_id" ref="classroom_a10"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_castiel_novak'), ref('student_bobby_singer'), ref('student_crowley_macleod')])]"/>
+        </record>
+        <record id="schedule_physics_i_mon" model="python_odoo8_module.schedule">
+            <field name="day">mon</field>
+            <field name="hour">08:30</field>
+            <field name="subject_id" ref="subject_physics_i"/>
+            <field name="classroom_id" ref="classroom_b21"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_rebekah_mikaelson'), ref('student_marcel_gerard'), ref('student_hayley_marshall')])]"/>
+        </record>
+        <record id="schedule_chemistry_i_mon" model="python_odoo8_module.schedule">
+            <field name="day">mon</field>
+            <field name="hour">09:30</field>
+            <field name="subject_id" ref="subject_chemistry_i"/>
+            <field name="classroom_id" ref="classroom_c28"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_rick_grimes'), ref('student_daryl_dixon'), ref('student_michonne_hawthorne')])]"/>
+        </record>
+        <record id="schedule_biology_i_mon" model="python_odoo8_module.schedule">
+            <field name="day">mon</field>
+            <field name="hour">10:30</field>
+            <field name="subject_id" ref="subject_biology_i"/>
+            <field name="classroom_id" ref="classroom_c32"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_dean_winchester'), ref('student_sam_winchester')])]"/>
+        </record>
+        <record id="schedule_history_i_mon" model="python_odoo8_module.schedule">
+            <field name="day">mon</field>
+            <field name="hour">11:30</field>
+            <field name="subject_id" ref="subject_history_i"/>
+            <field name="classroom_id" ref="classroom_a12"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_elijah_mikaelson'), ref('student_klaus_mikaelson')])]"/>
+        </record>
+
+        <!-- Martes -->
+        <record id="schedule_math_ii_tue" model="python_odoo8_module.schedule">
+            <field name="day">tue</field>
+            <field name="hour">07:30</field>
+            <field name="subject_id" ref="subject_math_ii"/>
+            <field name="classroom_id" ref="classroom_b25"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_carol_peletier'), ref('student_glenn_rhee')])]"/>
+        </record>
+        <record id="schedule_physics_ii_tue" model="python_odoo8_module.schedule">
+            <field name="day">tue</field>
+            <field name="hour">08:30</field>
+            <field name="subject_id" ref="subject_physics_ii"/>
+            <field name="classroom_id" ref="classroom_a18"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_dean_winchester'), ref('student_sam_winchester')])]"/>
+        </record>
+        <record id="schedule_chemistry_ii_tue" model="python_odoo8_module.schedule">
+            <field name="day">tue</field>
+            <field name="hour">09:30</field>
+            <field name="subject_id" ref="subject_chemistry_ii"/>
+            <field name="classroom_id" ref="classroom_b30"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_elijah_mikaelson'), ref('student_klaus_mikaelson')])]"/>
+        </record>
+        <record id="schedule_biology_ii_tue" model="python_odoo8_module.schedule">
+            <field name="day">tue</field>
+            <field name="hour">10:30</field>
+            <field name="subject_id" ref="subject_biology_ii"/>
+            <field name="classroom_id" ref="classroom_c39"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_carol_peletier'), ref('student_glenn_rhee')])]"/>
+        </record>
+        <record id="schedule_history_ii_tue" model="python_odoo8_module.schedule">
+            <field name="day">tue</field>
+            <field name="hour">11:30</field>
+            <field name="subject_id" ref="subject_history_ii"/>
+            <field name="classroom_id" ref="classroom_b21"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_castiel_novak'), ref('student_bobby_singer'), ref('student_crowley_macleod')])]"/>
+        </record>
+
+        <!-- MIÉRCOLES -->
+        <record id="schedule_math_i_wed" model="python_odoo8_module.schedule">
+            <field name="day">wed</field>
+            <field name="hour">07:30</field>
+            <field name="subject_id" ref="subject_math_i"/>
+            <field name="classroom_id" ref="classroom_a10"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_castiel_novak'), ref('student_bobby_singer'), ref('student_crowley_macleod')])]"/>
+        </record>
+        <record id="schedule_physics_i_wed" model="python_odoo8_module.schedule">
+            <field name="day">wed</field>
+            <field name="hour">08:30</field>
+            <field name="subject_id" ref="subject_physics_i"/>
+            <field name="classroom_id" ref="classroom_b21"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_rebekah_mikaelson'), ref('student_marcel_gerard'), ref('student_hayley_marshall')])]"/>
+        </record>
+        <record id="schedule_chemistry_i_wed" model="python_odoo8_module.schedule">
+            <field name="day">wed</field>
+            <field name="hour">09:30</field>
+            <field name="subject_id" ref="subject_chemistry_i"/>
+            <field name="classroom_id" ref="classroom_c28"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_rick_grimes'), ref('student_daryl_dixon'), ref('student_michonne_hawthorne')])]"/>
+        </record>
+        <record id="schedule_biology_i_wed" model="python_odoo8_module.schedule">
+            <field name="day">wed</field>
+            <field name="hour">10:30</field>
+            <field name="subject_id" ref="subject_biology_i"/>
+            <field name="classroom_id" ref="classroom_c32"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_dean_winchester'), ref('student_sam_winchester')])]"/>
+        </record>
+        <record id="schedule_history_i_wed" model="python_odoo8_module.schedule">
+            <field name="day">wed</field>
+            <field name="hour">11:30</field>
+            <field name="subject_id" ref="subject_history_i"/>
+            <field name="classroom_id" ref="classroom_a12"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_elijah_mikaelson'), ref('student_klaus_mikaelson')])]"/>
+        </record>
+
+        <!-- JUEVES -->
+        <record id="schedule_math_ii_thu" model="python_odoo8_module.schedule">
+            <field name="day">thu</field>
+            <field name="hour">07:30</field>
+            <field name="subject_id" ref="subject_math_ii"/>
+            <field name="classroom_id" ref="classroom_b25"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_carol_peletier'), ref('student_glenn_rhee')])]"/>
+        </record>
+        <record id="schedule_physics_ii_thu" model="python_odoo8_module.schedule">
+            <field name="day">thu</field>
+            <field name="hour">08:30</field>
+            <field name="subject_id" ref="subject_physics_ii"/>
+            <field name="classroom_id" ref="classroom_a18"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_dean_winchester'), ref('student_sam_winchester')])]"/>
+        </record>
+        <record id="schedule_chemistry_ii_thu" model="python_odoo8_module.schedule">
+            <field name="day">thu</field>
+            <field name="hour">09:30</field>
+            <field name="subject_id" ref="subject_chemistry_ii"/>
+            <field name="classroom_id" ref="classroom_b30"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_elijah_mikaelson'), ref('student_klaus_mikaelson')])]"/>
+        </record>
+        <record id="schedule_biology_ii_thu" model="python_odoo8_module.schedule">
+            <field name="day">thu</field>
+            <field name="hour">10:30</field>
+            <field name="subject_id" ref="subject_biology_ii"/>
+            <field name="classroom_id" ref="classroom_c39"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_carol_peletier'), ref('student_glenn_rhee')])]"/>
+        </record>
+        <record id="schedule_history_ii_thu" model="python_odoo8_module.schedule">
+            <field name="day">thu</field>
+            <field name="hour">11:30</field>
+            <field name="subject_id" ref="subject_history_ii"/>
+            <field name="classroom_id" ref="classroom_b21"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_castiel_novak'), ref('student_bobby_singer'), ref('student_crowley_macleod')])]"/>
+        </record>
+
+        <!-- VIERNES -->
+        <record id="schedule_math_i_fri" model="python_odoo8_module.schedule">
+            <field name="day">fri</field>
+            <field name="hour">07:30</field>
+            <field name="subject_id" ref="subject_math_i"/>
+            <field name="classroom_id" ref="classroom_a10"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_castiel_novak'), ref('student_bobby_singer'), ref('student_crowley_macleod')])]"/>
+        </record>
+        <record id="schedule_physics_i_fri" model="python_odoo8_module.schedule">
+            <field name="day">fri</field>
+            <field name="hour">08:30</field>
+            <field name="subject_id" ref="subject_physics_i"/>
+            <field name="classroom_id" ref="classroom_b21"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_rebekah_mikaelson'), ref('student_marcel_gerard'), ref('student_hayley_marshall')])]"/>
+        </record>
+        <record id="schedule_chemistry_i_fri" model="python_odoo8_module.schedule">
+            <field name="day">fri</field>
+            <field name="hour">09:30</field>
+            <field name="subject_id" ref="subject_chemistry_i"/>
+            <field name="classroom_id" ref="classroom_c28"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_rick_grimes'), ref('student_daryl_dixon'), ref('student_michonne_hawthorne')])]"/>
+        </record>
+        <record id="schedule_biology_i_fri" model="python_odoo8_module.schedule">
+            <field name="day">fri</field>
+            <field name="hour">10:30</field>
+            <field name="subject_id" ref="subject_biology_i"/>
+            <field name="classroom_id" ref="classroom_c32"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_dean_winchester'), ref('student_sam_winchester')])]"/>
+        </record>
+        <record id="schedule_history_i_fri" model="python_odoo8_module.schedule">
+            <field name="day">fri</field>
+            <field name="hour">11:30</field>
+            <field name="subject_id" ref="subject_history_i"/>
+            <field name="classroom_id" ref="classroom_a12"/>
+            <field name="student_ids" eval="[(6,0,[ref('student_elijah_mikaelson'), ref('student_klaus_mikaelson')])]"/>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="teacher_luis_mendez" model="python_odoo8_module.teacher">
+            <field name="name">Luis Méndez</field>
+            <field name="age">40</field>
+            <field name="email">luis@gmail.com</field>
+        </record>
+        <record id="teacher_maria_gonzalez" model="python_odoo8_module.teacher">
+            <field name="name">María González</field>
+            <field name="age">35</field>
+            <field name="email">maria@gmail.com</field>
+        </record>
+        <record id="teacher_carlos_ramirez" model="python_odoo8_module.teacher">
+            <field name="name">Carlos Ramírez</field>
+            <field name="age">38</field>
+            <field name="email">carlos@gmail.com</field>
+        </record>
+        <record id="teacher_ana_suarez" model="python_odoo8_module.teacher">
+            <field name="name">Ana Suárez</field>
+            <field name="age">42</field>
+            <field name="email">ana@gmail.com</field>
+        </record>
+        <record id="teacher_jorge_velasquez" model="python_odoo8_module.teacher">
+            <field name="name">Jorge Velásquez</field>
+            <field name="age">45</field>
+            <field name="email">jorge@gmail.com</field>
+        </record>
+        <record id="teacher_lorena_martinez" model="python_odoo8_module.teacher">
+            <field name="name">Lorena Martínez</field>
+            <field name="age">37</field>
+            <field name="email">lorena@gmail.com</field>
+        </record>
+        <record id="teacher_daniel_fernandez" model="python_odoo8_module.teacher">
+            <field name="name">Daniel Fernández</field>
+            <field name="age">39</field>
+            <field name="email">daniel@gmail.com</field>
+        </record>
+        <record id="teacher_claudia_rodriguez" model="python_odoo8_module.teacher">
+            <field name="name">Claudia Rodríguez</field>
+            <field name="age">41</field>
+            <field name="email">claudia@gmail.com</field>
+        </record>
+    </data>
+</openerp>

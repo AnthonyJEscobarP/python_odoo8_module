@@ -1,29 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data noupdate="1">
-        <record id="subject_math" model="python_odoo8_module.subject">
-            <field name="name">Matemáticas</field>
-            <field name="description">Curso de Matemáticas nivel básico y avanzado</field>
+        <record id="subject_math_i" model="python_odoo8_module.subject">
+            <field name="name">Matemáticas I</field>
+            <field name="description">Curso de matemáticas para nivel básico: operaciones, geometría elemental y problemas simples.</field>
+            <field name="teacher_id" ref="teacher_luis_mendez"/>
         </record>
 
-        <record id="subject_physics" model="python_odoo8_module.subject">
-            <field name="name">Física</field>
-            <field name="description">Curso de Física con prácticas experimentales</field>
+        <record id="subject_math_ii" model="python_odoo8_module.subject">
+            <field name="name">Matemáticas II</field>
+            <field name="description">Curso de matemáticas nivel diversificado: álgebra, funciones, trigonometría y resolución de problemas aplicados.</field>
+            <field name="teacher_id" ref="teacher_maria_gonzalez"/>
         </record>
-
-        <record id="subject_chemistry" model="python_odoo8_module.subject">
-            <field name="name">Química</field>
-            <field name="description">Química general y laboratorio</field>
+        <record id="subject_physics_i" model="python_odoo8_module.subject">
+            <field name="name">Física I</field>
+            <field name="description">Física fundamental, enfoque inicial: mecánica, energía, fuerza y movimiento con prácticas experimentales.</field>
+            <field name="teacher_id" ref="teacher_ana_suarez"/>
         </record>
-
-        <record id="subject_biology" model="python_odoo8_module.subject">
-            <field name="name">Biología</field>
-            <field name="description">Estudio de la biología moderna y ecología</field>
+        <record id="subject_physics_ii" model="python_odoo8_module.subject">
+            <field name="name">Física II</field>
+            <field name="description">Física avanzada: electricidad, magnetismo y ondas, con experimentos y problemas aplicados.</field>
+            <field name="teacher_id" ref="teacher_jorge_velasquez"/>
         </record>
-
-        <record id="subject_history" model="python_odoo8_module.subject">
-            <field name="name">Historia</field>
-            <field name="description">Historia universal y de Guatemala</field>
+        <record id="subject_chemistry_i" model="python_odoo8_module.subject">
+            <field name="name">Química I</field>
+            <field name="description">Química inicial,elementos, compuestos, reacciones químicas y laboratorio inicial.</field>
+            <field name="teacher_id" ref="teacher_lorena_martinez"/>
+        </record>
+        <record id="subject_chemistry_ii" model="python_odoo8_module.subject">
+            <field name="name">Química II</field>
+            <field name="description">Química avanzada, enfoque especial en química orgánica e inorgánica y prácticas avanzadas de laboratorio.</field>
+            <field name="teacher_id" ref="teacher_daniel_fernandez"/>
+        </record>
+        <record id="subject_biology_i" model="python_odoo8_module.subject">
+            <field name="name">Biología I</field>
+            <field name="description">Biología base con pensum en estudio de los seres vivos, células, anatomía y principios de ecología.</field>
+            <field name="teacher_id" ref="teacher_claudia_rodriguez"/>
+        </record>
+        <record id="subject_biology_ii" model="python_odoo8_module.subject">
+            <field name="name">Biología II</field>
+            <field name="description">Biología avanzada, pensum en genética, microbiología y biología molecular aplicada.</field>
+            <field name="teacher_id" ref="teacher_maria_gonzalez"/>
+        </record>
+        <record id="subject_history_i" model="python_odoo8_module.subject">
+            <field name="name">Historia I</field>
+            <field name="description">Historia con enfoque en civilizaciones antiguas, Edad Media y principios de historia moderna.</field>
+            <field name="teacher_id" ref="teacher_luis_mendez"/>
+        </record>
+        <record id="subject_history_ii" model="python_odoo8_module.subject">
+            <field name="name">Historia II</field>
+            <field name="description">Hhistoria contemporánea, Guatemala y movimientos sociales actuales.</field>
+            <field name="teacher_id" ref="teacher_ana_suarez"/>
         </record>
     </data>
 </openerp>

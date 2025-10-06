@@ -61,10 +61,12 @@ class Student(models.Model):
             try:
                 email = vals.get('email')
                 existing_user = self.env['res.users'].search([('login', '=', email)], limit=1)
+                group = self.env['res.groups'].search([('name', '=', 'Estudiantes')], limit=1)
                 if existing_user:
                     vals['user_id'] = existing_user.id
+                    if group and group.id not in existing_user.groups_id.ids:
+                        existing_user.groups_id = [(4, group.id)]
                 else:
-                    group = self.env['res.groups'].search([('name', '=', 'Estudiantes')], limit=1)
                     user_data = {
                         'name': vals.get('name'),
                         'login': vals.get('email'),

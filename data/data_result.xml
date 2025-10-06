@@ -3,84 +3,72 @@
     <data noupdate="1">
         <!-- RESULTADOS DE EXÁMENES: MATEMÁTICAS I -->
         <record id="result_math_i_castiel" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_math_i"/>
+            <field name="exam_id" ref="exam_math_i_1"/>
             <field name="student_id" ref="student_castiel_novak"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_q1_a'), ref('answer_math_i_q2_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_1_a'), ref('answer_math_i_1_b')])]"/>
         </record>
         <record id="result_math_i_bobby" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_math_i"/>
+            <field name="exam_id" ref="exam_math_i_1"/>
             <field name="student_id" ref="student_bobby_singer"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_q1_a'), ref('answer_math_i_q2_a')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_1_a'), ref('answer_math_i_1_b')])]"/>
         </record>
         <record id="result_math_i_crowley" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_math_i"/>
+            <field name="exam_id" ref="exam_math_i_1"/>
             <field name="student_id" ref="student_crowley_macleod"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_q1_b'), ref('answer_math_i_q2_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_1_a'), ref('answer_math_i_1_b')])]"/>
         </record>
 
         <!-- RESULTADOS DE EXÁMENES: FÍSICA I -->
         <record id="result_physics_i_rebekah" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_physics_i"/>
+            <field name="exam_id" ref="exam_physics_i_1"/>
             <field name="student_id" ref="student_rebekah_mikaelson"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_q1_a'), ref('answer_physics_i_q2_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_1_a'), ref('answer_physics_i_1_b')])]"/>
         </record>
         <record id="result_physics_i_marcel" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_physics_i"/>
+            <field name="exam_id" ref="exam_physics_i_1"/>
             <field name="student_id" ref="student_marcel_gerard"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_q1_b'), ref('answer_physics_i_q2_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_1_a'), ref('answer_physics_i_1_b')])]"/>
         </record>
         <record id="result_physics_i_hayley" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_physics_i"/>
+            <field name="exam_id" ref="exam_physics_i_1"/>
             <field name="student_id" ref="student_hayley_marshall"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_q1_a'), ref('answer_physics_i_q2_a')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_1_a'), ref('answer_physics_i_1_b')])]"/>
         </record>
 
         <!-- RESULTADOS: QUÍMICA I -->
         <record id="result_chemistry_i_rick" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_chemistry_i"/>
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
             <field name="student_id" ref="student_rick_grimes"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_chemistry_i_q1_a'), ref('answer_chemistry_i_q2_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_chemistry_i_1_a'), ref('answer_chemistry_i_1_b')])]"/>
         </record>
         <record id="result_chemistry_i_daryl" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_chemistry_i"/>
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
             <field name="student_id" ref="student_daryl_dixon"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_chemistry_i_q1_b'), ref('answer_chemistry_i_q2_a')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_chemistry_i_1_a'), ref('answer_chemistry_i_1_b')])]"/>
         </record>
 
         <!-- RESULTADOS: BIOLOGÍA I -->
         <record id="result_biology_i_dean" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_biology_i"/>
+            <field name="exam_id" ref="exam_biology_i_1"/>
             <field name="student_id" ref="student_dean_winchester"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_biology_i_q1_a'), ref('answer_biology_i_q2_a')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_biology_i_1_a'), ref('answer_biology_i_1_b')])]"/>
         </record>
         <record id="result_biology_i_sam" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_biology_i"/>
+            <field name="exam_id" ref="exam_biology_i_1"/>
             <field name="student_id" ref="student_sam_winchester"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_biology_i_q1_b'), ref('answer_biology_i_q2_a')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_biology_i_1_a'), ref('answer_biology_i_1_b')])]"/>
         </record>
 
         <!-- RESULTADOS: HISTORIA I -->
         <record id="result_history_i_elijah" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_history_i"/>
+            <field name="exam_id" ref="exam_history_i_1"/>
             <field name="student_id" ref="student_elijah_mikaelson"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_history_i_q1_a'), ref('answer_history_i_q2_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_history_i_1_a'), ref('answer_history_i_1_b')])]"/>
         </record>
         <record id="result_history_i_klaus" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_history_i"/>
+            <field name="exam_id" ref="exam_history_i_1"/>
             <field name="student_id" ref="student_klaus_mikaelson"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_history_i_q1_a'), ref('answer_history_i_q2_a')])]"/>
-        </record>
-
-        <!-- RESULTADOS: MATEMÁTICAS II -->
-        <record id="result_math_ii_carol" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_math_ii"/>
-            <field name="student_id" ref="student_carol_peletier"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_ii_q1_a'), ref('answer_math_ii_q2_b')])]"/>
-        </record>
-        <record id="result_math_ii_glenn" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_math_ii"/>
-            <field name="student_id" ref="student_glenn_rhee"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_ii_q1_b'), ref('answer_math_ii_q2_a')])]"/>
+            <field name="answer_ids" eval="[(6,0,[ref('answer_history_i_1_a'), ref('answer_history_i_1_b')])]"/>
         </record>
     </data>
 </openerp>

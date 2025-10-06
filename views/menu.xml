@@ -30,7 +30,6 @@
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="python_odoo8_module.student_form_view"/>
-            <field name="domain">[('user_id','=',uid)]</field>
             <field name="context">{'create': False,'delete': False,'form_view_ref': 'python_odoo8_module.student_form_view'}</field>
             <field name="target">current</field>
         </record>
@@ -53,7 +52,6 @@
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="python_odoo8_module.teacher_form_view"/>
-            <field name="domain">[('email','=',user.login)]</field>
             <field name="context">{'create': False,'delete': False,'form_view_ref': 'python_odoo8_module.teacher_form_view'}</field>
             <field name="target">current</field>
         </record>

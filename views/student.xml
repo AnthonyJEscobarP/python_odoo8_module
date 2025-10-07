@@ -65,7 +65,6 @@
                     <field name="grade" type="col"/>
                     <field name="section" type="col"/>
                     <field name="id" type="measure" operator="count"/>
-
                 </graph>
             </field>
         </record>

@@ -235,7 +235,7 @@
         </record>
         <record id="answerQ4_physics_i_1_a" model="python_odoo8_module.answer">
             <field name="question_id" ref="question4_physics_i_1"/>
-            <field name="response">F = m * a</field>s
+            <field name="response">F = m * a</field>
             <field name="correct">True</field>
             <field name="point">20</field>
         </record>

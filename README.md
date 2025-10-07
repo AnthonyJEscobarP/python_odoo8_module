@@ -6,9 +6,10 @@ Un módulo desarrollado para **Odoo 8** que centraliza y optimiza la administrac
 
 Este sistema proporciona un entorno **escalable, seguro y adaptable**, con reportes PDF personalizados, vistas dinámicas y control de accesos por roles, garantizando un flujo de información claro y confiable dentro de la institución.  
 
-## 📱MODULO IMPLEMENTADO
-### [**URL ODOO8**]:(**http://64.181.217.115/web**)
-  - **PARA ACCESO AL SERVIDOR/ODOO WEB, SOLICITAR CREDENCIALES AL DESARROLLADOR*
+## 📱MODULO IMPLEMENTADO - ODOO8
+ - 🌐 **URL DB:** [**AE_TECH_SCHOOL**](http://64.181.217.115/web)
+  - ‼️🔐 **PARA ACCESO A LA BASE DE DATOS DEL SERVIDOR/ODOO WEB, SOLICITAR CREDENCIALES AL DESARROLLADOR**
+
 ---
 
 ## ⚙️ Sistema de Gestión Académica Completa
@@ -215,16 +216,14 @@ python_odoo8_module/
 ---
 
 ## 💡Autoria
-  - **Modulo Administracion Estudiantil v1.1.2** bajo **AE-Solutions** 🏷️
-  ---
+- **Modulo Administracion Estudiantil v1.1.2** bajo **AE-Solutions** 🏷️
+- ### 📝 **Licencia**
+  - **MIT License**
+
 ### 🤖 Programador: 
   - **Anthony Josue Escobar Ponce**
   - 👀 **Portafolio Web:** [**CONOCE MAS SOBRE MI**](https://ae--technologies.web.app/index.html)  
-  - 🔎 **LinkedIn:** [**Trabajemos juntos**](https://www.linkedin.com/in/anthony-josu%C3%A9-escobar-ponce-71004437b/) 
+  - 🔎 **LinkedIn:** [**TRABAJA CONMIGO**](https://www.linkedin.com/in/anthony-josu%C3%A9-escobar-ponce-71004437b/) 
   ---
 ### 💡 **Contacto directo:**
-  - **anthonyescobarponce@Outlook.com** / [**Click aqui**](https://ae--technologies.web.app/pages/contact.html)
-  ---
-### 📝 **Licencia**
-  - **MIT License**
-  ---
+  - 📭 **anthonyescobarponce@Outlook.com** / 📨 [**CLICK AQUI**](https://ae--technologies.web.app/pages/contact.html)

@@ -47,6 +47,20 @@
             </field>
         </record>
 
+        <record id="schedule_graph_view" model="ir.ui.view">
+            <field name="name">schedule.graph_view</field>
+            <field name="model">python_odoo8_module.schedule</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="Estudiantes por Día" type="bar">
+                    <field name="day" type="row"/>
+                    <field name="classroom_id" type="col"/>
+                    <field name="student_ids" type="measure" operator="count"/>
+                </graph>
+            </field>
+        </record>
+
+
         <record id="schedule_search_view" model="ir.ui.view">
             <field name="name">schedule.search_view</field>
             <field name="model">python_odoo8_module.schedule</field>

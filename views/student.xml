@@ -55,6 +55,21 @@
             </field>
         </record>
 
+        <record id="student_graph_view" model="ir.ui.view">
+            <field name="name">student.graph_view</field>
+            <field name="model">python_odoo8_module.student</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="Estudiantes" type="bar">
+                    <field name="create_date" type="row" interval="month"/>
+                    <field name="grade" type="col"/>
+                    <field name="section" type="col"/>
+                    <field name="id" type="measure" operator="count"/>
+
+                </graph>
+            </field>
+        </record>
+
         <record id="student_search_view" model="ir.ui.view">
             <field name="name">student.search_view</field>
             <field name="model">python_odoo8_module.student</field>

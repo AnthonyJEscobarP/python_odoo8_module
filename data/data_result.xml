@@ -1,74 +1,1757 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data noupdate="1">
-        <!-- RESULTADOS DE EXÁMENES: MATEMÁTICAS I -->
-        <record id="result_math_i_castiel" model="python_odoo8_module.result">
+        <!-- RESULTADOS DE EXÁMENES: MATEMÁTICAS I 1 -->
+        <!-- Castiel: 100 puntos (todas correctas) -->
+        <record id="result_math_i_1_castiel" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_math_i_1"/>
             <field name="student_id" ref="student_castiel_novak"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_1_a'), ref('answer_math_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
         </record>
-        <record id="result_math_i_bobby" model="python_odoo8_module.result">
+
+        <!-- Bobby: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_i_1_bobby" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_math_i_1"/>
             <field name="student_id" ref="student_bobby_singer"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_1_a'), ref('answer_math_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_b') 
+            ])]"/>
+            <field name="score">80</field>
         </record>
-        <record id="result_math_i_crowley" model="python_odoo8_module.result">
+
+        <!-- Crowley: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_i_1_crowley" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_math_i_1"/>
             <field name="student_id" ref="student_crowley_macleod"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_math_i_1_a'), ref('answer_math_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_a'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_a'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
         </record>
+
+        <!-- Rebekah: 100 puntos (todas correctas) -->
+        <record id="result_math_i_1_rebekah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_rebekah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Marcel: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_i_1_marcel" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_marcel_gerard"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_b'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Hayley: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_i_1_hayley" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_hayley_marshall"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_a'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_a'),
+                ref('answerQ5_math_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Rick: 100 puntos (todas correctas) -->
+        <record id="result_math_i_1_rick" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_rick_grimes"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Daryl: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_math_i_1_daryl" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_daryl_dixon"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_b'),
+                ref('answerQ2_math_i_1_a'),
+                ref('answerQ3_math_i_1_b'),
+                ref('answerQ4_math_i_1_a'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Michonne: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_i_1_michonne" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_michonne_hawthorne"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_a'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Gabriela: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_i_1_gabriela" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_gabriela_torres"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_b'),
+                ref('answerQ4_math_i_1_a'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Oscar: 100 puntos (todas correctas) -->
+        <record id="result_math_i_1_oscar" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_oscar_delgado"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Andrea: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_i_1_andrea" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_andrea_navarro"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_a'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Diana: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_i_1_diana" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_diana_contreras"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_b'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_a'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Ernesto: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_math_i_1_ernesto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_ernesto_salinas"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_a'),
+                ref('answerQ3_math_i_1_b'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_b')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Gloria: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_i_1_gloria" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_gloria_miranda"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_b'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Humberto: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_i_1_humberto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_humberto_vega"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_a'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Inés: 100 puntos (todas correctas) -->
+        <record id="result_math_i_1_ines" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_1"/>
+            <field name="student_id" ref="student_ines_campos"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_1_a'),
+                ref('answerQ2_math_i_1_b'),
+                ref('answerQ3_math_i_1_a'),
+                ref('answerQ4_math_i_1_b'),
+                ref('answerQ5_math_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+
+        <!-- RESULTADOS DE EXÁMENES: MATEMÁTICAS I 2 -->
+        <!-- Castiel: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_i_2_castiel" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_2"/>
+            <field name="student_id" ref="student_castiel_novak"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_2_a'),
+                ref('answerQ2_math_i_2_b'),
+                ref('answerQ3_math_i_2_a'),
+                ref('answerQ4_math_i_2_a'),
+                ref('answerQ5_math_i_2_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Bobby: 100 puntos (5 correctas) -->
+        <record id="result_math_i_2_bobby" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_2"/>
+            <field name="student_id" ref="student_bobby_singer"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_2_a'),
+                ref('answerQ2_math_i_2_a'),
+                ref('answerQ3_math_i_2_b'),
+                ref('answerQ4_math_i_2_a'),
+                ref('answerQ5_math_i_2_b')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Crowley: 40 puntos (2 correctas, 3 incorrecta) -->
+        <record id="result_math_i_2_crowley" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_i_2"/>
+            <field name="student_id" ref="student_crowley_macleod"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_i_2_b'),
+                ref('answerQ2_math_i_2_b'),
+                ref('answerQ3_math_i_2_a'),
+                ref('answerQ4_math_i_2_b'),
+                ref('answerQ5_math_i_2_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
 
         <!-- RESULTADOS DE EXÁMENES: FÍSICA I -->
-        <record id="result_physics_i_rebekah" model="python_odoo8_module.result">
+        <!-- Rebekah: 100 puntos (5 correctas) -->
+        <record id="result_physics_i_1_rebekah" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_physics_i_1"/>
             <field name="student_id" ref="student_rebekah_mikaelson"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_1_a'), ref('answer_physics_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
         </record>
-        <record id="result_physics_i_marcel" model="python_odoo8_module.result">
+
+        <!-- Marcel: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_i_1_marcel" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_physics_i_1"/>
             <field name="student_id" ref="student_marcel_gerard"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_1_a'), ref('answer_physics_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_b')
+            ])]"/>
+            <field name="score">80</field>
         </record>
-        <record id="result_physics_i_hayley" model="python_odoo8_module.result">
+
+        <!-- Hayley: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_physics_i_1_hayley" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_physics_i_1"/>
             <field name="student_id" ref="student_hayley_marshall"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_physics_i_1_a'), ref('answer_physics_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_b'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
         </record>
 
-        <!-- RESULTADOS: QUÍMICA I -->
-        <record id="result_chemistry_i_rick" model="python_odoo8_module.result">
+        <!-- Castiel: 100 puntos (todas correctas) -->
+        <record id="result_physics_i_1_castiel" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_castiel_novak"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Bobby: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_i_1_bobby" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_bobby_singer"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Crowley: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_physics_i_1_crowley" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_crowley_macleod"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_b'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Rick: 100 puntos (todas correctas) -->
+        <record id="result_physics_i_1_rick" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_rick_grimes"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Daryl: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_physics_i_1_daryl" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_daryl_dixon"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_b'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_b'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Michonne: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_i_1_michonne" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_michonne_hawthorne"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_b'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Gabriela: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_physics_i_1_gabriela" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_gabriela_torres"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_b'),
+                ref('answerQ3_physics_i_1_b'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Oscar: 100 puntos (todas correctas) -->
+        <record id="result_physics_i_1_oscar" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_oscar_delgado"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Andrea: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_i_1_andrea" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_andrea_navarro"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_b'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Diana: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_physics_i_1_diana" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_diana_contreras"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_b'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Ernesto: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_physics_i_1_ernesto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_ernesto_salinas"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_b'),
+                ref('answerQ3_physics_i_1_b'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Gloria: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_i_1_gloria" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_gloria_miranda"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_b'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Humberto: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_physics_i_1_humberto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_humberto_vega"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_b'),
+                ref('answerQ4_physics_i_1_b'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Inés: 100 puntos (todas correctas) -->
+        <record id="result_physics_i_1_ines" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_i_1"/>
+            <field name="student_id" ref="student_ines_campos"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_i_1_a'),
+                ref('answerQ2_physics_i_1_a'),
+                ref('answerQ3_physics_i_1_a'),
+                ref('answerQ4_physics_i_1_a'),
+                ref('answerQ5_physics_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- RESULTADOS DE EXÁMENES: QUÍMICA I -->
+        <!-- Rick: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_i_1_rick" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_chemistry_i_1"/>
             <field name="student_id" ref="student_rick_grimes"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_chemistry_i_1_a'), ref('answer_chemistry_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_b')
+            ])]"/>
+            <field name="score">80</field>
         </record>
-        <record id="result_chemistry_i_daryl" model="python_odoo8_module.result">
+
+        <!-- Daryl: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_i_1_daryl" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_chemistry_i_1"/>
             <field name="student_id" ref="student_daryl_dixon"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_chemistry_i_1_a'), ref('answer_chemistry_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_b'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_b'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
         </record>
 
-        <!-- RESULTADOS: BIOLOGÍA I -->
-        <record id="result_biology_i_dean" model="python_odoo8_module.result">
+        <!-- Castiel: 100 puntos (todas correctas) -->
+        <record id="result_chemistry_i_1_castiel" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_castiel_novak"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Bobby: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_i_1_bobby" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_bobby_singer"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_b'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Crowley: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_i_1_crowley" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_crowley_macleod"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_b'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_b'),
+                ref('answerQ5_chemistry_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Rebekah: 100 puntos (todas correctas) -->
+        <record id="result_chemistry_i_1_rebekah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_rebekah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Marcel: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_i_1_marcel" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_marcel_gerard"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_b'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Hayley: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_i_1_hayley" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_hayley_marshall"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_b'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_b'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Michonne: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_i_1_michonne" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_michonne_hawthorne"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_b'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Gabriela: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_i_1_gabriela" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_gabriela_torres"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_b'),
+                ref('answerQ3_chemistry_i_1_b'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Oscar: 100 puntos (todas correctas) -->
+        <record id="result_chemistry_i_1_oscar" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_oscar_delgado"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Andrea: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_i_1_andrea" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_andrea_navarro"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_b'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Diana: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_i_1_diana" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_diana_contreras"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_b'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_b'),
+                ref('answerQ5_chemistry_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Ernesto: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_chemistry_i_1_ernesto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_ernesto_salinas"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_b'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_b'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_b')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Gloria: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_i_1_gloria" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_gloria_miranda"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_b'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Humberto: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_i_1_humberto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_humberto_vega"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_b'),
+                ref('answerQ4_chemistry_i_1_b'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Inés: 100 puntos (todas correctas) -->
+        <record id="result_chemistry_i_1_ines" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="student_id" ref="student_ines_campos"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_i_1_a'),
+                ref('answerQ2_chemistry_i_1_a'),
+                ref('answerQ3_chemistry_i_1_a'),
+                ref('answerQ4_chemistry_i_1_a'),
+                ref('answerQ5_chemistry_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+
+        <!-- RESULTADOS DE EXÁMENES: BIOLOGÍA I -->
+        <!-- Dean: 100 puntos (5 correctas) -->
+        <record id="result_biology_i_1_dean" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_biology_i_1"/>
             <field name="student_id" ref="student_dean_winchester"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_biology_i_1_a'), ref('answer_biology_i_1_b')])]"/>
-        </record>
-        <record id="result_biology_i_sam" model="python_odoo8_module.result">
-            <field name="exam_id" ref="exam_biology_i_1"/>
-            <field name="student_id" ref="student_sam_winchester"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_biology_i_1_a'), ref('answer_biology_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
         </record>
 
-        <!-- RESULTADOS: HISTORIA I -->
-        <record id="result_history_i_elijah" model="python_odoo8_module.result">
+        <!-- Sam: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_i_1_sam" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_sam_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_b')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Klaus: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_biology_i_1_klaus" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_klaus_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_b'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Elijah: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_i_1_elijah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_elijah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Carol: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_biology_i_1_carol" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_carol_peletier"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_b'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_b'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_b')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Glenn: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_biology_i_1_glenn" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_glenn_rhee"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_b'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Gabriela: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_i_1_gabriela" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_gabriela_torres"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Oscar: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_biology_i_1_oscar" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_oscar_delgado"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_b'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Andrea: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_biology_i_1_andrea" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_andrea_navarro"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_b'),
+                ref('answerQ2_biology_i_1_b'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Diana: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_i_1_diana" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_diana_contreras"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_b'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Ernesto: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_biology_i_1_ernesto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_ernesto_salinas"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_b'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Gloria: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_biology_i_1_gloria" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_gloria_miranda"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_b'),
+                ref('answerQ2_biology_i_1_b'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Humberto: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_i_1_humberto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_humberto_vega"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_b'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Inés: 100 puntos (5 correctas) -->
+        <record id="result_biology_i_1_ines" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="student_id" ref="student_ines_campos"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_i_1_a'),
+                ref('answerQ2_biology_i_1_a'),
+                ref('answerQ3_biology_i_1_a'),
+                ref('answerQ4_biology_i_1_a'),
+                ref('answerQ5_biology_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- RESULTADOS DE EXÁMENES: HISTORIA I -->
+        <!-- Elijah: 100 puntos (5 correctas) -->
+        <record id="result_history_i_1_elijah" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_history_i_1"/>
             <field name="student_id" ref="student_elijah_mikaelson"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_history_i_1_a'), ref('answer_history_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
         </record>
-        <record id="result_history_i_klaus" model="python_odoo8_module.result">
+
+        <!-- Klaus: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_history_i_1_klaus" model="python_odoo8_module.result">
             <field name="exam_id" ref="exam_history_i_1"/>
             <field name="student_id" ref="student_klaus_mikaelson"/>
-            <field name="answer_ids" eval="[(6,0,[ref('answer_history_i_1_a'), ref('answer_history_i_1_b')])]"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_b'),
+                ref('answerQ3_history_i_1_b'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
         </record>
+
+        <!-- Dean: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_history_i_1_dean" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_dean_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_b')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Sam: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_history_i_1_sam" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_sam_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_b'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Carol: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_history_i_1_carol" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_carol_peletier"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_b'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Glenn: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_history_i_1_glenn" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_glenn_rhee"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_b'),
+                ref('answerQ2_history_i_1_b'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_b')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Gabriela: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_history_i_1_gabriela" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_gabriela_torres"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Oscar: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_history_i_1_oscar" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_oscar_delgado"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_b'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Andrea: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_history_i_1_andrea" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_andrea_navarro"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_b')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Diana: 100 puntos (5 correctas) -->
+        <record id="result_history_i_1_diana" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_diana_contreras"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Ernesto: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_history_i_1_ernesto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_ernesto_salinas"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_b'),
+                ref('answerQ3_history_i_1_b'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Gloria: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_history_i_1_gloria" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_gloria_miranda"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_b'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_b')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Humberto: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_history_i_1_humberto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_humberto_vega"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_b'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Inés: 100 puntos (5 correctas) -->
+        <record id="result_history_i_1_ines" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="student_id" ref="student_ines_campos"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_i_1_a'),
+                ref('answerQ2_history_i_1_a'),
+                ref('answerQ3_history_i_1_a'),
+                ref('answerQ4_history_i_1_a'),
+                ref('answerQ5_history_i_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- RESULTADOS DE EXÁMENES: MATEMÁTICAS II -->
+        <!-- Dean: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_ii_1_dean" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_dean_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Sam: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_ii_1_sam" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_sam_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_b'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Klaus: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_math_ii_1_klaus" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_klaus_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_b'),
+                ref('answerQ2_math_ii_1_b'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Elijah: 100 puntos (5 correctas) -->
+        <record id="result_math_ii_1_elijah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_elijah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Carol: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_ii_1_carol" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_carol_peletier"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_b'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Glenn: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_ii_1_glenn" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_glenn_rhee"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Javier: 100 puntos (5 correctas) -->
+        <record id="result_math_ii_1_javier" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_javier_medina"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Paola: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_ii_1_paola" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_paola_guerra"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_b'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_b'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Raúl: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_math_ii_1_raul" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_raul_flores"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_b'),
+                ref('answerQ3_math_ii_1_b'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Marcos: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_ii_1_marcos" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_marcos_herrera"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_b')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Octavio: 100 puntos (5 correctas) -->
+        <record id="result_math_ii_1_octavio" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_octavio_reyes"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Patricia: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_ii_1_patricia" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_patricia_lara"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_b'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Ramón: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_ii_1_ramon" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_ramon_orozco"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Sandra: 100 puntos (5 correctas) -->
+        <record id="result_math_ii_1_sandra" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_sandra_mendez"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Mónica: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_math_ii_1_monica" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_monica_arias"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_b'),
+                ref('answerQ2_math_ii_1_b'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Roberto: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_ii_1_roberto" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_roberto_miranda"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_b')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Verónica: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_ii_1_veronica" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_veronica_cordoba"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_b'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Tomás: 100 puntos (5 correctas) -->
+        <record id="result_math_ii_1_tomas" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_tomas_gil"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Úrsula: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_math_ii_1_ursula" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_ursula_romero"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_b'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Víctor: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_math_ii_1_victor" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_victor_soto"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_b'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_b'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Wendy: 100 puntos (5 correctas) -->
+        <record id="result_math_ii_1_wendy" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_wendy_nunez"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_a'),
+                ref('answerQ2_math_ii_1_a'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_a'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Ximena: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_math_ii_1_ximena" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="student_id" ref="student_ximena_paredes"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_math_ii_1_b'),
+                ref('answerQ2_math_ii_1_b'),
+                ref('answerQ3_math_ii_1_a'),
+                ref('answerQ4_math_ii_1_b'),
+                ref('answerQ5_math_ii_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- RESULTADOS DE EXÁMENES: PHYSICS II -->
+        <!-- Dean: 100 puntos (5 correctas) -->
+        <record id="result_physics_ii_1_dean" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="student_id" ref="student_dean_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_ii_1_a'),
+                ref('answerQ2_physics_ii_1_a'),
+                ref('answerQ3_physics_ii_1_a'),
+                ref('answerQ4_physics_ii_1_a'),
+                ref('answerQ5_physics_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Sam: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_ii_1_sam" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="student_id" ref="student_sam_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_ii_1_a'),
+                ref('answerQ2_physics_ii_1_a'),
+                ref('answerQ3_physics_ii_1_b'),
+                ref('answerQ4_physics_ii_1_a'),
+                ref('answerQ5_physics_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Klaus: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_physics_ii_1_klaus" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="student_id" ref="student_klaus_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_ii_1_a'),
+                ref('answerQ2_physics_ii_1_b'),
+                ref('answerQ3_physics_ii_1_a'),
+                ref('answerQ4_physics_ii_1_b'),
+                ref('answerQ5_physics_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Elijah: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_physics_ii_1_elijah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="student_id" ref="student_elijah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_ii_1_b'),
+                ref('answerQ2_physics_ii_1_a'),
+                ref('answerQ3_physics_ii_1_b'),
+                ref('answerQ4_physics_ii_1_b'),
+                ref('answerQ5_physics_ii_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Carol: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_physics_ii_1_carol" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="student_id" ref="student_carol_peletier"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_physics_ii_1_a'),
+                ref('answerQ2_physics_ii_1_a'),
+                ref('answerQ3_physics_ii_1_a'),
+                ref('answerQ4_physics_ii_1_b'),
+                ref('answerQ5_physics_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- RESULTADOS DE EXÁMENES: CHEMISTRY II -->
+        <!-- Dean: 100 puntos (5 correctas) -->
+        <record id="result_chemistry_ii_1_dean" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="student_id" ref="student_dean_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_ii_1_a'),
+                ref('answerQ2_chemistry_ii_1_a'),
+                ref('answerQ3_chemistry_ii_1_a'),
+                ref('answerQ4_chemistry_ii_1_a'),
+                ref('answerQ5_chemistry_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Sam: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_chemistry_ii_1_sam" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="student_id" ref="student_sam_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_ii_1_a'),
+                ref('answerQ2_chemistry_ii_1_b'),
+                ref('answerQ3_chemistry_ii_1_a'),
+                ref('answerQ4_chemistry_ii_1_a'),
+                ref('answerQ5_chemistry_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Klaus: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_ii_1_klaus" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="student_id" ref="student_klaus_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_ii_1_b'),
+                ref('answerQ2_chemistry_ii_1_a'),
+                ref('answerQ3_chemistry_ii_1_a'),
+                ref('answerQ4_chemistry_ii_1_b'),
+                ref('answerQ5_chemistry_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Carol: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_chemistry_ii_1_carol" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="student_id" ref="student_carol_peletier"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_ii_1_b'),
+                ref('answerQ2_chemistry_ii_1_b'),
+                ref('answerQ3_chemistry_ii_1_a'),
+                ref('answerQ4_chemistry_ii_1_a'),
+                ref('answerQ5_chemistry_ii_1_b')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Elijah: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_chemistry_ii_1_elijah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="student_id" ref="student_elijah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_chemistry_ii_1_a'),
+                ref('answerQ2_chemistry_ii_1_b'),
+                ref('answerQ3_chemistry_ii_1_a'),
+                ref('answerQ4_chemistry_ii_1_b'),
+                ref('answerQ5_chemistry_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+
+        <!-- RESULTADOS DE EXÁMENES: BIOLOGY II -->
+        <!-- Dean: 100 puntos (5 correctas) -->
+        <record id="result_biology_ii_1_dean" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="student_id" ref="student_dean_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_ii_1_a'),
+                ref('answerQ2_biology_ii_1_a'),
+                ref('answerQ3_biology_ii_1_a'),
+                ref('answerQ4_biology_ii_1_a'),
+                ref('answerQ5_biology_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Sam: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_ii_1_sam" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="student_id" ref="student_sam_winchester"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_ii_1_a'),
+                ref('answerQ2_biology_ii_1_b'),
+                ref('answerQ3_biology_ii_1_a'),
+                ref('answerQ4_biology_ii_1_a'),
+                ref('answerQ5_biology_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Klaus: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_biology_ii_1_klaus" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="student_id" ref="student_klaus_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_ii_1_b'),
+                ref('answerQ2_biology_ii_1_a'),
+                ref('answerQ3_biology_ii_1_a'),
+                ref('answerQ4_biology_ii_1_b'),
+                ref('answerQ5_biology_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Carol: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_biology_ii_1_carol" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="student_id" ref="student_carol_peletier"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_ii_1_b'),
+                ref('answerQ2_biology_ii_1_b'),
+                ref('answerQ3_biology_ii_1_a'),
+                ref('answerQ4_biology_ii_1_b'),
+                ref('answerQ5_biology_ii_1_b')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Elijah: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_biology_ii_1_elijah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="student_id" ref="student_elijah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_biology_ii_1_a'),
+                ref('answerQ2_biology_ii_1_b'),
+                ref('answerQ3_biology_ii_1_a'),
+                ref('answerQ4_biology_ii_1_a'),
+                ref('answerQ5_biology_ii_1_a')
+            ])]"/>
+            <field name="score">50</field>
+        </record>
+
+
+        <!-- RESULTADOS DE EXÁMENES: HISTORY II -->
+        <!-- Castiel: 100 puntos (5 correctas) -->
+        <record id="result_history_ii_1_castiel" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="student_id" ref="student_castiel_novak"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_ii_1_a'),
+                ref('answerQ2_history_ii_1_a'),
+                ref('answerQ3_history_ii_1_a'),
+                ref('answerQ4_history_ii_1_a'),
+                ref('answerQ5_history_ii_1_a')
+            ])]"/>
+            <field name="score">100</field>
+        </record>
+
+        <!-- Bobby: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_history_ii_1_bobby" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="student_id" ref="student_bobby_singer"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_ii_1_a'),
+                ref('answerQ2_history_ii_1_b'),
+                ref('answerQ3_history_ii_1_a'),
+                ref('answerQ4_history_ii_1_a'),
+                ref('answerQ5_history_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
+        <!-- Rebekah: 60 puntos (3 correctas, 2 incorrectas) -->
+        <record id="result_history_ii_1_rebekah" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="student_id" ref="student_rebekah_mikaelson"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_ii_1_b'),
+                ref('answerQ2_history_ii_1_a'),
+                ref('answerQ3_history_ii_1_a'),
+                ref('answerQ4_history_ii_1_b'),
+                ref('answerQ5_history_ii_1_a')
+            ])]"/>
+            <field name="score">60</field>
+        </record>
+
+        <!-- Rick: 40 puntos (2 correctas, 3 incorrectas) -->
+        <record id="result_history_ii_1_rick" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="student_id" ref="student_rick_grimes"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_ii_1_b'),
+                ref('answerQ2_history_ii_1_a'),
+                ref('answerQ3_history_ii_1_b'),
+                ref('answerQ4_history_ii_1_b'),
+                ref('answerQ5_history_ii_1_a')
+            ])]"/>
+            <field name="score">40</field>
+        </record>
+
+        <!-- Michonne: 80 puntos (4 correctas, 1 incorrecta) -->
+        <record id="result_history_ii_1_michonne" model="python_odoo8_module.result">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="student_id" ref="student_michonne_hawthorne"/>
+            <field name="answer_ids" eval="[(6,0,[
+                ref('answerQ1_history_ii_1_a'),
+                ref('answerQ2_history_ii_1_a'),
+                ref('answerQ3_history_ii_1_a'),
+                ref('answerQ4_history_ii_1_b'),
+                ref('answerQ5_history_ii_1_a')
+            ])]"/>
+            <field name="score">80</field>
+        </record>
+
     </data>
 </openerp>

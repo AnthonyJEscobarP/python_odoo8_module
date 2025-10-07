@@ -48,6 +48,20 @@
             </field>
         </record>
 
+        <record id="teacher_graph_view" model="ir.ui.view">
+            <field name="name">teacher.graph_view</field>
+            <field name="model">python_odoo8_module.teacher</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="Maestros" type="bar">
+                    <field name="create_date" type="row" interval="month"/>
+                    <field name="age" type="col"/>
+                    <field name="id" type="measure" operator="count"/>
+                </graph>
+            </field>
+        </record>
+
+
         <record id="teacher_search_view" model="ir.ui.view">
             <field name="name">teacher.search_view</field>
             <field name="model">python_odoo8_module.teacher</field>

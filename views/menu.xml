@@ -6,7 +6,7 @@
             <field name="name">Estudiantes - Administrador</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.student_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.student_search_view"/>
             <field name="target">current</field>
@@ -17,7 +17,7 @@
             <field name="name">Estudiantes - Profesor</field>
             <field name="res_model">python_odoo8_module.student</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.student_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.student_search_view"/>
             <field name="target">current</field>
@@ -38,7 +38,7 @@
             <field name="name">Profesores - Administrador</field>
             <field name="res_model">python_odoo8_module.teacher</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.teacher_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.teacher_search_view"/>
             <field name="target">current</field>
@@ -59,7 +59,7 @@
             <field name="name">Materias - Administrador</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.subject_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.subject_search_view"/>
             <field name="target">current</field>
@@ -70,7 +70,7 @@
             <field name="name">Materias - Profesor</field>
             <field name="res_model">python_odoo8_module.subject</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.subject_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.subject_search_view"/>
             <field name="target">current</field>
@@ -92,7 +92,7 @@
             <field name="name">Aulas - Administrador</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.classroom_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.classroom_search_view"/>
             <field name="target">current</field>
@@ -103,7 +103,7 @@
             <field name="name">Aulas - Profesor</field>
             <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.classroom_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.classroom_search_view"/>
             <field name="target">current</field>
@@ -125,7 +125,7 @@
             <field name="name">Horarios - Administrador</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.schedule_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.schedule_search_view"/>
             <field name="target">current</field>
@@ -136,7 +136,7 @@
             <field name="name">Horarios - Profesor</field>
             <field name="res_model">python_odoo8_module.schedule</field>
             <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="view_id" ref="python_odoo8_module.schedule_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.schedule_search_view"/>
             <field name="target">current</field>
@@ -193,6 +193,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
+            <field name="context">{'edit': True,'create': False,'delete': True}</field>
             <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
             <field name="target">current</field>
         </record>
@@ -204,6 +205,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
+            <field name="context">{'edit': True,'create': False,'delete': True}</field>
             <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
             <field name="target">current</field>
         </record>
@@ -216,7 +218,6 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="python_odoo8_module.result_tree_view"/>
             <field name="search_view_id" ref="python_odoo8_module.result_search_view"/>
-            <field name="context">{'create': False,'delete': False,'edit': False}</field>
             <field name="target">current</field>
         </record>
 
@@ -241,19 +242,19 @@
         <!-- MENUS: MAESTRO - PROFESOR -->
         <menuitem id="primary_menu_teacher" name="Portal Academico" sequence="2" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_student_teacher" name="Manejo | Estudiantes" parent="primary_menu_teacher"/>
-        <menuitem id="submenu_student_teacher_item" name="Mis Estudiantes" parent="submenu_student_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_student_teacher_item" name="Estudiantes" parent="submenu_student_teacher" action="student_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_teacher_teacher" name="Manejo | Profesor" parent="primary_menu_teacher"/>
         <menuitem id="submenu_teacher_teacher_item" name="Mi Informacion" parent="submenu_teacher_teacher" action="teacher_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_subject_teacher" name="Manejo | Materia" parent="primary_menu_teacher"/>
-        <menuitem id="submenu_subject_teacher_item" name="Mi Materia" parent="submenu_subject_teacher" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_subject_teacher_item" name="Materias" parent="submenu_subject_teacher" action="subject_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_classroom_teacher" name="Manejo | Aulas" parent="primary_menu_teacher"/>
-        <menuitem id="submenu_classroom_teacher_item" name="Mis Aulas" parent="submenu_classroom_teacher" action="classroom_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_classroom_teacher_item" name="Aulas" parent="submenu_classroom_teacher" action="classroom_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_schedule_teacher" name="Manejo | Horarios" parent="primary_menu_teacher"/>
-        <menuitem id="submenu_schedule_teacher_item" name="Mis horarios" parent="submenu_schedule_teacher" action="schedule_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_schedule_teacher_item" name="Calendario" parent="submenu_schedule_teacher" action="schedule_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_exam_teacher" name="Manejo | Exámenes" parent="primary_menu_teacher"/>
         <menuitem id="submenu_exam_teacher_item" name="Mis Examenes" parent="submenu_exam_teacher" action="exam_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
         <menuitem id="submenu_result_teacher" name="Manejo | Resultados" parent="primary_menu_teacher"/>
-        <menuitem id="submenu_result_teacher_item" name="Resultados" parent="submenu_result_teacher" action="result_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
+        <menuitem id="submenu_result_teacher_item" name="Resultados de examenes" parent="submenu_result_teacher" action="result_actions_teacher" groups="python_odoo8_module.teacher_role_group"/>
 
         <!-- MENUS: ESTUDIANTE -->
         <menuitem id="primary_menu_student" name="Portal Estudiantil" sequence="3" groups="python_odoo8_module.student_role_group"/>

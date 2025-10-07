@@ -17,4 +17,4 @@ class Answer(models.Model):
     )
     
     correct = fields.Boolean('validacion', default=False)
-    point = fields.Integer('Puntos', default=1)
+    point = fields.Integer('Puntos', default=0)

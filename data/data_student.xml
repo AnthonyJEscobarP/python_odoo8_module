@@ -135,5 +135,518 @@
             <field name="grade">3d</field>
             <field name="section">C</field>
         </record>
+
+        <record id="student_sofia_martinez" model="python_odoo8_module.student">
+            <field name="name">Sofía Martínez</field>
+            <field name="age">7</field>
+            <field name="card">2025016</field>
+            <field name="email">sofiaMartinez@gmail.com</field>
+            <field name="grade">1p</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_diego_hernandez" model="python_odoo8_module.student">
+            <field name="name">Diego Hernández</field>
+            <field name="age">7</field>
+            <field name="card">2025017</field>
+            <field name="email">diegoHernandez@gmail.com</field>
+            <field name="grade">1p</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_valentina_lopez" model="python_odoo8_module.student">
+            <field name="name">Valentina López</field>
+            <field name="age">8</field>
+            <field name="card">2025018</field>
+            <field name="email">valentinaLopez@gmail.com</field>
+            <field name="grade">1p</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_alejandro_garcia" model="python_odoo8_module.student">
+            <field name="name">Alejandro García</field>
+            <field name="age">10</field>
+            <field name="card">2025019</field>
+            <field name="email">alejandroGarcia@gmail.com</field>
+            <field name="grade">4p</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_isabella_rodriguez" model="python_odoo8_module.student">
+            <field name="name">Isabella Rodríguez</field>
+            <field name="age">10</field>
+            <field name="card">2025020</field>
+            <field name="email">isabellaRodriguez@gmail.com</field>
+            <field name="grade">4p</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_mateo_gonzalez" model="python_odoo8_module.student">
+            <field name="name">Mateo González</field>
+            <field name="age">11</field>
+            <field name="card">2025021</field>
+            <field name="email">mateoGonzalez@gmail.com</field>
+            <field name="grade">5p</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_lucia_ramirez" model="python_odoo8_module.student">
+            <field name="name">Lucía Ramírez</field>
+            <field name="age">12</field>
+            <field name="card">2025022</field>
+            <field name="email">luciaRamirez@gmail.com</field>
+            <field name="grade">5p</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_adrian_morales" model="python_odoo8_module.student">
+            <field name="name">Adrián Morales</field>
+            <field name="age">13</field>
+            <field name="card">2025023</field>
+            <field name="email">adrianMorales@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_camila_vargas" model="python_odoo8_module.student">
+            <field name="name">Camila Vargas</field>
+            <field name="age">14</field>
+            <field name="card">2025024</field>
+            <field name="email">camilaVargas@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_sebastian_castro" model="python_odoo8_module.student">
+            <field name="name">Sebastián Castro</field>
+            <field name="age">13</field>
+            <field name="card">2025025</field>
+            <field name="email">sebastianCastro@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_emilia_ruiz" model="python_odoo8_module.student">
+            <field name="name">Emilia Ruiz</field>
+            <field name="age">14</field>
+            <field name="card">2025026</field>
+            <field name="email">emiliaRuiz@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_daniel_ortiz" model="python_odoo8_module.student">
+            <field name="name">Daniel Ortiz</field>
+            <field name="age">15</field>
+            <field name="card">2025027</field>
+            <field name="email">danielOrtiz@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_valeria_mendoza" model="python_odoo8_module.student">
+            <field name="name">Valeria Mendoza</field>
+            <field name="age">14</field>
+            <field name="card">2025028</field>
+            <field name="email">valeriaMendoza@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_fernando_silva" model="python_odoo8_module.student">
+            <field name="name">Fernando Silva</field>
+            <field name="age">15</field>
+            <field name="card">2025029</field>
+            <field name="email">fernandoSilva@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_mariana_rios" model="python_odoo8_module.student">
+            <field name="name">Mariana Ríos</field>
+            <field name="age">16</field>
+            <field name="card">2025030</field>
+            <field name="email">marianaRios@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_ricardo_mejia" model="python_odoo8_module.student">
+            <field name="name">Ricardo Mejía</field>
+            <field name="age">15</field>
+            <field name="card">2025031</field>
+            <field name="email">ricardoMejia@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_gabriela_torres" model="python_odoo8_module.student">
+            <field name="name">Gabriela Torres</field>
+            <field name="age">16</field>
+            <field name="card">2025032</field>
+            <field name="email">gabrielaTorres@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_oscar_delgado" model="python_odoo8_module.student">
+            <field name="name">Óscar Delgado</field>
+            <field name="age">17</field>
+            <field name="card">2025033</field>
+            <field name="email">oscarDelgado@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_andrea_navarro" model="python_odoo8_module.student">
+            <field name="name">Andrea Navarro</field>
+            <field name="age">16</field>
+            <field name="card">2025034</field>
+            <field name="email">andreaNavarro@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_javier_medina" model="python_odoo8_module.student">
+            <field name="name">Javier Medina</field>
+            <field name="age">17</field>
+            <field name="card">2025035</field>
+            <field name="email">javierMedina@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_paola_guerra" model="python_odoo8_module.student">
+            <field name="name">Paola Guerra</field>
+            <field name="age">18</field>
+            <field name="card">2025036</field>
+            <field name="email">paolaGuerra@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_raul_flores" model="python_odoo8_module.student">
+            <field name="name">Raúl Flores</field>
+            <field name="age">17</field>
+            <field name="card">2025037</field>
+            <field name="email">raulFlores@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_monica_arias" model="python_odoo8_module.student">
+            <field name="name">Mónica Arias</field>
+            <field name="age">18</field>
+            <field name="card">2025038</field>
+            <field name="email">monicaArias@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_roberto_miranda" model="python_odoo8_module.student">
+            <field name="name">Roberto Miranda</field>
+            <field name="age">19</field>
+            <field name="card">2025039</field>
+            <field name="email">robertoMiranda@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_veronica_cordoba" model="python_odoo8_module.student">
+            <field name="name">Verónica Córdoba</field>
+            <field name="age">18</field>
+            <field name="card">2025040</field>
+            <field name="email">veronicaCordoba@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_esteban_paredes" model="python_odoo8_module.student">
+            <field name="name">Esteban Paredes</field>
+            <field name="age">12</field>
+            <field name="card">2025041</field>
+            <field name="email">estebanParedes@gmail.com</field>
+            <field name="grade">6p</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_natalia_salazar" model="python_odoo8_module.student">
+            <field name="name">Natalia Salazar</field>
+            <field name="age">11</field>
+            <field name="card">2025042</field>
+            <field name="email">nataliaSalazar@gmail.com</field>
+            <field name="grade">5p</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_leonardo_vega" model="python_odoo8_module.student">
+            <field name="name">Leonardo Vega</field>
+            <field name="age">14</field>
+            <field name="card">2025043</field>
+            <field name="email">leonardoVega@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_diana_contreras" model="python_odoo8_module.student">
+            <field name="name">Diana Contreras</field>
+            <field name="age">16</field>
+            <field name="card">2025044</field>
+            <field name="email">dianaContreras@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_marcos_herrera" model="python_odoo8_module.student">
+            <field name="name">Marcos Herrera</field>
+            <field name="age">17</field>
+            <field name="card">2025045</field>
+            <field name="email">marcosHerrera@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_carlos_rivas" model="python_odoo8_module.student">
+            <field name="name">Carlos Rivas</field>
+            <field name="age">13</field>
+            <field name="card">2025046</field>
+            <field name="email">carlosRivas@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_elena_moreno" model="python_odoo8_module.student">
+            <field name="name">Elena Moreno</field>
+            <field name="age">14</field>
+            <field name="card">2025047</field>
+            <field name="email">elenaMoreno@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_pablo_juarez" model="python_odoo8_module.student">
+            <field name="name">Pablo Juárez</field>
+            <field name="age">13</field>
+            <field name="card">2025048</field>
+            <field name="email">pabloJuarez@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_lorena_santos" model="python_odoo8_module.student">
+            <field name="name">Lorena Santos</field>
+            <field name="age">14</field>
+            <field name="card">2025049</field>
+            <field name="email">lorenaSantos@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_antonio_molina" model="python_odoo8_module.student">
+            <field name="name">Antonio Molina</field>
+            <field name="age">13</field>
+            <field name="card">2025050</field>
+            <field name="email">antonioMolina@gmail.com</field>
+            <field name="grade">1b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_beatriz_leon" model="python_odoo8_module.student">
+            <field name="name">Beatriz León</field>
+            <field name="age">15</field>
+            <field name="card">2025051</field>
+            <field name="email">beatrizLeon@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_miguel_aguilar" model="python_odoo8_module.student">
+            <field name="name">Miguel Aguilar</field>
+            <field name="age">14</field>
+            <field name="card">2025052</field>
+            <field name="email">miguelAguilar@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_silvia_perez" model="python_odoo8_module.student">
+            <field name="name">Silvia Pérez</field>
+            <field name="age">15</field>
+            <field name="card">2025053</field>
+            <field name="email">silviaPerez@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_arturo_guzman" model="python_odoo8_module.student">
+            <field name="name">Arturo Guzmán</field>
+            <field name="age">14</field>
+            <field name="card">2025054</field>
+            <field name="email">arturoGuzman@gmail.com</field>
+            <field name="grade">2b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_claudia_vidal" model="python_odoo8_module.student">
+            <field name="name">Claudia Vidal</field>
+            <field name="age">16</field>
+            <field name="card">2025055</field>
+            <field name="email">claudiaVidal@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_eduardo_mendoza" model="python_odoo8_module.student">
+            <field name="name">Eduardo Mendoza</field>
+            <field name="age">15</field>
+            <field name="card">2025056</field>
+            <field name="email">eduardoMendoza@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_rosa_figueroa" model="python_odoo8_module.student">
+            <field name="name">Rosa Figueroa</field>
+            <field name="age">16</field>
+            <field name="card">2025057</field>
+            <field name="email">rosaFigueroa@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_manuel_rios" model="python_odoo8_module.student">
+            <field name="name">Manuel Ríos</field>
+            <field name="age">15</field>
+            <field name="card">2025058</field>
+            <field name="email">manuelRios@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_teresa_cortes" model="python_odoo8_module.student">
+            <field name="name">Teresa Cortés</field>
+            <field name="age">16</field>
+            <field name="card">2025059</field>
+            <field name="email">teresaCortes@gmail.com</field>
+            <field name="grade">3b</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_ernesto_salinas" model="python_odoo8_module.student">
+            <field name="name">Ernesto Salinas</field>
+            <field name="age">17</field>
+            <field name="card">2025060</field>
+            <field name="email">ernestoSalinas@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_gloria_miranda" model="python_odoo8_module.student">
+            <field name="name">Gloria Miranda</field>
+            <field name="age">16</field>
+            <field name="card">2025061</field>
+            <field name="email">gloriaMiranda@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_humberto_vega" model="python_odoo8_module.student">
+            <field name="name">Humberto Vega</field>
+            <field name="age">17</field>
+            <field name="card">2025062</field>
+            <field name="email">humbertoVega@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_ines_campos" model="python_odoo8_module.student">
+            <field name="name">Inés Campos</field>
+            <field name="age">16</field>
+            <field name="card">2025063</field>
+            <field name="email">inesCampos@gmail.com</field>
+            <field name="grade">1d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_octavio_reyes" model="python_odoo8_module.student">
+            <field name="name">Octavio Reyes</field>
+            <field name="age">18</field>
+            <field name="card">2025064</field>
+            <field name="email">octavioReyes@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_patricia_lara" model="python_odoo8_module.student">
+            <field name="name">Patricia Lara</field>
+            <field name="age">17</field>
+            <field name="card">2025065</field>
+            <field name="email">patriciaLara@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_ramon_orozco" model="python_odoo8_module.student">
+            <field name="name">Ramón Orozco</field>
+            <field name="age">18</field>
+            <field name="card">2025066</field>
+            <field name="email">ramonOrozco@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_sandra_mendez" model="python_odoo8_module.student">
+            <field name="name">Sandra Méndez</field>
+            <field name="age">17</field>
+            <field name="card">2025067</field>
+            <field name="email">sandraMendez@gmail.com</field>
+            <field name="grade">2d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_tomas_gil" model="python_odoo8_module.student">
+            <field name="name">Tomás Gil</field>
+            <field name="age">19</field>
+            <field name="card">2025068</field>
+            <field name="email">tomasGil@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_ursula_romero" model="python_odoo8_module.student">
+            <field name="name">Úrsula Romero</field>
+            <field name="age">18</field>
+            <field name="card">2025069</field>
+            <field name="email">ursulaRomero@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">A</field>
+        </record>
+
+        <record id="student_victor_soto" model="python_odoo8_module.student">
+            <field name="name">Víctor Soto</field>
+            <field name="age">19</field>
+            <field name="card">2025070</field>
+            <field name="email">victorSoto@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">B</field>
+        </record>
+
+        <record id="student_wendy_nunez" model="python_odoo8_module.student">
+            <field name="name">Wendy Núñez</field>
+            <field name="age">18</field>
+            <field name="card">2025071</field>
+            <field name="email">wendyNunez@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">C</field>
+        </record>
+
+        <record id="student_ximena_paredes" model="python_odoo8_module.student">
+            <field name="name">Ximena Paredes</field>
+            <field name="age">19</field>
+            <field name="card">2025072</field>
+            <field name="email">ximenaParedes@gmail.com</field>
+            <field name="grade">3d</field>
+            <field name="section">A</field>
+        </record>
     </data>
 </openerp>

@@ -48,6 +48,18 @@
             </field>
         </record>
 
+        <record id="subject_graph_view" model="ir.ui.view">
+            <field name="name">subject.graph_view</field>
+            <field name="model">python_odoo8_module.subject</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="Exámenes por Materia" type="bar">
+                    <field name="name" type="row"/>
+                    <field name="exam_ids" type="measure" operator="count"/>
+                </graph>
+            </field>
+        </record>
+
         <record id="subject_search_view" model="ir.ui.view">
             <field name="name">subject.search_view</field>
             <field name="model">python_odoo8_module.subject</field>

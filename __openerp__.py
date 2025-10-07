@@ -41,4 +41,6 @@
   'external_dependencies': {
         'python': ['reportlab'],
     },
+   'images': ['static/description/AE_Solutions_Logo.png'],
+
 }

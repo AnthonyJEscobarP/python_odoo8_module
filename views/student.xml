@@ -79,14 +79,11 @@
                     <field name="email" string="Correo"/>
                     <field name="grade" string="Grado"/>
                     <field name="section" string="Seccion"/>
-                    <field name="schedule_ids" string="Periodo"/>
                     <filter string="Inscritos" name="with_schedule" domain="[('schedule_ids','!=',False)]"/>
                     <filter string="No Inscritos" name="without_schedule" domain="[('schedule_ids','=',False)]"/>
                     <group expand="0" string="Agrupar Por">
                         <filter string="Grado" context="{'group_by':'grade'}"/>
                         <filter string="Seccion" context="{'group_by':'section'}"/>
-                        <filter string="Periodos" context="{'group_by':'schedule_ids'}"/>
-                        <filter string="Grado y Seccion" context="{'group_by':'grade,section'}"/>
                     </group>
                 </search>
             </field>

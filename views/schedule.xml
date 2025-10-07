@@ -73,9 +73,6 @@
                     <field name="classroom_id" string="Aula"/>
                     <field name="student_ids" string="Estudiantes"/>
 
-                    <filter string="Por Profesor" name="by_teacher" domain="[('teacher_id.user_id', '=', uid)]"/>
-                    <filter string="Por Estudiante" name="by_student" domain="[('student_ids.user_id', '=', uid)]"/>
-
                     <group expand="0" string="Agrupar Por">
                         <filter string="Día" context="{'group_by':'day'}"/>
                         <filter string="Materia" context="{'group_by':'subject_id'}"/>

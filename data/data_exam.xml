@@ -259,695 +259,694 @@
             <field name="question_id" ref="question5_physics_i_1"/>
             <field name="response">Su volumen y densidad</field>
         </record>
-    </record>
 
-    <!-- Examen Química I -->
-    <record id="exam_chemistry_i_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Química I - Elementos y Compuestos</field>
-        <field name="subject_id" ref="subject_chemistry_i"/>
-    </record>
+        <!-- Examen Química I -->
+        <record id="exam_chemistry_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Química I - Elementos y Compuestos</field>
+            <field name="subject_id" ref="subject_chemistry_i"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_chemistry_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_i_1"/>
-        <field name="sentence">El símbolo químico del Oxígeno es:</field>
-    </record>
-    <record id="answerQ1_chemistry_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_chemistry_i_1"/>
-        <field name="response">O</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_chemistry_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_chemistry_i_1"/>
-        <field name="response">Ox</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_chemistry_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="sentence">El símbolo químico del Oxígeno es:</field>
+        </record>
+        <record id="answerQ1_chemistry_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_chemistry_i_1"/>
+            <field name="response">O</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_chemistry_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_chemistry_i_1"/>
+            <field name="response">Ox</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_chemistry_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_i_1"/>
-        <field name="sentence">¿Cuál es el símbolo químico del Hierro?</field>
-    </record>
-    <record id="answerQ2_chemistry_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_chemistry_i_1"/>
-        <field name="response">Fe</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_chemistry_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_chemistry_i_1"/>
-        <field name="response">H</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_chemistry_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="sentence">¿Cuál es el símbolo químico del Hierro?</field>
+        </record>
+        <record id="answerQ2_chemistry_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_chemistry_i_1"/>
+            <field name="response">Fe</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_chemistry_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_chemistry_i_1"/>
+            <field name="response">H</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_chemistry_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_i_1"/>
-        <field name="sentence">El agua tiene la fórmula química:</field>
-    </record>
-    <record id="answerQ3_chemistry_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_chemistry_i_1"/>
-        <field name="response">H₂O</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_chemistry_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_chemistry_i_1"/>
-        <field name="response">CO₂</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_chemistry_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="sentence">El agua tiene la fórmula química:</field>
+        </record>
+        <record id="answerQ3_chemistry_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_chemistry_i_1"/>
+            <field name="response">H₂O</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_chemistry_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_chemistry_i_1"/>
+            <field name="response">CO₂</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_chemistry_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_i_1"/>
-        <field name="sentence">¿Cuál es el pH neutro?</field>
-    </record>
-    <record id="answerQ4_chemistry_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_chemistry_i_1"/>
-        <field name="response">7</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_chemistry_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_chemistry_i_1"/>
-        <field name="response">0</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_chemistry_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="sentence">¿Cuál es el pH neutro?</field>
+        </record>
+        <record id="answerQ4_chemistry_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_chemistry_i_1"/>
+            <field name="response">7</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_chemistry_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_chemistry_i_1"/>
+            <field name="response">0</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_chemistry_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_i_1"/>
-        <field name="sentence">La tabla periódica fue creada por:</field>
-    </record>
-    <record id="answerQ5_chemistry_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_chemistry_i_1"/>
-        <field name="response">Dmitri Mendeleiev</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_chemistry_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_chemistry_i_1"/>
-        <field name="response">Marie Curie</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_chemistry_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_i_1"/>
+            <field name="sentence">La tabla periódica fue creada por:</field>
+        </record>
+        <record id="answerQ5_chemistry_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_chemistry_i_1"/>
+            <field name="response">Dmitri Mendeleiev</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_chemistry_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_chemistry_i_1"/>
+            <field name="response">Marie Curie</field>
+        </record>
 
-    <!-- Examen Biología I -->
-    <record id="exam_biology_i_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Biología I - Células</field>
-        <field name="subject_id" ref="subject_biology_i"/>
-    </record>
+        <!-- Examen Biología I -->
+        <record id="exam_biology_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Biología I - Células</field>
+            <field name="subject_id" ref="subject_biology_i"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_biology_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_i_1"/>
-        <field name="sentence">La unidad básica de la vida es:</field>
-    </record>
-    <record id="answerQ1_biology_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_biology_i_1"/>
-        <field name="response">La célula</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_biology_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_biology_i_1"/>
-        <field name="response">El tejido</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_biology_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="sentence">La unidad básica de la vida es:</field>
+        </record>
+        <record id="answerQ1_biology_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_biology_i_1"/>
+            <field name="response">La célula</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_biology_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_biology_i_1"/>
+            <field name="response">El tejido</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_biology_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_i_1"/>
-        <field name="sentence">¿Qué orgánulo es conocido como la 'central energética' de la célula?</field>
-    </record>
-    <record id="answerQ2_biology_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_biology_i_1"/>
-        <field name="response">Mitocondria</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_biology_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_biology_i_1"/>
-        <field name="response">Núcleo</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_biology_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="sentence">¿Qué orgánulo es conocido como la 'central energética' de la célula?</field>
+        </record>
+        <record id="answerQ2_biology_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_biology_i_1"/>
+            <field name="response">Mitocondria</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_biology_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_biology_i_1"/>
+            <field name="response">Núcleo</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_biology_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_i_1"/>
-        <field name="sentence">El proceso de división celular se llama:</field>
-    </record>
-    <record id="answerQ3_biology_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_biology_i_1"/>
-        <field name="response">Mitosis</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_biology_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_biology_i_1"/>
-        <field name="response">Fotosíntesis</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_biology_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="sentence">El proceso de división celular se llama:</field>
+        </record>
+        <record id="answerQ3_biology_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_biology_i_1"/>
+            <field name="response">Mitosis</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_biology_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_biology_i_1"/>
+            <field name="response">Fotosíntesis</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_biology_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_i_1"/>
-        <field name="sentence">Las plantas realizan la fotosíntesis para producir:</field>
-    </record>
-    <record id="answerQ4_biology_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_biology_i_1"/>
-        <field name="response">Oxígeno y glucosa</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_biology_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_biology_i_1"/>
-        <field name="response">Dióxido de carbono y agua</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_biology_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="sentence">Las plantas realizan la fotosíntesis para producir:</field>
+        </record>
+        <record id="answerQ4_biology_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_biology_i_1"/>
+            <field name="response">Oxígeno y glucosa</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_biology_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_biology_i_1"/>
+            <field name="response">Dióxido de carbono y agua</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_biology_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_i_1"/>
-        <field name="sentence">El ADN se encuentra principalmente en:</field>
-    </record>
-    <record id="answerQ5_biology_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_biology_i_1"/>
-        <field name="response">El núcleo celular</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_biology_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_biology_i_1"/>
-        <field name="response">El citoplasma</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_biology_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_i_1"/>
+            <field name="sentence">El ADN se encuentra principalmente en:</field>
+        </record>
+        <record id="answerQ5_biology_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_biology_i_1"/>
+            <field name="response">El núcleo celular</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_biology_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_biology_i_1"/>
+            <field name="response">El citoplasma</field>
+        </record>
 
-    <!-- Examen Historia I -->
-    <record id="exam_history_i_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Historia I - Civilizaciones antiguas</field>
-        <field name="subject_id" ref="subject_history_i"/>
-    </record>
+        <!-- Examen Historia I -->
+        <record id="exam_history_i_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Historia I - Civilizaciones antiguas</field>
+            <field name="subject_id" ref="subject_history_i"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_history_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_i_1"/>
-        <field name="sentence">¿Qué civilización construyó las pirámides de Egipto?</field>
-    </record>
-    <record id="answerQ1_history_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_history_i_1"/>
-        <field name="response">Egipcia</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_history_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_history_i_1"/>
-        <field name="response">Maya</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_history_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="sentence">¿Qué civilización construyó las pirámides de Egipto?</field>
+        </record>
+        <record id="answerQ1_history_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_history_i_1"/>
+            <field name="response">Egipcia</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_history_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_history_i_1"/>
+            <field name="response">Maya</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_history_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_i_1"/>
-        <field name="sentence">La civilización romana se originó en:</field>
-    </record>
-    <record id="answerQ2_history_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_history_i_1"/>
-        <field name="response">Península Itálica</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_history_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_history_i_1"/>
-        <field name="response">Península Ibérica</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_history_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="sentence">La civilización romana se originó en:</field>
+        </record>
+        <record id="answerQ2_history_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_history_i_1"/>
+            <field name="response">Península Itálica</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_history_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_history_i_1"/>
+            <field name="response">Península Ibérica</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_history_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_i_1"/>
-        <field name="sentence">¿Quién fue el primer emperador de Roma?</field>
-    </record>
-    <record id="answerQ3_history_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_history_i_1"/>
-        <field name="response">César Augusto</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_history_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_history_i_1"/>
-        <field name="response">Julio César</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_history_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="sentence">¿Quién fue el primer emperador de Roma?</field>
+        </record>
+        <record id="answerQ3_history_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_history_i_1"/>
+            <field name="response">César Augusto</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_history_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_history_i_1"/>
+            <field name="response">Julio César</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_history_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_i_1"/>
-        <field name="sentence">La civilización griega es considerada la cuna de:</field>
-    </record>
-    <record id="answerQ4_history_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_history_i_1"/>
-        <field name="response">La democracia</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_history_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_history_i_1"/>
-        <field name="response">El feudalismo</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_history_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="sentence">La civilización griega es considerada la cuna de:</field>
+        </record>
+        <record id="answerQ4_history_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_history_i_1"/>
+            <field name="response">La democracia</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_history_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_history_i_1"/>
+            <field name="response">El feudalismo</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_history_i_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_i_1"/>
-        <field name="sentence">Los fenicios fueron destacados en:</field>
-    </record>
-    <record id="answerQ5_history_i_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_history_i_1"/>
-        <field name="response">La navegación y comercio</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_history_i_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_history_i_1"/>
-        <field name="response">La construcción de pirámides</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_history_i_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_i_1"/>
+            <field name="sentence">Los fenicios fueron destacados en:</field>
+        </record>
+        <record id="answerQ5_history_i_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_history_i_1"/>
+            <field name="response">La navegación y comercio</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_history_i_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_history_i_1"/>
+            <field name="response">La construcción de pirámides</field>
+        </record>
 
 
-    <!-- Examen Matemáticas II -->
-    <record id="exam_math_ii_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Matemáticas II - Unidad 1</field>
-        <field name="subject_id" ref="subject_math_ii"/>
-    </record>
+        <!-- Examen Matemáticas II -->
+        <record id="exam_math_ii_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Matemáticas II - Unidad 1</field>
+            <field name="subject_id" ref="subject_math_ii"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_math_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_math_ii_1"/>
-        <field name="sentence">¿Cuál es el valor de x en la ecuación: 2x + 5 = 15?</field>
-    </record>
-    <record id="answerQ1_math_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_math_ii_1"/>
-        <field name="response">5</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_math_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_math_ii_1"/>
-        <field name="response">10</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_math_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="sentence">¿Cuál es el valor de x en la ecuación: 2x + 5 = 15?</field>
+        </record>
+        <record id="answerQ1_math_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_math_ii_1"/>
+            <field name="response">5</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_math_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_math_ii_1"/>
+            <field name="response">10</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_math_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_math_ii_1"/>
-        <field name="sentence">¿Cuál es la fórmula del área de un triángulo?</field>
-    </record>
-    <record id="answerQ2_math_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_math_ii_1"/>
-        <field name="response">(base X altura) / 2</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_math_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_math_ii_1"/>
-        <field name="response">base X altura</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_math_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="sentence">¿Cuál es la fórmula del área de un triángulo?</field>
+        </record>
+        <record id="answerQ2_math_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_math_ii_1"/>
+            <field name="response">(base X altura) / 2</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_math_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_math_ii_1"/>
+            <field name="response">base X altura</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_math_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_math_ii_1"/>
-        <field name="sentence">¿Cuál es el resultado de (3 + 2)²?</field>
-    </record>
-    <record id="answerQ3_math_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_math_ii_1"/>
-        <field name="response">25</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_math_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_math_ii_1"/>
-        <field name="response">13</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_math_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="sentence">¿Cuál es el resultado de (3 + 2)²?</field>
+        </record>
+        <record id="answerQ3_math_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_math_ii_1"/>
+            <field name="response">25</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_math_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_math_ii_1"/>
+            <field name="response">13</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_math_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_math_ii_1"/>
-        <field name="sentence">¿Cuál es el valor de sen(90°)?</field>
-    </record>
-    <record id="answerQ4_math_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_math_ii_1"/>
-        <field name="response">1</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_math_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_math_ii_1"/>
-        <field name="response">0</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_math_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="sentence">¿Cuál es el valor de sen(90°)?</field>
+        </record>
+        <record id="answerQ4_math_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_math_ii_1"/>
+            <field name="response">1</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_math_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_math_ii_1"/>
+            <field name="response">0</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_math_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_math_ii_1"/>
-        <field name="sentence">La ecuación de una línea recta es:</field>
-    </record>
-    <record id="answerQ5_math_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_math_ii_1"/>
-        <field name="response">y = mx + b</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_math_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_math_ii_1"/>
-        <field name="response">x² + y² = r²</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_math_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_math_ii_1"/>
+            <field name="sentence">La ecuación de una línea recta es:</field>
+        </record>
+        <record id="answerQ5_math_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_math_ii_1"/>
+            <field name="response">y = mx + b</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_math_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_math_ii_1"/>
+            <field name="response">x² + y² = r²</field>
+        </record>
 
-    <!-- Examen Física II -->
-    <record id="exam_physics_ii_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Física II - Electricidad</field>
-        <field name="subject_id" ref="subject_physics_ii"/>
-    </record>
+        <!-- Examen Física II -->
+        <record id="exam_physics_ii_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Física II - Electricidad</field>
+            <field name="subject_id" ref="subject_physics_ii"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_physics_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_physics_ii_1"/>
-        <field name="sentence">¿Cuál es la unidad de medida de la corriente eléctrica?</field>
-    </record>
-    <record id="answerQ1_physics_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_physics_ii_1"/>
-        <field name="response">Amperio</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_physics_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_physics_ii_1"/>
-        <field name="response">Voltio</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_physics_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="sentence">¿Cuál es la unidad de medida de la corriente eléctrica?</field>
+        </record>
+        <record id="answerQ1_physics_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_physics_ii_1"/>
+            <field name="response">Amperio</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_physics_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_physics_ii_1"/>
+            <field name="response">Voltio</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_physics_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_physics_ii_1"/>
-        <field name="sentence">La ley de Ohm establece que:</field>
-    </record>
-    <record id="answerQ2_physics_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_physics_ii_1"/>
-        <field name="response">V = I * R</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_physics_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_physics_ii_1"/>
-        <field name="response">F = m * a</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_physics_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="sentence">La ley de Ohm establece que:</field>
+        </record>
+        <record id="answerQ2_physics_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_physics_ii_1"/>
+            <field name="response">V = I * R</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_physics_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_physics_ii_1"/>
+            <field name="response">F = m * a</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_physics_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_physics_ii_1"/>
-        <field name="sentence">¿Qué tipo de corriente cambia de dirección periódicamente?</field>
-    </record>
-    <record id="answerQ3_physics_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_physics_ii_1"/>
-        <field name="response">Corriente alterna</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_physics_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_physics_ii_1"/>
-        <field name="response">Corriente continua</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_physics_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="sentence">¿Qué tipo de corriente cambia de dirección periódicamente?</field>
+        </record>
+        <record id="answerQ3_physics_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_physics_ii_1"/>
+            <field name="response">Corriente alterna</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_physics_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_physics_ii_1"/>
+            <field name="response">Corriente continua</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_physics_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_physics_ii_1"/>
-        <field name="sentence">¿Qué instrumento se usa para medir el voltaje?</field>
-    </record>
-    <record id="answerQ4_physics_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_physics_ii_1"/>
-        <field name="response">Voltímetro</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_physics_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_physics_ii_1"/>
-        <field name="response">Amperímetro</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_physics_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="sentence">¿Qué instrumento se usa para medir el voltaje?</field>
+        </record>
+        <record id="answerQ4_physics_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_physics_ii_1"/>
+            <field name="response">Voltímetro</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_physics_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_physics_ii_1"/>
+            <field name="response">Amperímetro</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_physics_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_physics_ii_1"/>
-        <field name="sentence">Los imanes tienen:</field>
-    </record>
-    <record id="answerQ5_physics_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_physics_ii_1"/>
-        <field name="response">Polo norte y polo sur</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_physics_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_physics_ii_1"/>
-        <field name="response">Polo positivo y polo negativo</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_physics_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_physics_ii_1"/>
+            <field name="sentence">Los imanes tienen:</field>
+        </record>
+        <record id="answerQ5_physics_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_physics_ii_1"/>
+            <field name="response">Polo norte y polo sur</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_physics_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_physics_ii_1"/>
+            <field name="response">Polo positivo y polo negativo</field>
+        </record>
 
-    <!-- Examen Química II -->
-    <record id="exam_chemistry_ii_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Química II - Química Orgánica</field>
-        <field name="subject_id" ref="subject_chemistry_ii"/>
-    </record>
+        <!-- Examen Química II -->
+        <record id="exam_chemistry_ii_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Química II - Química Orgánica</field>
+            <field name="subject_id" ref="subject_chemistry_ii"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_chemistry_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_ii_1"/>
-        <field name="sentence">¿Cuál es el compuesto principal del gas natural?</field>
-    </record>
-    <record id="answerQ1_chemistry_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_chemistry_ii_1"/>
-        <field name="response">Metano (CH₄)</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_chemistry_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_chemistry_ii_1"/>
-        <field name="response">Propano (C₃H₈)</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_chemistry_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="sentence">¿Cuál es el compuesto principal del gas natural?</field>
+        </record>
+        <record id="answerQ1_chemistry_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_chemistry_ii_1"/>
+            <field name="response">Metano (CH₄)</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_chemistry_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_chemistry_ii_1"/>
+            <field name="response">Propano (C₃H₈)</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_chemistry_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_ii_1"/>
-        <field name="sentence">Los hidrocarburos contienen:</field>
-    </record>
-    <record id="answerQ2_chemistry_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_chemistry_ii_1"/>
-        <field name="response">Carbono e hidrógeno</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_chemistry_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_chemistry_ii_1"/>
-        <field name="response">Oxígeno e hidrógeno</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_chemistry_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="sentence">Los hidrocarburos contienen:</field>
+        </record>
+        <record id="answerQ2_chemistry_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_chemistry_ii_1"/>
+            <field name="response">Carbono e hidrógeno</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_chemistry_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_chemistry_ii_1"/>
+            <field name="response">Oxígeno e hidrógeno</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_chemistry_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_ii_1"/>
-        <field name="sentence">¿Qué es un polímero?</field>
-    </record>
-    <record id="answerQ3_chemistry_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_chemistry_ii_1"/>
-        <field name="response">Una macromolécula formada por monómeros</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_chemistry_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_chemistry_ii_1"/>
-        <field name="response">Un átomo con múltiples electrones</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_chemistry_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="sentence">¿Qué es un polímero?</field>
+        </record>
+        <record id="answerQ3_chemistry_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_chemistry_ii_1"/>
+            <field name="response">Una macromolécula formada por monómeros</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_chemistry_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_chemistry_ii_1"/>
+            <field name="response">Un átomo con múltiples electrones</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_chemistry_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_ii_1"/>
-        <field name="sentence">El grupo funcional -OH corresponde a:</field>
-    </record>
-    <record id="answerQ4_chemistry_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_chemistry_ii_1"/>
-        <field name="response">Alcoholes</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_chemistry_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_chemistry_ii_1"/>
-        <field name="response">Ácidos</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_chemistry_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="sentence">El grupo funcional -OH corresponde a:</field>
+        </record>
+        <record id="answerQ4_chemistry_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_chemistry_ii_1"/>
+            <field name="response">Alcoholes</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_chemistry_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_chemistry_ii_1"/>
+            <field name="response">Ácidos</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_chemistry_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_chemistry_ii_1"/>
-        <field name="sentence">La fórmula del etanol es:</field>
-    </record>
-    <record id="answerQ5_chemistry_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_chemistry_ii_1"/>
-        <field name="response">C₂H₅OH</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_chemistry_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_chemistry_ii_1"/>
-        <field name="response">CH₃COOH</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_chemistry_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_chemistry_ii_1"/>
+            <field name="sentence">La fórmula del etanol es:</field>
+        </record>
+        <record id="answerQ5_chemistry_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_chemistry_ii_1"/>
+            <field name="response">C₂H₅OH</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_chemistry_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_chemistry_ii_1"/>
+            <field name="response">CH₃COOH</field>
+        </record>
 
-    <!-- Examen Biología II -->
-    <record id="exam_biology_ii_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Biología II - Genética</field>
-        <field name="subject_id" ref="subject_biology_ii"/>
-    </record>
+        <!-- Examen Biología II -->
+        <record id="exam_biology_ii_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Biología II - Genética</field>
+            <field name="subject_id" ref="subject_biology_ii"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_biology_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_ii_1"/>
-        <field name="sentence">¿Qué científico es conocido como el padre de la genética?</field>
-    </record>
-    <record id="answerQ1_biology_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_biology_ii_1"/>
-        <field name="response">Gregor Mendel</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_biology_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_biology_ii_1"/>
-        <field name="response">Charles Darwin</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_biology_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="sentence">¿Qué científico es conocido como el padre de la genética?</field>
+        </record>
+        <record id="answerQ1_biology_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_biology_ii_1"/>
+            <field name="response">Gregor Mendel</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_biology_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_biology_ii_1"/>
+            <field name="response">Charles Darwin</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_biology_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_ii_1"/>
-        <field name="sentence">¿Qué son los genes?</field>
-    </record>
-    <record id="answerQ2_biology_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_biology_ii_1"/>
-        <field name="response">Segmentos de ADN que codifican proteínas</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_biology_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_biology_ii_1"/>
-        <field name="response">Células reproductivas</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_biology_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="sentence">¿Qué son los genes?</field>
+        </record>
+        <record id="answerQ2_biology_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_biology_ii_1"/>
+            <field name="response">Segmentos de ADN que codifican proteínas</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_biology_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_biology_ii_1"/>
+            <field name="response">Células reproductivas</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_biology_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_ii_1"/>
-        <field name="sentence">¿Cuál es la unidad básica de la herencia?</field>
-    </record>
-    <record id="answerQ3_biology_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_biology_ii_1"/>
-        <field name="response">Gen</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_biology_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_biology_ii_1"/>
-        <field name="response">Cromosoma</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_biology_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="sentence">¿Cuál es la unidad básica de la herencia?</field>
+        </record>
+        <record id="answerQ3_biology_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_biology_ii_1"/>
+            <field name="response">Gen</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_biology_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_biology_ii_1"/>
+            <field name="response">Cromosoma</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_biology_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_ii_1"/>
-        <field name="sentence">Los humanos tienen:</field>
-    </record>
-    <record id="answerQ4_biology_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_biology_ii_1"/>
-        <field name="response">46 cromosomas</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_biology_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_biology_ii_1"/>
-        <field name="response">23 cromosomas</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_biology_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="sentence">Los humanos tienen:</field>
+        </record>
+        <record id="answerQ4_biology_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_biology_ii_1"/>
+            <field name="response">46 cromosomas</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_biology_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_biology_ii_1"/>
+            <field name="response">23 cromosomas</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_biology_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_biology_ii_1"/>
-        <field name="sentence">La mutación es:</field>
-    </record>
-    <record id="answerQ5_biology_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_biology_ii_1"/>
-        <field name="response">Un cambio en la secuencia de ADN</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_biology_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_biology_ii_1"/>
-        <field name="response">Un tipo de célula</field>
-    </record>
+        <!-- Pregunta 5 -->
+        <record id="question5_biology_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_biology_ii_1"/>
+            <field name="sentence">La mutación es:</field>
+        </record>
+        <record id="answerQ5_biology_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_biology_ii_1"/>
+            <field name="response">Un cambio en la secuencia de ADN</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_biology_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_biology_ii_1"/>
+            <field name="response">Un tipo de célula</field>
+        </record>
 
-    <!-- Examen Historia II -->
-    <record id="exam_history_ii_1" model="python_odoo8_module.exam">
-        <field name="name">Examen Historia II - Historia Contemporánea</field>
-        <field name="subject_id" ref="subject_history_ii"/>
-    </record>
+        <!-- Examen Historia II -->
+        <record id="exam_history_ii_1" model="python_odoo8_module.exam">
+            <field name="name">Examen Historia II - Historia Contemporánea</field>
+            <field name="subject_id" ref="subject_history_ii"/>
+        </record>
 
-    <!-- Pregunta 1 -->
-    <record id="question1_history_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_ii_1"/>
-        <field name="sentence">¿En qué año se firmó la Independencia de Guatemala?</field>
-    </record>
-    <record id="answerQ1_history_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_history_ii_1"/>
-        <field name="response">1821</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ1_history_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question1_history_ii_1"/>
-        <field name="response">1810</field>
-    </record>
+        <!-- Pregunta 1 -->
+        <record id="question1_history_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="sentence">¿En qué año se firmó la Independencia de Guatemala?</field>
+        </record>
+        <record id="answerQ1_history_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_history_ii_1"/>
+            <field name="response">1821</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ1_history_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question1_history_ii_1"/>
+            <field name="response">1810</field>
+        </record>
 
-    <!-- Pregunta 2 -->
-    <record id="question2_history_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_ii_1"/>
-        <field name="sentence">¿Qué conflicto armado duró 36 años en Guatemala?</field>
-    </record>
-    <record id="answerQ2_history_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_history_ii_1"/>
-        <field name="response">Conflicto Armado Interno</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ2_history_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question2_history_ii_1"/>
-        <field name="response">Guerra del Fútbol</field>
-    </record>
+        <!-- Pregunta 2 -->
+        <record id="question2_history_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="sentence">¿Qué conflicto armado duró 36 años en Guatemala?</field>
+        </record>
+        <record id="answerQ2_history_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_history_ii_1"/>
+            <field name="response">Conflicto Armado Interno</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ2_history_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question2_history_ii_1"/>
+            <field name="response">Guerra del Fútbol</field>
+        </record>
 
-    <!-- Pregunta 3 -->
-    <record id="question3_history_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_ii_1"/>
-        <field name="sentence">¿En qué siglo ocurrió la Revolución Industrial?</field>
-    </record>
-    <record id="answerQ3_history_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_history_ii_1"/>
-        <field name="response">Siglo XVIII</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ3_history_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question3_history_ii_1"/>
-        <field name="response">Siglo XVI</field>
-    </record>
+        <!-- Pregunta 3 -->
+        <record id="question3_history_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="sentence">¿En qué siglo ocurrió la Revolución Industrial?</field>
+        </record>
+        <record id="answerQ3_history_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_history_ii_1"/>
+            <field name="response">Siglo XVIII</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ3_history_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question3_history_ii_1"/>
+            <field name="response">Siglo XVI</field>
+        </record>
 
-    <!-- Pregunta 4 -->
-    <record id="question4_history_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_ii_1"/>
-        <field name="sentence">La Primera Guerra Mundial ocurrió entre:</field>
-    </record>
-    <record id="answerQ4_history_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_history_ii_1"/>
-        <field name="response">1914-1918</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ4_history_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question4_history_ii_1"/>
-        <field name="response">1939-1945</field>
-    </record>
+        <!-- Pregunta 4 -->
+        <record id="question4_history_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="sentence">La Primera Guerra Mundial ocurrió entre:</field>
+        </record>
+        <record id="answerQ4_history_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_history_ii_1"/>
+            <field name="response">1914-1918</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ4_history_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question4_history_ii_1"/>
+            <field name="response">1939-1945</field>
+        </record>
 
-    <!-- Pregunta 5 -->
-    <record id="question5_history_ii_1" model="python_odoo8_module.question">
-        <field name="exam_id" ref="exam_history_ii_1"/>
-        <field name="sentence">¿Qué movimiento social buscó derechos civiles en EE.UU.?</field>
-    </record>
-    <record id="answerQ5_history_ii_1_a" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_history_ii_1"/>
-        <field name="response">Movimiento por los Derechos Civiles</field>
-        <field name="correct">True</field>
-        <field name="point">20</field>
-    </record>
-    <record id="answerQ5_history_ii_1_b" model="python_odoo8_module.answer">
-        <field name="question_id" ref="question5_history_ii_1"/>
-        <field name="response">Movimiento Obrero</field>
-    </record>
-</data>
+        <!-- Pregunta 5 -->
+        <record id="question5_history_ii_1" model="python_odoo8_module.question">
+            <field name="exam_id" ref="exam_history_ii_1"/>
+            <field name="sentence">¿Qué movimiento social buscó derechos civiles en EE.UU.?</field>
+        </record>
+        <record id="answerQ5_history_ii_1_a" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_history_ii_1"/>
+            <field name="response">Movimiento por los Derechos Civiles</field>
+            <field name="correct">True</field>
+            <field name="point">20</field>
+        </record>
+        <record id="answerQ5_history_ii_1_b" model="python_odoo8_module.answer">
+            <field name="question_id" ref="question5_history_ii_1"/>
+            <field name="response">Movimiento Obrero</field>
+        </record>
+    </data>
 </openerp>
